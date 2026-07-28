@@ -1,0 +1,1517 @@
+{
+  "version": 1,
+  "out": "as-published",
+  "series": [
+    {
+      "key": "ksc-2018-summer-regatta",
+      "id": "6fecf35a-a0e6-5303-848c-632d67215fae",
+      "publishedSlug": "2018",
+      "name": "Summer Regatta 2018",
+      "venue": "Killaloe Sailing Club",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2018",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-regatta",
+          "file": "sources/sailwave.com/results/KSC/2018_Summer_Regatta.htm",
+          "sectionTitle": "Overall"
+        }
+      ]
+    },
+    {
+      "key": "ksc-2018-junior-regatta",
+      "id": "ab1f0afd-6810-599d-a742-431e3cd26c6d",
+      "publishedSlug": "2018",
+      "name": "Junior Regatta 2018",
+      "venue": "Killaloe Sailing Club",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2018",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "junior-regatta",
+          "file": "sources/sailwave.com/results/KSC/2018_Junior_Regatta.htm",
+          "sectionTitle": "Overall"
+        }
+      ]
+    },
+    {
+      "key": "ksc-2018-september-series",
+      "id": "212ba99e-2b2e-57ee-a123-f8add2502206",
+      "publishedSlug": "2018",
+      "name": "September Series 2018",
+      "venue": "Killaloe Sailing Club",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2018",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/2018_September_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2018-cooler-series",
+      "id": "0165914e-c263-59c6-b28d-b1d751d7270f",
+      "publishedSlug": "2018",
+      "name": "Cooler Series 2018",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2018",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "cooler-series",
+          "file": "sources/sailwave.com/results/KSC/2018_Cooler_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2018-baltic-series",
+      "id": "4be062e7-1124-5dca-a4dc-1b434fafc524",
+      "publishedSlug": "2018",
+      "name": "Baltic Series 2018",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2018",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "baltic-series",
+          "file": "sources/sailwave.com/results/KSC/2018_Baltic_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-warmer-series",
+      "id": "0ac29874-400a-5f6d-9d57-6a804d89f524",
+      "publishedSlug": "2019",
+      "name": "Warmer Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2019_Warmer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-baltic-series",
+      "id": "15d75b5f-7455-5a76-817f-72b99e3bb248",
+      "publishedSlug": "2019",
+      "name": "Baltic Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "baltic-series",
+          "file": "sources/sailwave.com/results/KSC/2019_Baltic_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-cooler-series",
+      "id": "a606ac2d-2a87-5f44-bb1c-e35c23e7cc2f",
+      "publishedSlug": "2019",
+      "name": "Cooler Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "cooler-series",
+          "file": "sources/sailwave.com/results/KSC/2019_Cooler_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-spring-regatta",
+      "id": "5d022745-de12-50ac-b6a6-66a65de37e61",
+      "publishedSlug": "2019",
+      "name": "Spring Regatta 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-regatta",
+          "file": "sources/sailwave.com/results/KSC/2019_Spring_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-mayfly-series",
+      "id": "1a2b3de1-9804-50a0-b701-411473a3136b",
+      "publishedSlug": "2019",
+      "name": "Mayfly Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2019_Mayfly_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-summer-series",
+      "id": "bbb1e216-a896-5850-b19f-06b54719941e",
+      "publishedSlug": "2019",
+      "name": "Summer Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2019_Summer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-september-series",
+      "id": "0973090f-4cc3-5566-957f-4c1452c77844",
+      "publishedSlug": "2019",
+      "name": "September Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/2019_September_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2019-june-series",
+      "id": "45a1698e-1c7f-5d02-b4a1-a2a1d6880899",
+      "publishedSlug": "2019",
+      "name": "June Series 2019",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2019",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2019_June_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2020-summer-series",
+      "id": "419e47e7-acfc-5fb3-b54d-924f0d289843",
+      "publishedSlug": "2020",
+      "name": "Summer Series 2020",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2020",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2020_Summer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2020-summer-regatta",
+      "id": "4cb163c6-e522-58a1-89b2-29c3b72080b7",
+      "publishedSlug": "2020",
+      "name": "Summer Regatta 2020",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2020",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-regatta",
+          "file": "sources/sailwave.com/results/KSC/2020_Summer_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-junior-regatta",
+      "id": "ef870aca-8955-52b2-af4a-da8dd66be859",
+      "publishedSlug": "2021",
+      "name": "Junior Regatta 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "junior-regatta",
+          "file": "sources/sailwave.com/results/KSC/Junior_Regatta_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-killaloe-sailing-regatta",
+      "id": "6cbf1f09-661e-5417-afe8-072d0c18d1ce",
+      "publishedSlug": "2021",
+      "name": "Killaloe Sailing Regatta 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "killaloe-sailing-regatta",
+          "file": "sources/sailwave.com/results/KSC/2021_Spring_regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-winter-regatta",
+      "id": "1b5c40b4-fe29-5592-b332-9aba17a6a195",
+      "publishedSlug": "2021",
+      "name": "Winter Regatta 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "winter-regatta",
+          "file": "sources/sailwave.com/results/KSC/Winter_Regatta_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-summer-series",
+      "id": "9f71f016-2b8d-526d-9f11-611e75796f92",
+      "publishedSlug": "2021",
+      "name": "Summer Series 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/Summer_Series_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-september-series",
+      "id": "8a1f5a29-ac77-50b5-96f0-3c55d936484e",
+      "publishedSlug": "2021",
+      "name": "September Series 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/September_Series_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-mayfly-series",
+      "id": "6101d88e-3300-5281-9d3e-8f0f5eab0e80",
+      "publishedSlug": "2021",
+      "name": "Mayfly Series 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/Mayfly_series_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-june-series",
+      "id": "975d1574-c9c4-57d0-97ab-63407de677b9",
+      "publishedSlug": "2021",
+      "name": "June Series 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/Junes_series_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2021-cooler-series",
+      "id": "2725761a-8fe5-5a52-bd00-1c8cd7153793",
+      "publishedSlug": "2021",
+      "name": "Cooler Series 2021",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2021",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "cooler-series",
+          "file": "sources/sailwave.com/results/KSC/Cooler_Series_2021.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-warmer-series",
+      "id": "05cb4db7-db88-5b2a-be74-f0e3811b190d",
+      "publishedSlug": "2022",
+      "name": "Warmer Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2022_warmer_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-spring-challenge-open-regatta",
+      "id": "066dbe6e-bb35-58b6-8e6a-127ac84ed796",
+      "publishedSlug": "2022",
+      "name": "Spring Challenge Open Regatta 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-challenge-open-regatta",
+          "file": "sources/sailwave.com/results/KSC/2022_Spring_open_challenge.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-june-series",
+      "id": "a7a68abf-d41d-55ba-a88f-d06a5c282927",
+      "publishedSlug": "2022",
+      "name": "June Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2022_June_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-mayfly-series",
+      "id": "f59ceef7-2148-5718-a5ab-1c72b51981f9",
+      "publishedSlug": "2022",
+      "name": "Mayfly Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2022_Mayfly_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-open-summer-regatta",
+      "id": "ef1e4061-332c-5019-92f6-55b4610a34db",
+      "publishedSlug": "2022",
+      "name": "Open Summer Regatta 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "open-summer-regatta",
+          "file": "sources/sailwave.com/results/KSC/2022_Summer_Open_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-summer-series",
+      "id": "695ec346-3d9f-55e7-be1a-544e36aebcad",
+      "publishedSlug": "2022",
+      "name": "Summer Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2022_Summer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-september-series",
+      "id": "a8310df9-a374-5285-93fe-ee9b2515da72",
+      "publishedSlug": "2022",
+      "name": "September Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/September_Series_2022.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-fireball-munsters",
+      "id": "127b3cc1-f5a5-5df9-82ea-2e357a7490ee",
+      "publishedSlug": "2022",
+      "name": "Fireball Munsters 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "fireball-munsters",
+          "file": "sources/sailwave.com/results/KSC/Munster_fireballs_2022.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-rs-inlands",
+      "id": "1ab0c486-808b-5345-bb31-a583a870784f",
+      "publishedSlug": "2022",
+      "name": "RS Inlands 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "RS200 Fleet",
+          "subPath": "rs-inlands/rs200-fleet",
+          "file": "sources/sailwave.com/results/KSC/rs_inlands_2022.htm",
+          "sectionTitle": "RS200 Fleet",
+          "includeRaces": true
+        },
+        {
+          "name": "RS400 Fleet",
+          "subPath": "rs-inlands/rs400-fleet",
+          "file": "sources/sailwave.com/results/KSC/rs_inlands_2022.htm",
+          "sectionTitle": "RS400 Fleet",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2022-cooler-series",
+      "id": "f31201c0-c2ad-5093-a12f-19dc02ace0ad",
+      "publishedSlug": "2022",
+      "name": "Cooler Series 2022",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2022",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "cooler-series",
+          "file": "sources/sailwave.com/results/KSC/2022_october_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-warmer-series",
+      "id": "1e542fb7-69dc-5f09-b137-060806979bf0",
+      "publishedSlug": "2023",
+      "name": "Warmer Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2023_Warmer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-spring-regatta",
+      "id": "11cb34d6-ea3e-501a-9d0d-7fe793e78845",
+      "publishedSlug": "2023",
+      "name": "Spring Regatta 2023",
+      "venue": "Lough derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-regatta",
+          "file": "sources/sailwave.com/results/KSC/2023_Spring_Challenge_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-mayfly-series",
+      "id": "a568444e-3f1b-556c-8165-85c4d708a129",
+      "publishedSlug": "2023",
+      "name": "Mayfly Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2023_Mayfly_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-june-series",
+      "id": "a9c2680e-3a4f-5490-ae54-32ad37af1942",
+      "publishedSlug": "2023",
+      "name": "June Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2023_June_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-fireball-munsters-420-leinsters",
+      "id": "68993721-1229-564c-85ed-d5733ff950df",
+      "publishedSlug": "2023",
+      "name": "Fireball Munsters & 420 Leinsters 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "420 Fleet",
+          "subPath": "fireball-munsters-420-leinsters/420-fleet",
+          "file": "sources/sailwave.com/results/KSC/2023_fireball_420.htm",
+          "sectionTitle": "420 Fleet",
+          "includeRaces": true
+        },
+        {
+          "name": "Fireball Fleet",
+          "subPath": "fireball-munsters-420-leinsters/fireball-fleet",
+          "file": "sources/sailwave.com/results/KSC/2023_fireball_420.htm",
+          "sectionTitle": "Fireball Fleet",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-summer-series",
+      "id": "759c75fc-7871-5f83-a86f-073eb65b97b4",
+      "publishedSlug": "2023",
+      "name": "Summer Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2023_Summer_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-open-summer-regatta",
+      "id": "80cd1810-7ea6-54c0-ad70-aee3eefecd6a",
+      "publishedSlug": "2023",
+      "name": "Open Summer Regatta 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "open-summer-regatta",
+          "file": "sources/sailwave.com/results/KSC/2023_Open_Summer_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-open-junior-summer-regatta",
+      "id": "a221f464-4ecf-5385-8ad2-9f5a72fb43f7",
+      "publishedSlug": "2023",
+      "name": "Open Junior Summer Regatta 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "open-junior-summer-regatta",
+          "file": "sources/sailwave.com/results/KSC/2023_Open_Junior_Summer_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-september-series",
+      "id": "663e8dab-e8d2-537b-a9ed-0a041602a92a",
+      "publishedSlug": "2023",
+      "name": "September Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/2023_september_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-october-series",
+      "id": "3ebd79e8-b5d0-579e-836c-46985adf9c85",
+      "publishedSlug": "2023",
+      "name": "October Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "october-series",
+          "file": "sources/sailwave.com/results/KSC/2023_October_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2023-brass-monkey-series",
+      "id": "10d0741b-a73d-55ec-934d-42e793492b56",
+      "publishedSlug": "2023",
+      "name": "Brass Monkey Series 2023",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2023",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "brass-monkey-series",
+          "file": "sources/sailwave.com/results/KSC/2023_brass_monkey.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-gp14-munsters-alternate-scoring",
+      "id": "316787b6-c22f-5d9d-98ef-17ec22c51146",
+      "publishedSlug": "2024",
+      "name": "GP14 Munsters (alternate scoring) 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "gp14-munsters-alternate-scoring",
+          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters_alternate.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-gp14-munsters",
+      "id": "897d11da-df21-5837-8ee6-abc08788d7d5",
+      "publishedSlug": "2024",
+      "name": "GP14 Munsters 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Gold Fleet",
+          "subPath": "gp14-munsters/gold-fleet",
+          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
+          "sectionTitle": "Gold Fleet",
+          "includeRaces": true
+        },
+        {
+          "name": "Silver Fleet",
+          "subPath": "gp14-munsters/silver-fleet",
+          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
+          "sectionTitle": "Silver Fleet",
+          "includeRaces": true
+        },
+        {
+          "name": "Bronze Fleet",
+          "subPath": "gp14-munsters/bronze-fleet",
+          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
+          "sectionTitle": "Bronze Fleet",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-warmer-series",
+      "id": "f5188cac-d750-59eb-9fe6-90e625393e45",
+      "publishedSlug": "2024",
+      "name": "Warmer Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2024_Warmer_Invitational_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-may-fun-event",
+      "id": "a3b02d98-732a-597b-884d-93cd09752e37",
+      "publishedSlug": "2024",
+      "name": "May Fun Event 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "may-fun-event",
+          "file": "sources/sailwave.com/results/KSC/may_thursday_fun_event.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-mayfly-series",
+      "id": "447a738d-4a6b-523f-889a-66444633561f",
+      "publishedSlug": "2024",
+      "name": "Mayfly Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2024_Mayfly_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-june-sprint-1",
+      "id": "eeccc251-cd04-54c4-9c23-a397918cacec",
+      "publishedSlug": "2024",
+      "name": "June Sprint 1 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-sprint-1",
+          "file": "sources/sailwave.com/results/KSC/2024_June_Sprint_1.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-june-sprint-2",
+      "id": "bc152463-0f5e-5a92-bbbf-2b3de52f2c0b",
+      "publishedSlug": "2024",
+      "name": "June Sprint 2 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-sprint-2",
+          "file": "sources/sailwave.com/results/KSC/2024_June_Sprint_2.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-june-sprint-3",
+      "id": "31ec04e7-76b6-5229-86c0-f4c00ba440b4",
+      "publishedSlug": "2024",
+      "name": "June Sprint 3 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-sprint-3",
+          "file": "sources/sailwave.com/results/KSC/2024_June_Sprint_3.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-june-series",
+      "id": "2334f645-4659-5130-a562-a113746952df",
+      "publishedSlug": "2024",
+      "name": "June Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2024_june_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-summer-open-regatta",
+      "id": "d3a59824-d09f-5763-8721-7b75edd3bb1c",
+      "publishedSlug": "2024",
+      "name": "Summer Open Regatta 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-open-regatta",
+          "file": "sources/sailwave.com/results/KSC/2024_summer_regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-summer-series",
+      "id": "edcaa4bf-2972-5298-b877-b22ffdd6b13f",
+      "publishedSlug": "2024",
+      "name": "Summer Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2024_Summer_Super_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-september-series",
+      "id": "a412b4f3-531e-5feb-b75a-61bd4f284489",
+      "publishedSlug": "2024",
+      "name": "September Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/2024_September_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-october-series",
+      "id": "29dd6f64-36c1-5d82-b853-047805ff84bd",
+      "publishedSlug": "2024",
+      "name": "October Series 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "october-series",
+          "file": "sources/sailwave.com/results/KSC/2024_Cooler_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2024-brass-monkey-winter",
+      "id": "1082f15d-1f53-5481-89ac-9ceeeb0c7e7f",
+      "publishedSlug": "2024",
+      "name": "Brass Monkey / Winter 2024",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2024",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "brass-monkey-winter",
+          "file": "sources/sailwave.com/results/KSC/2024_Winter_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-spring-series",
+      "id": "2a369e58-72c7-5b52-a520-4d57bee5bb3e",
+      "publishedSlug": "2025",
+      "name": "Spring Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-series",
+          "file": "sources/sailwave.com/results/KSC/2025_Spring_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-warmer-series",
+      "id": "e57ab4f0-83e7-5168-84b5-b305fe5cfef3",
+      "publishedSlug": "2025",
+      "name": "Warmer Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2025_Warmer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-spring-open-regatta",
+      "id": "d7edf58b-8e18-5c0f-ba30-210453ca4a8b",
+      "publishedSlug": "2025",
+      "name": "Spring Open Regatta 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-open-regatta",
+          "file": "sources/sailwave.com/results/KSC/2025_Spring_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-mayfly-series",
+      "id": "3b94e055-084a-5f22-83f7-92bb6f2ec88c",
+      "publishedSlug": "2025",
+      "name": "Mayfly Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2025_mayfly_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-summer-sunday-series",
+      "id": "64762f7b-1b7c-5b70-91de-69a70b7dbfc4",
+      "publishedSlug": "2025",
+      "name": "Summer Sunday Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-sunday-series",
+          "file": "sources/sailwave.com/results/KSC/2025_Summer_Sunday_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-june-series",
+      "id": "3e668aa3-3bd2-54e3-b866-8dac2a16872c",
+      "publishedSlug": "2025",
+      "name": "June Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2025_june_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-ilca-westerns",
+      "id": "9d522d78-7e2b-5f8d-8de7-07028f8d175e",
+      "publishedSlug": "2025",
+      "name": "ILCA Westerns 2025",
+      "venue": "https://www.killaloesailingclub.com/",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "ILCA 4 / Laser 4.7 Class",
+          "subPath": "ilca-westerns/ilca-4-laser-4-7-class",
+          "file": "sources/sailwave.com/results/KSC/2025_ILCA_Westerns.htm",
+          "sectionTitle": "ILCA 4 / Laser 4.7 Class",
+          "includeRaces": true
+        },
+        {
+          "name": "ILCA 6 / Laser Radial Class",
+          "subPath": "ilca-westerns/ilca-6-laser-radial-class",
+          "file": "sources/sailwave.com/results/KSC/2025_ILCA_Westerns.htm",
+          "sectionTitle": "ILCA 6 / Laser Radial Class",
+          "includeRaces": true
+        },
+        {
+          "name": "ILCA 7 / Laser Class",
+          "subPath": "ilca-westerns/ilca-7-laser-class",
+          "file": "sources/sailwave.com/results/KSC/2025_ILCA_Westerns.htm",
+          "sectionTitle": "ILCA 7 / Laser Class",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-summer-open-regatta",
+      "id": "b28cfc36-9744-57cc-b78f-278ff230849e",
+      "publishedSlug": "2025",
+      "name": "Summer Open Regatta 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-open-regatta",
+          "file": "sources/sailwave.com/results/KSC/2025_Summer_Regatta.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-summer-series",
+      "id": "c5994437-c36d-59b2-bcda-503c157deb0d",
+      "publishedSlug": "2025",
+      "name": "Summer Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2025_Summer_Super_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-september-series",
+      "id": "7bbf7459-27e1-54f0-9e19-d9f095972099",
+      "publishedSlug": "2025",
+      "name": "September Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "september-series",
+          "file": "sources/sailwave.com/results/KSC/2025_September_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-cooler-series",
+      "id": "337bbe52-afcd-587e-b51b-2f2804d57ed0",
+      "publishedSlug": "2025",
+      "name": "Cooler Series 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "cooler-series",
+          "file": "sources/sailwave.com/results/KSC/2025_Cooler_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2025-brass-monkey-winter",
+      "id": "5676102d-c9ff-5a4b-a6fa-228876e7da17",
+      "publishedSlug": "2025",
+      "name": "Brass Monkey / Winter 2025",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2025-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2025",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "brass-monkey-winter",
+          "file": "sources/sailwave.com/results/KSC/2025_Winter_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-spring-series",
+      "id": "48570d14-be3e-56e9-b287-b2af4dfb0bee",
+      "publishedSlug": "2026",
+      "name": "Spring Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "spring-series",
+          "file": "sources/sailwave.com/results/KSC/2026_Spring_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-warmer-series",
+      "id": "00fedb67-859a-5ca4-8355-7039ae7e5690",
+      "publishedSlug": "2026",
+      "name": "Warmer Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "warmer-series",
+          "file": "sources/sailwave.com/results/KSC/2026_Warmer_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-summer-sunday-series",
+      "id": "f8a7f711-8f31-5aa1-9973-8fd47aac7e00",
+      "publishedSlug": "2026",
+      "name": "Summer Sunday Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-sunday-series",
+          "file": "sources/sailwave.com/results/KSC/2026_Summer_Sunday_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-june-series",
+      "id": "f12cd4f4-5a56-508e-87b4-b3e6b24f06f2",
+      "publishedSlug": "2026",
+      "name": "June Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "june-series",
+          "file": "sources/sailwave.com/results/KSC/2026_june_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-mayfly-series",
+      "id": "42379b7b-9521-5670-9fdb-56a744aa743e",
+      "publishedSlug": "2026",
+      "name": "Mayfly Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "mayfly-series",
+          "file": "sources/sailwave.com/results/KSC/2026_mayfly_series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    },
+    {
+      "key": "ksc-2026-summer-series",
+      "id": "9fbd1ae0-b89a-56ae-bb69-5053c4b58b9b",
+      "publishedSlug": "2026",
+      "name": "Summer Series 2026",
+      "venue": "Lough Derg",
+      "venueUrl": "https://www.killaloesailingclub.com",
+      "eventUrl": "https://www.killaloesailingclub.com/2026-archived-racing-results/",
+      "source": "sailwave",
+      "category": "2026",
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "summer-series",
+          "file": "sources/sailwave.com/results/KSC/2026_Summer_Super_Series.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        }
+      ]
+    }
+  ]
+}

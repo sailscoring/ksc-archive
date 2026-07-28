@@ -1,0 +1,3359 @@
+{
+  "source": {
+    "sailwave": "https://www.sailwave.com/results/KSC/",
+    "club": "https://www.killaloesailingclub.com/members-area/racing-results/"
+  },
+  "pages": [
+    {
+      "file": "2004_Summer_Super_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2004_Summer_Super_Series.htm",
+      "uploadedAt": "2024-07-23T20:28:31Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "document-title",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2004,
+        "documentTitle": 2024,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Super Series at Lough Derg 2024",
+      "eventName": "Summer Super Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 26,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 26, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "superseded",
+      "supersededBy": "2024_Summer_Super_Series.htm"
+    },
+    {
+      "file": "2018_Baltic_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2018_Baltic_Series.htm",
+      "uploadedAt": "2022-07-06T07:06:53Z",
+      "encoding": "utf-8",
+      "year": 2018,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2018,
+        "documentTitle": 2022,
+        "heading": 2018
+      },
+      "documentTitle": "Sailwave results for KSC 2018 Baltic Series at Lough Derg 2022",
+      "eventName": "KSC 2018 Baltic Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 17,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 17, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1 - 30/10/2018",
+        "R2 - 30/09/2018",
+        "R3 - 30/09/2018",
+        "R4 - 30/09/2018",
+        "R5 - 30/09/2018",
+        "R6 - 30/09/2018",
+        "R7 - 30/09/2018",
+        "R8 - 30/09/2018"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2018_Cooler_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2018_Cooler_Series.htm",
+      "uploadedAt": "2022-07-06T07:03:47Z",
+      "encoding": "utf-8",
+      "year": 2018,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2018,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Cooler Series at Lough Derg 2022",
+      "eventName": "Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 27,
+          "raceColumns": 12,
+          "caption": "Sailed: 12, Discards: 3, To count: 9, Rating system: PY, Entries: 27, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 12,
+      "raceTitles": [
+        "R1 - 30/09/2018",
+        "R2 - 30/09/2018",
+        "R3 - 30/09/2018",
+        "R4 - 30/09/2018",
+        "R5 - 30/09/2018",
+        "R6 - 30/09/2018",
+        "R7 - 30/09/2018",
+        "R8 - 30/09/2018",
+        "R9 - 30/09/2018",
+        "R10 - 30/09/2018",
+        "R11 - 30/09/2018",
+        "R12 - 30/09/2018"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2018_Junior_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2018_Junior_Regatta.htm",
+      "uploadedAt": "2022-07-06T06:59:36Z",
+      "encoding": "utf-8",
+      "year": 2018,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2018,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Junior Regatta at Killaloe Sailing Club 2022",
+      "eventName": "KSC Junior Regatta",
+      "venueLine": "Killaloe Sailing Club",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 11,
+          "raceColumns": 2,
+          "caption": "Sailed: 2, Discards: 0, To count: 2, Entries: 11, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "current"
+    },
+    {
+      "file": "2018_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2018_September_Series.htm",
+      "uploadedAt": "2022-07-06T07:01:34Z",
+      "encoding": "utf-8",
+      "year": 2018,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2018,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Killaloe Sailing Club 2022",
+      "eventName": "September Series",
+      "venueLine": "Killaloe Sailing Club",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 14,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 14, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1 - 04/09/2018",
+        "R2 - 11/09/2018",
+        "R3 - 18/09/2018",
+        "R4 - 25/09/2018"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2018_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2018_Summer_Regatta.htm",
+      "uploadedAt": "2022-07-06T06:56:15Z",
+      "encoding": "utf-8",
+      "year": 2018,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2018,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Killaloe Sailing Summer Regatta at Killaloe Sailing Club 2022",
+      "eventName": "Killaloe Sailing Summer Regatta",
+      "venueLine": "Killaloe Sailing Club",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 25,
+          "raceColumns": 7,
+          "caption": "Sailed: 7, Discards: 1, To count: 6, Rating system: PY, Entries: 25, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "current"
+    },
+    {
+      "file": "2019_Baltic_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Baltic_Series.htm",
+      "uploadedAt": "2022-07-06T06:32:31Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Baltic Series at Lough Derg 2022",
+      "eventName": "Baltic Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_Cooler_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Cooler_Series.htm",
+      "uploadedAt": "2022-07-06T06:38:53Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Killaloe Cooler Series at Lough Derg 2022",
+      "eventName": "Killaloe Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 17,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 17, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_June_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_June_Series.htm",
+      "uploadedAt": "2022-07-06T06:50:08Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC June Series at Lough Derg 2022",
+      "eventName": "KSC June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 23,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 23, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_Mayfly_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Mayfly_Series.htm",
+      "uploadedAt": "2022-07-06T06:43:13Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2022",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 28,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 28, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_September_Series.htm",
+      "uploadedAt": "2022-07-06T06:48:03Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2022",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 24,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 24, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_Spring_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Spring_Regatta.htm",
+      "uploadedAt": "2022-07-06T06:41:05Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Killaloe Spring Regatta at Lough Derg 2022",
+      "eventName": "Killaloe Spring Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 19,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 19, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_Summer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Summer_Series.htm",
+      "uploadedAt": "2022-07-06T06:46:12Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Summer Series at Lough Derg 2022",
+      "eventName": "KSC Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 42,
+          "raceColumns": 18,
+          "caption": "Sailed: 18, Discards: 4, To count: 14, Rating system: PY, Entries: 42, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 18,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2019_Warmer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2019_Warmer_Series.htm",
+      "uploadedAt": "2022-07-06T06:29:49Z",
+      "encoding": "utf-8",
+      "year": 2019,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2019,
+        "documentTitle": 2022,
+        "heading": 2019
+      },
+      "documentTitle": "Sailwave results for Killaloe Sailing Club Warmer Series 2019 at Lough Derg 2022",
+      "eventName": "Killaloe Sailing Club Warmer Series 2019",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2020_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2020_Summer_Regatta.htm",
+      "uploadedAt": "2022-07-06T06:25:53Z",
+      "encoding": "utf-8",
+      "year": 2020,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2020,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Summer Regatta at Lough Derg 2022",
+      "eventName": "KSC Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 21,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 21, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2020_Summer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2020_Summer_Series.htm",
+      "uploadedAt": "2022-07-06T06:23:13Z",
+      "encoding": "utf-8",
+      "year": 2020,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2020,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Summer Series at Lough Derg 2022",
+      "eventName": "KSC Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 30,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 30, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2021_Spring_regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2021_Spring_regatta.htm",
+      "uploadedAt": "2022-07-06T06:13:47Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Killaloe Sailing Regatta at Lough Derg 2022",
+      "eventName": "Killaloe Sailing Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_June_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_June_series.htm",
+      "uploadedAt": "2022-07-06T06:10:02Z",
+      "encoding": "utf-8",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for June Series at Lough Derg 2022",
+      "eventName": "June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 16,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 16, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_Mayfly_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_Mayfly_series.htm",
+      "uploadedAt": "2022-07-06T06:11:08Z",
+      "encoding": "utf-8",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2022",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 19,
+          "raceColumns": 10,
+          "caption": "Sailed: 10, Discards: 2, To count: 8, Rating system: PY, Entries: 19, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 10,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_September_Series.htm",
+      "uploadedAt": "2022-09-13T19:48:30Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2022",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 26,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 26, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "superseded",
+      "supersededBy": "September_Series_2022.htm"
+    },
+    {
+      "file": "2022_Spring_open_challenge.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_Spring_open_challenge.htm",
+      "uploadedAt": "2022-05-22T15:44:43Z",
+      "encoding": "utf-8",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Spring Challenge Open Regatta at Lough Derg 2022",
+      "eventName": "Spring Challenge Open Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_Summer_Open_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_Summer_Open_Regatta.htm",
+      "uploadedAt": "2022-08-28T12:39:44Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KIllaloe Sailing Club Open Summer Regatta at Lough Derg 2022",
+      "eventName": "KIllaloe Sailing Club Open Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 22,
+          "raceColumns": 2,
+          "caption": "Sailed: 2, Discards: 0, To count: 2, Rating system: PY, Entries: 22, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 2,
+      "raceTitles": [
+        "R1",
+        "R2"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_Summer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_Summer_Series.htm",
+      "uploadedAt": "2022-09-06T19:47:42Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Summer Series at Lough Derg 2022",
+      "eventName": "KSC Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 35,
+          "raceColumns": 15,
+          "caption": "Sailed: 15, Discards: 3, To count: 12, Rating system: PY, Entries: 35, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 15,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_october_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_october_series.htm",
+      "uploadedAt": "2022-11-13T12:04:30Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Cooler Series at Lough Derg 2022",
+      "eventName": "Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2022_warmer_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2022_warmer_series.htm",
+      "uploadedAt": "2022-04-24T12:11:21Z",
+      "encoding": "utf-8",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Warmer Series at Lough Derg 2022",
+      "eventName": "Warmer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 14,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 14, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_June_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_June_Series.htm",
+      "uploadedAt": "2023-06-28T11:45:36Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": 2023
+      },
+      "documentTitle": "Sailwave results for 2023 June Series at Lough Derg 2023",
+      "eventName": "2023 June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 26,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 26, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Mayfly_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Mayfly_Series.htm",
+      "uploadedAt": "2023-06-01T14:16:37Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2023",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 25,
+          "raceColumns": 10,
+          "caption": "Sailed: 10, Discards: 2, To count: 8, Rating system: PY, Entries: 25, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 10,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_October_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_October_Series.htm",
+      "uploadedAt": "2023-10-22T13:22:14Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for October Series at Lough Derg 2023",
+      "eventName": "October Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 23,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 23, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Open_Junior_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Open_Junior_Summer_Regatta.htm",
+      "uploadedAt": "2023-09-03T14:32:46Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Open Junior Summer Regatta at Lough Derg 2023",
+      "eventName": "KSC Open Junior Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 9,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 9, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Open_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Open_Summer_Regatta.htm",
+      "uploadedAt": "2023-09-03T14:31:02Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Open Summer Regatta at Lough Derg 2023",
+      "eventName": "KSC Open Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 27,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 27, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Spring_Challenge_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Spring_Challenge_Regatta.htm",
+      "uploadedAt": "2023-05-21T13:50:42Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": 2023
+      },
+      "documentTitle": "Sailwave results for KSC Spring Regatta 2023 at Lough derg 2023",
+      "eventName": "KSC Spring Regatta 2023",
+      "venueLine": "Lough derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 13,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 13, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Summer_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Summer_series.htm",
+      "uploadedAt": "2023-08-29T20:35:45Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Series at Lough Derg 2023",
+      "eventName": "Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 32,
+          "raceColumns": 16,
+          "caption": "Sailed: 16, Discards: 4, To count: 12, Rating system: PY, Entries: 32, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 16,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_Warmer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_Warmer_Series.htm",
+      "uploadedAt": "2023-05-11T19:24:51Z",
+      "encoding": "utf-8",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": 2023
+      },
+      "documentTitle": "Sailwave results for Warmer Series 2023 at Lough Derg 2023",
+      "eventName": "Warmer Series 2023",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 29,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 29, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_brass_monkey.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_brass_monkey.htm",
+      "uploadedAt": "2023-11-12T14:15:59Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Brass Monkey Series at Lough Derg 2023",
+      "eventName": "Brass Monkey Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 13,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 13, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_fireball_420.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_fireball_420.htm",
+      "uploadedAt": "2023-07-23T14:20:30Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": 2023
+      },
+      "documentTitle": "Sailwave results for 2023 Fireball Munsters & 420 Leinsters at Lough Derg 2023",
+      "eventName": "2023 Fireball Munsters & 420 Leinsters",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "420 Fleet",
+          "entries": 14,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 14, Scoring system: Appendix A"
+        },
+        {
+          "title": "Fireball Fleet",
+          "entries": 15,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1 - 420 Fleet",
+        "R2 - 420 Fleet",
+        "R3 - 420 Fleet",
+        "R4 - 420 Fleet",
+        "R1 - Fireball Fleet",
+        "R2 - Fireball Fleet",
+        "R3 - Fireball Fleet",
+        "R4 - Fireball Fleet"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2023_september_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2023_september_series.htm",
+      "uploadedAt": "2023-09-27T07:07:29Z",
+      "encoding": "iso-8859-1",
+      "year": 2023,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2023,
+        "documentTitle": 2023,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2023",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 26,
+          "raceColumns": 5,
+          "caption": "Sailed: 5, Discards: 1, To count: 4, Rating system: PY, Entries: 26, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 5,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_Cooler_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_Cooler_Series.htm",
+      "uploadedAt": "2024-10-13T13:25:03Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 Cooler Series at Lough Derg 2024",
+      "eventName": "2024 Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "October Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 24,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 24, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_GP14_Munsters.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_GP14_Munsters.htm",
+      "uploadedAt": "2024-04-21T14:17:15Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024_GP14_Munsters at Lough Derg 2024",
+      "eventName": "2024_GP14_Munsters",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Gold Fleet",
+          "entries": 12,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 12, Scoring system: Appendix A"
+        },
+        {
+          "title": "Silver Fleet",
+          "entries": 4,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 4, Scoring system: Appendix A"
+        },
+        {
+          "title": "Bronze Fleet",
+          "entries": 11,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 11, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_GP14_Munsters_alternate.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_GP14_Munsters_alternate.htm",
+      "uploadedAt": "2024-04-21T14:16:17Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024_GP14_Munsters at Lough Derg 2024",
+      "eventName": "2024_GP14_Munsters",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 27,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 27, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_June_Sprint_1.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_June_Sprint_1.htm",
+      "uploadedAt": "2024-06-06T19:50:53Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 June Sprint Wk 1 at Lough Derg 2024",
+      "eventName": "2024 June Sprint Wk 1",
+      "venueLine": "Lough Derg",
+      "clubHeading": "June Sprint Racing Results 1",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 4,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 4, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_June_Sprint_2.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_June_Sprint_2.htm",
+      "uploadedAt": "2024-06-14T11:12:06Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 June Sprint Wk 1 at Lough Derg 2024",
+      "eventName": "2024 June Sprint Wk 1",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 3,
+          "raceColumns": 2,
+          "caption": "Sailed: 2, Discards: 0, To count: 2, Rating system: PY, Entries: 3, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 2,
+      "raceTitles": [
+        "R1",
+        "R2"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_June_Sprint_3.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_June_Sprint_3.htm",
+      "uploadedAt": "2024-06-20T20:37:43Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 June Sprint Wk 3 at Lough Derg 2024",
+      "eventName": "2024 June Sprint Wk 3",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 7,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 7, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_KSC_Open_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_KSC_Open_Regatta.htm",
+      "uploadedAt": "2024-06-11T07:58:46Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 KSC Open Regatta at Lough Derg 2024",
+      "eventName": "2024 KSC Open Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 11,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 11, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2024_Mayfly_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_Mayfly_Series.htm",
+      "uploadedAt": "2024-05-30T06:00:16Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 Mayfly Series at Lough Derg 2024",
+      "eventName": "2024 Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Mayfly Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 12,
+          "raceColumns": 2,
+          "caption": "Sailed: 2, Discards: 0, To count: 2, Rating system: PY, Entries: 12, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 2,
+      "raceTitles": [
+        "R1",
+        "R2"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_September_Series.htm",
+      "uploadedAt": "2024-09-10T19:25:40Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2024",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "September Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 21,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 21, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_Summer_Super_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_Summer_Super_Series.htm",
+      "uploadedAt": "2024-08-29T06:03:14Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Super Series at Lough Derg 2024",
+      "eventName": "Summer Super Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 29,
+          "raceColumns": 16,
+          "caption": "Sailed: 16, Discards: 4, To count: 12, Rating system: PY, Entries: 29, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 16,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_Warmer_Invitational_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_Warmer_Invitational_Series.htm",
+      "uploadedAt": "2024-05-06T21:30:00Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for Warmer Invitational 2024 Series at Lough Derg 2024",
+      "eventName": "Warmer Invitational 2024 Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Warmer Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_Winter_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_Winter_Series.htm",
+      "uploadedAt": "2024-12-01T13:15:44Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Winter Series at Lough Derg 2024",
+      "eventName": "Winter Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Brass Monkey / Winter Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_june_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_june_series.htm",
+      "uploadedAt": "2024-06-27T08:04:14Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 June Series at Lough Derg 2024",
+      "eventName": "2024 June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "June Series Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 27,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 27, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2024_summer_regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2024_summer_regatta.htm",
+      "uploadedAt": "2024-07-27T15:45:15Z",
+      "encoding": "iso-8859-1",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": 2024,
+        "documentTitle": 2024,
+        "heading": 2024
+      },
+      "documentTitle": "Sailwave results for 2024 Summer Regatta at Lough Derg 2024",
+      "eventName": "2024 Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Open Regatta Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 16,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 16, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Cooler_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Cooler_Series.htm",
+      "uploadedAt": "2025-10-26T13:50:04Z",
+      "encoding": "iso-8859-1",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Cooler Series at Lough Derg 2025",
+      "eventName": "Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Cooler Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 27,
+          "raceColumns": 12,
+          "caption": "Sailed: 12, Discards: 3, To count: 9, Rating system: PY, Entries: 27, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 12,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_ILCA_Westerns.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_ILCA_Westerns.htm",
+      "uploadedAt": "2025-06-29T13:47:08Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": 2025
+      },
+      "documentTitle": "Sailwave results for 2025 ILCA Westerns at https://www.killaloesailingclub.com/ 2025",
+      "eventName": "2025 ILCA Westerns",
+      "venueLine": "https://www.killaloesailingclub.com/",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "ILCA 4 / Laser 4.7 Class",
+          "entries": 8,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Entries: 7, Scoring system: Appendix A"
+        },
+        {
+          "title": "ILCA 6 / Laser Radial Class",
+          "entries": 26,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Entries: 24, Scoring system: Appendix A"
+        },
+        {
+          "title": "ILCA 7 / Laser Class",
+          "entries": 21,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Entries: 17, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 18,
+      "raceTitles": [
+        "R1 - ILCA 4 / Laser 4.7 Class",
+        "R2 - ILCA 4 / Laser 4.7 Class",
+        "R3 - ILCA 4 / Laser 4.7 Class",
+        "R4 - ILCA 4 / Laser 4.7 Class",
+        "R5 - ILCA 4 / Laser 4.7 Class",
+        "R6 - ILCA 4 / Laser 4.7 Class",
+        "R1 - ILCA 6 / Laser Radial Class",
+        "R2 - ILCA 6 / Laser Radial Class",
+        "R3 - ILCA 6 / Laser Radial Class",
+        "R4 - ILCA 6 / Laser Radial Class",
+        "R5 - ILCA 6 / Laser Radial Class",
+        "R6 - ILCA 6 / Laser Radial Class",
+        "R1 - ILCA 7 / Laser Class",
+        "R2 - ILCA 7 / Laser Class",
+        "R3 - ILCA 7 / Laser Class",
+        "R4 - ILCA 7 / Laser Class",
+        "R5 - ILCA 7 / Laser Class",
+        "R6 - ILCA 7 / Laser Class"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_September_Series.htm",
+      "uploadedAt": "2025-10-01T15:25:43Z",
+      "encoding": "iso-8859-1",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2025",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "September Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 28,
+          "raceColumns": 9,
+          "caption": "Sailed: 9, Discards: 2, To count: 7, Rating system: PY, Entries: 28, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 9,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Spring_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Spring_Regatta.htm",
+      "uploadedAt": "2025-05-25T09:31:16Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": 2025
+      },
+      "documentTitle": "Sailwave results for Killaloe Sailing Club 2025 Spring Regatta at Lough Derg 2025",
+      "eventName": "Killaloe Sailing Club 2025 Spring Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Spring Open Regatta Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 11,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 11, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Spring_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Spring_Series.htm",
+      "uploadedAt": "2025-04-29T20:00:20Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Spring Series at Lough Derg 2025",
+      "eventName": "Spring Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Spring Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Summer_Regatta.htm",
+      "uploadedAt": "2025-08-24T15:02:16Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Regatta at Lough Derg 2025",
+      "eventName": "Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Open Regatta Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 25,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 25, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Summer_Sunday_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Summer_Sunday_Series.htm",
+      "uploadedAt": "2025-06-22T11:54:51Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Sundays at Lough Derg 2025",
+      "eventName": "Summer Sundays",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Sunday Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Summer_Super_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Summer_Super_Series.htm",
+      "uploadedAt": "2025-09-06T07:37:33Z",
+      "encoding": "iso-8859-1",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Super Series at Lough Derg 2025",
+      "eventName": "Summer Super Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 30,
+          "raceColumns": 14,
+          "caption": "Sailed: 14, Discards: 4, To count: 10, Rating system: PY, Entries: 30, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 14,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Warmer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Warmer_Series.htm",
+      "uploadedAt": "2025-05-04T12:06:53Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": 2025
+      },
+      "documentTitle": "Sailwave results for 2025 Warmer Series at Lough Derg 2025",
+      "eventName": "2025 Warmer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Warmer Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 24,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 24, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_Winter_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_Winter_Series.htm",
+      "uploadedAt": "2025-11-30T17:48:49Z",
+      "encoding": "iso-8859-1",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Brass Monkey Series at Lough Derg 2025",
+      "eventName": "Brass Monkey Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Brass Monkey / Winter Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 22,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 22, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_june_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_june_series.htm",
+      "uploadedAt": "2025-06-24T21:14:38Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for June Series at Lough Derg 2025",
+      "eventName": "June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "June Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 32,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 32, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2025_mayfly_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2025_mayfly_series.htm",
+      "uploadedAt": "2025-05-27T20:42:56Z",
+      "encoding": "utf-8",
+      "year": 2025,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2025,
+        "filename": 2025,
+        "documentTitle": 2025,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2025",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Mayfly Series Racing Results",
+      "clubYearPage": "2025",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 22,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 22, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_Cooler_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Cooler_Series.htm",
+      "uploadedAt": "2026-03-04T18:14:02Z",
+      "encoding": "utf-8",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Cooler Series at Lough Derg 2026",
+      "eventName": "Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Cooler Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 1,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 1, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2026_September_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_September_Series.htm",
+      "uploadedAt": "2026-03-04T18:16:01Z",
+      "encoding": "utf-8",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2026",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "September Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 1,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 1, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2026_Spring_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Spring_Regatta.htm",
+      "uploadedAt": "2026-04-08T08:52:46Z",
+      "encoding": "utf-8",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": 2026
+      },
+      "documentTitle": "Sailwave results for Killaloe Sailing Club 2026 Spring Regatta at Lough Derg 2026",
+      "eventName": "Killaloe Sailing Club 2026 Spring Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Spring Open Regatta Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 1,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 1, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2026_Spring_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Spring_Series.htm",
+      "uploadedAt": "2026-04-28T20:13:03Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Spring Series at Lough Derg 2026",
+      "eventName": "Spring Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Spring Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 25,
+          "raceColumns": 8,
+          "caption": "Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 25, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_Summer_Regatta.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Summer_Regatta.htm",
+      "uploadedAt": "2026-03-04T18:17:48Z",
+      "encoding": "utf-8",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Regatta at Lough Derg 2026",
+      "eventName": "Summer Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Open Regatta Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 1,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 1, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2026_Summer_Sunday_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Summer_Sunday_Series.htm",
+      "uploadedAt": "2026-06-28T11:59:35Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Sundays at Lough Derg 2026",
+      "eventName": "Summer Sundays",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Sunday Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 16,
+          "raceColumns": 5,
+          "caption": "Sailed: 5, Discards: 1, To count: 4, Rating system: PY, Entries: 16, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 5,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_Summer_Super_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Summer_Super_Series.htm",
+      "uploadedAt": "2026-07-21T19:57:14Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Super Series at Lough Derg 2026",
+      "eventName": "Summer Super Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Summer Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 21,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 21, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_Warmer_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Warmer_Series.htm",
+      "uploadedAt": "2026-05-10T13:38:03Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": 2025
+      },
+      "documentTitle": "Sailwave results for 2025 Warmer Series at Lough Derg 2026",
+      "eventName": "2025 Warmer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Warmer Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 13,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Rating system: PY, Entries: 13, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 4,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_Winter_Series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_Winter_Series.htm",
+      "uploadedAt": "2026-03-04T18:19:56Z",
+      "encoding": "utf-8",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Brass Monkey Series at Lough Derg 2026",
+      "eventName": "Brass Monkey Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Brass Monkey / Winter Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 1,
+          "raceColumns": 0,
+          "caption": "Sailed: 0, Discards: 0, To count: 0, Rating system: PY, Entries: 1, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 0,
+      "raceTitles": [],
+      "status": "placeholder"
+    },
+    {
+      "file": "2026_june_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_june_series.htm",
+      "uploadedAt": "2026-06-30T20:45:16Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for June Series at Lough Derg 2026",
+      "eventName": "June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "June Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 30,
+          "raceColumns": 10,
+          "caption": "Sailed: 10, Discards: 2, To count: 8, Rating system: PY, Entries: 30, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 10,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "2026_mayfly_series.htm",
+      "url": "https://www.sailwave.com/results/KSC/2026_mayfly_series.htm",
+      "uploadedAt": "2026-07-08T07:34:18Z",
+      "encoding": "iso-8859-1",
+      "year": 2026,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2026,
+        "filename": 2026,
+        "documentTitle": 2026,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2026",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": "Mayfly Series Racing Results",
+      "clubYearPage": "2026",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 23,
+          "raceColumns": 5,
+          "caption": "Sailed: 5, Discards: 1, To count: 4, Rating system: PY, Entries: 23, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 5,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Cooler_Series_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Cooler_Series_2021.htm",
+      "uploadedAt": "2022-07-06T06:21:19Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Cooler Series at Lough Derg 2022",
+      "eventName": "KSC Cooler Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 20,
+          "raceColumns": 7,
+          "caption": "Sailed: 7, Discards: 1, To count: 6, Rating system: PY, Entries: 20, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 7,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Junes_series_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Junes_series_2021.htm",
+      "uploadedAt": "2022-07-06T06:19:40Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Killaloe June Series at Lough Derg 2022",
+      "eventName": "Killaloe June Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 23,
+          "raceColumns": 7,
+          "caption": "Sailed: 7, Discards: 1, To count: 6, Rating system: PY, Entries: 23, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 7,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Junior_Regatta_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Junior_Regatta_2021.htm",
+      "uploadedAt": "2021-08-29T14:13:50Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2021,
+        "heading": 2021
+      },
+      "documentTitle": "Sailwave results for KSC Junior Regatta 2021 at Lough Derg 2021",
+      "eventName": "KSC Junior Regatta 2021",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 8,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 8, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Mayfly_series_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Mayfly_series_2021.htm",
+      "uploadedAt": "2022-07-06T06:18:32Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Mayfly Series at Lough Derg 2022",
+      "eventName": "Mayfly Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Munster_fireballs_2022.htm",
+      "url": "https://www.sailwave.com/results/KSC/Munster_fireballs_2022.htm",
+      "uploadedAt": "2022-10-02T15:44:16Z",
+      "encoding": "utf-8",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Fireball Munsters at Lough Derg 2022",
+      "eventName": "Fireball Munsters",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 15,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Entries: 15, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "September_Series_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/September_Series_2021.htm",
+      "uploadedAt": "2022-07-06T06:16:46Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": 2021
+      },
+      "documentTitle": "Sailwave results for KSC September Series 2021 at Lough Derg 2022",
+      "eventName": "KSC September Series 2021",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 22,
+          "raceColumns": 1,
+          "caption": "Sailed: 1, Discards: 0, To count: 1, Rating system: PY, Entries: 22, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 1,
+      "raceTitles": [
+        "R1"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "September_Series_2022.htm",
+      "url": "https://www.sailwave.com/results/KSC/September_Series_2022.htm",
+      "uploadedAt": "2022-09-28T10:02:57Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for September Series at Lough Derg 2022",
+      "eventName": "September Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 26,
+          "raceColumns": 6,
+          "caption": "Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 26, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 6,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Summer_Series_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Summer_Series_2021.htm",
+      "uploadedAt": "2022-07-06T06:15:49Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Series at Lough Derg 2022",
+      "eventName": "Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 31,
+          "raceColumns": 17,
+          "caption": "Sailed: 17, Discards: 4, To count: 13, Rating system: PY, Entries: 31, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 17,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "Summer_Series_2022.htm",
+      "url": "https://www.sailwave.com/results/KSC/Summer_Series_2022.htm",
+      "uploadedAt": "2022-09-06T19:47:21Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Summer Series at Lough Derg 2022",
+      "eventName": "KSC Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 35,
+          "raceColumns": 15,
+          "caption": "Sailed: 15, Discards: 3, To count: 12, Rating system: PY, Entries: 35, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 15,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "status": "superseded",
+      "duplicateOf": "2022_Summer_Series.htm",
+      "supersededBy": "2022_Summer_Series.htm"
+    },
+    {
+      "file": "Summer_Series_wk7.htm",
+      "url": "https://www.sailwave.com/results/KSC/Summer_Series_wk7.htm",
+      "uploadedAt": "2021-08-17T20:34:26Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "document-title",
+      "yearCandidates": {
+        "club": null,
+        "filename": null,
+        "documentTitle": 2021,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Series at Lough Derg 2021",
+      "eventName": "Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 31,
+          "raceColumns": 13,
+          "caption": "Sailed: 13, Discards: 3, To count: 10, Rating system: PY, Entries: 31, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 13,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "status": "superseded",
+      "supersededBy": "Summer_Series_2021.htm"
+    },
+    {
+      "file": "Summer_Series_wk8.htm",
+      "url": "https://www.sailwave.com/results/KSC/Summer_Series_wk8.htm",
+      "uploadedAt": "2021-08-24T20:26:48Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "document-title",
+      "yearCandidates": {
+        "club": null,
+        "filename": null,
+        "documentTitle": 2021,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Series at Lough Derg 2021",
+      "eventName": "Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 31,
+          "raceColumns": 15,
+          "caption": "Sailed: 15, Discards: 3, To count: 12, Rating system: PY, Entries: 31, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 15,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "status": "superseded",
+      "supersededBy": "Summer_Series_2021.htm"
+    },
+    {
+      "file": "Summer_Series_wk9.htm",
+      "url": "https://www.sailwave.com/results/KSC/Summer_Series_wk9.htm",
+      "uploadedAt": "2021-08-31T20:01:35Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "document-title",
+      "yearCandidates": {
+        "club": null,
+        "filename": null,
+        "documentTitle": 2021,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Summer Series at Lough Derg 2021",
+      "eventName": "Summer Series",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 31,
+          "raceColumns": 17,
+          "caption": "Sailed: 17, Discards: 4, To count: 13, Rating system: PY, Entries: 31, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 17,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "status": "superseded",
+      "supersededBy": "Summer_Series_2021.htm"
+    },
+    {
+      "file": "Winter_Regatta_2021.htm",
+      "url": "https://www.sailwave.com/results/KSC/Winter_Regatta_2021.htm",
+      "uploadedAt": "2022-07-06T06:14:25Z",
+      "encoding": "utf-8",
+      "year": 2021,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2021,
+        "documentTitle": 2022,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for KSC Winter Regatta at Lough Derg 2022",
+      "eventName": "KSC Winter Regatta",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 19,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 19, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "may_thursday_fun_event.htm",
+      "url": "https://www.sailwave.com/results/KSC/may_thursday_fun_event.htm",
+      "uploadedAt": "2024-05-23T20:51:04Z",
+      "encoding": "utf-8",
+      "year": 2024,
+      "yearSource": "club-page",
+      "yearCandidates": {
+        "club": 2024,
+        "filename": null,
+        "documentTitle": 2024,
+        "heading": null
+      },
+      "documentTitle": "Sailwave results for Thursday Fun Event at Lough Derg 2024",
+      "eventName": "Thursday Fun Event",
+      "venueLine": "Lough Derg",
+      "clubHeading": "May 2024 Fun Event Racing Results",
+      "clubYearPage": "2024",
+      "fleets": [
+        {
+          "title": "Overall",
+          "entries": 10,
+          "raceColumns": 3,
+          "caption": "Sailed: 3, Discards: 0, To count: 3, Rating system: PY, Entries: 10, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 3,
+      "raceTitles": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "current"
+    },
+    {
+      "file": "rs_inlands_2022.htm",
+      "url": "https://www.sailwave.com/results/KSC/rs_inlands_2022.htm",
+      "uploadedAt": "2022-10-09T10:53:05Z",
+      "encoding": "iso-8859-1",
+      "year": 2022,
+      "yearSource": "filename",
+      "yearCandidates": {
+        "club": null,
+        "filename": 2022,
+        "documentTitle": 2022,
+        "heading": 2022
+      },
+      "documentTitle": "Sailwave results for RS Inlands 2022 at Lough Derg 2022",
+      "eventName": "RS Inlands 2022",
+      "venueLine": "Lough Derg",
+      "clubHeading": null,
+      "clubYearPage": null,
+      "fleets": [
+        {
+          "title": "RS200 Fleet",
+          "entries": 8,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Entries: 8, Scoring system: Appendix A"
+        },
+        {
+          "title": "RS400 Fleet",
+          "entries": 17,
+          "raceColumns": 4,
+          "caption": "Sailed: 4, Discards: 1, To count: 3, Entries: 17, Scoring system: Appendix A"
+        }
+      ],
+      "raceCount": 8,
+      "raceTitles": [
+        "R1 - RS200 Fleet",
+        "R2 - RS200 Fleet",
+        "R3 - RS200 Fleet",
+        "R4 - RS200 Fleet",
+        "R1 - RS400 Fleet",
+        "R2 - RS400 Fleet",
+        "R3 - RS400 Fleet",
+        "R4 - RS400 Fleet"
+      ],
+      "status": "current"
+    }
+  ],
+  "unmatchedClubHeadings": []
+}

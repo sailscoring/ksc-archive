@@ -1,0 +1,2229 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for September Series at Lough Derg 2022</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=HighlightWins3v3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2016-07-04
+//  version=3.0  For use with Sailwave from V2.22.x
+//  Requires the following lines in the Results.htm file (Results.htm is in the Templates directory)
+//  string.set("summary.col.race.rank1.td",   "rank1")
+//  string.set("summary.col.race.rank2.td",   "rank2")
+//  string.set("summary.col.race.rank3.td",   "rank3")
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var selectorRank1 = '.rank1';
+var selectorRank2 = '.rank2';
+var selectorRank3 = '.rank3';
+
+// Results with these codes will not get highlighted add or remove codes to your choice
+var ignoreText   = /^(?!.*\b(DNC|DNF|DNS|OCS|BFD|UFD|RET|DSQ|DGM|DNE)\b).*/i
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+
+
+// Change the background color for cells with class of rank1-3 and don't have a code specified
+$(function () {
+
+  $(selectorRank1).filter(function() {
+    return ignoreText.test($(this).text());
+  }).css("background", winsColour);
+  $(selectorRank2).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", twoColour);
+  $(selectorRank3).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+//
+//  name=HighlightWins3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2015-08-18
+//  version=1.6 2018-11-15
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var winsSelector = '.summaryrace';
+var winsText     = /\b1\.0/;
+var twoText              = /\b2\.0/;
+var threeText    = /\b3\.0/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+//var twoColour  = '#ffe768';
+//var threeColour  = '#fff0a1';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(winsSelector).filter(function() {
+    return winsText.test($(this).text());
+  }).css("background", winsColour);
+  $(winsSelector).filter(function() {
+        return twoText.test($(this).text());
+  }).css("background", twoColour);
+  $(winsSelector).filter(function() {
+        return threeText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+//
+//  name=HighlightWins.js
+//  dependencies=
+//  description=Highlight winning scores in summary tables.
+//  author=Colin Jenkins
+//  version=1.0
+//  date=2015-07-27
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  twitter=@op12no2
+//
+
+var winsText     = '1.0';
+var winsColour   = '#ffd700';
+var winsSelector = '.summarytable td';
+
+$(function () {
+  $(winsSelector).filter(function() {
+    return $(this).text() === winsText;
+  }).css("background", winsColour);
+});
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+
+<h1>September Series</h1>
+<h2>Lough Derg</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 11:02 on September 28, 2022</h3>
+<h3 class="summarytitle">Overall</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 26, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th><a class="racelink" href="#r1">R1</a></th>
+<th><a class="racelink" href="#r2">R2</a></th>
+<th><a class="racelink" href="#r3">R3</a></th>
+<th><a class="racelink" href="#r4">R4</a></th>
+<th><a class="racelink" href="#r5">R5</a></th>
+<th><a class="racelink" href="#r6">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td>(14.0 OCS)</td>
+<td>21.0</td>
+<td>7.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>(8.0)</td>
+<td class="rank2">2.0</td>
+<td>6.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>22.0</td>
+<td>14.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>4.0 OOD</td>
+<td>4.0 OOD</td>
+<td>(6.0)</td>
+<td>5.0</td>
+<td>26.0</td>
+<td>20.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>(12.0)</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>7.0</td>
+<td>6.0</td>
+<td>33.0</td>
+<td>21.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>(11.0)</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>11.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>36.0</td>
+<td>25.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>6.0</td>
+<td>(13.0)</td>
+<td>8.0</td>
+<td>6.0</td>
+<td>9.0</td>
+<td>7.0</td>
+<td>49.0</td>
+<td>36.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>5.0</td>
+<td>10.0</td>
+<td>(16.0)</td>
+<td>16.0</td>
+<td>5.0</td>
+<td class="rank3">3.0</td>
+<td>55.0</td>
+<td>39.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>9.0 OOD</td>
+<td>9.0 OOD</td>
+<td>9.0</td>
+<td>(13.5)</td>
+<td>9.0 OOD</td>
+<td>9.0 OOD</td>
+<td>58.5</td>
+<td>45.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>RS 200</td>
+<td>938</td>
+<td>KSC</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td class="rank3">3.0</td>
+<td>7.0</td>
+<td class="rank2">2.0</td>
+<td>7.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>73.0</td>
+<td>46.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>KSC</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>942</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>4.0</td>
+<td>8.0</td>
+<td>74.0</td>
+<td>47.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>9.0</td>
+<td>12.0</td>
+<td>11.0</td>
+<td>9.0</td>
+<td>(13.0)</td>
+<td>11.0</td>
+<td>65.0</td>
+<td>52.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
+<td>Laser</td>
+<td>177870</td>
+<td>KSC</td>
+<td>Frank Larkin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>8.0</td>
+<td>4.0</td>
+<td>81.0</td>
+<td>54.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>13th</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Henry Clifton Brown</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>13.0</td>
+<td>11.0</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>90.0</td>
+<td>63.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>14th</td>
+<td>Devoti D-Zero</td>
+<td>101</td>
+<td>KSC</td>
+<td>Rae Hughes</td>
+<td>&nbsp;</td>
+<td>1029</td>
+<td>13.7 OOD</td>
+<td>13.7 OOD</td>
+<td>10.0</td>
+<td>4.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>95.4</td>
+<td>68.4</td>
+</tr>
+<tr class="odd summaryrow">
+<td>15th</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>KSC</td>
+<td>Bryan Bryce</td>
+<td>Kate O'Brien</td>
+<td>942</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>98.0</td>
+<td>71.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>16th</td>
+<td>Laser Radial</td>
+<td>182605</td>
+<td>KSC</td>
+<td>Frank McGrath</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>17.0</td>
+<td>15.0</td>
+<td>11.0</td>
+<td>9.0</td>
+<td>106.0</td>
+<td>79.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>17th</td>
+<td>Laser</td>
+<td>89875</td>
+<td>KSC</td>
+<td>Declan Carey</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>15.0</td>
+<td>16.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>12.0</td>
+<td>14.0 RET</td>
+<td>111.0</td>
+<td>84.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>18th</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>KSC</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>18.0 DNF</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>17.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>119.0</td>
+<td>92.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>19th</td>
+<td>Laser</td>
+<td>193448</td>
+<td>KSC</td>
+<td>Sean Cunningham</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>4.0</td>
+<td>10.0</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>122.0</td>
+<td>95.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>20th</td>
+<td>RS Feva XL</td>
+<td>1485</td>
+<td>KSC</td>
+<td>Aoibhí Kiki Ryan</td>
+<td>Kate O'Brien</td>
+<td>1244</td>
+<td>14.0</td>
+<td>17.0</td>
+<td>19.3 OOD</td>
+<td>19.3 OOD</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>123.6</td>
+<td>96.6</td>
+</tr>
+<tr class="odd summaryrow">
+<td>21st</td>
+<td>Laser 4.7</td>
+<td>149211</td>
+<td>KSC</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1208</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>127.0</td>
+<td>100.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>22nd</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Shirley O'Neill</td>
+<td>Declan Carey</td>
+<td>1183</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>13.0</td>
+<td>8.0</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>129.0</td>
+<td>102.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>23rd</td>
+<td>RS 400</td>
+<td>581</td>
+<td>KSC</td>
+<td>Donal Cullinane</td>
+<td>Enda</td>
+<td>942</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>19.0 RET</td>
+<td>19.0 DNS</td>
+<td>21.7 OOD</td>
+<td>21.7 OOD</td>
+<td>135.4</td>
+<td>108.4</td>
+</tr>
+<tr class="even summaryrow">
+<td>24th</td>
+<td>Laser</td>
+<td>188055</td>
+<td>KSC</td>
+<td>Declan Hartnett</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>14.0</td>
+<td>13.5</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>135.5</td>
+<td>108.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>25th</td>
+<td>Laser Radial</td>
+<td>169698</td>
+<td>KSC</td>
+<td>Caroline Rice</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>16.0</td>
+<td>14.0</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>138.0</td>
+<td>111.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>26th</td>
+<td>Laser</td>
+<td>215187</td>
+<td>KSC</td>
+<td>Shane Ryan</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>27.0 OOD</td>
+<td>27.0 OOD</td>
+<td>(27.0 DNC)</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>27.0 DNC</td>
+<td>162.0</td>
+<td>135.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1">R1</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:31:23</td>
+<td>0:28:32</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>0:26:58</td>
+<td>0:28:38</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS 200</td>
+<td>938</td>
+<td>KSC</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:30:26</td>
+<td>0:29:06</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>KSC</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>942</td>
+<td>0:27:42</td>
+<td>0:29:24</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:34:12</td>
+<td>0:29:49</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:28:27</td>
+<td>0:29:53</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser</td>
+<td>177870</td>
+<td>KSC</td>
+<td>Frank Larkin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:33:23</td>
+<td>0:30:21</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:28:39</td>
+<td>0:30:25</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>9</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:29:01</td>
+<td>0:30:29</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Laser 4.7</td>
+<td>149211</td>
+<td>KSC</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1208</td>
+<td>0:22:23</td>
+<td>0:37:04</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:21:44</td>
+<td>0:37:54</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:21:00</td>
+<td>0:38:11</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Henry Clifton Brown</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:24:47</td>
+<td>0:41:54</td>
+<td>13.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>Devoti D-Zero</td>
+<td>101</td>
+<td>KSC</td>
+<td>Rae Hughes</td>
+<td>&nbsp;</td>
+<td>1029</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>13.7</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>RS Feva XL</td>
+<td>1485</td>
+<td>KSC</td>
+<td>Aoibhí Kiki Ryan</td>
+<td>Kate O'Brien</td>
+<td>1244</td>
+<td>0:27:36</td>
+<td>0:44:22</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>Laser</td>
+<td>89875</td>
+<td>KSC</td>
+<td>Declan Carey</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:28:37</td>
+<td>0:52:02</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>Laser Radial</td>
+<td>169698</td>
+<td>KSC</td>
+<td>Caroline Rice</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:30:42</td>
+<td>0:53:32</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>KSC</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>18.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>Laser</td>
+<td>215187</td>
+<td>KSC</td>
+<td>Shane Ryan</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>27.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2">R2</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:22:28</td>
+<td>0:20:25</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:19:16</td>
+<td>0:20:27</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:22:36</td>
+<td>0:20:33</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>KSC</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>942</td>
+<td>0:19:33</td>
+<td>0:20:45</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>0:19:50</td>
+<td>0:21:03</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:24:22</td>
+<td>0:21:15</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS 200</td>
+<td>938</td>
+<td>KSC</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:22:15</td>
+<td>0:21:16</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Laser</td>
+<td>177870</td>
+<td>KSC</td>
+<td>Frank Larkin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:23:34</td>
+<td>0:21:25</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>9</td>
+<td>Laser 4.7</td>
+<td>149211</td>
+<td>KSC</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1208</td>
+<td>0:25:54</td>
+<td>0:21:26</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:24:39</td>
+<td>0:21:29</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Henry Clifton Brown</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:25:34</td>
+<td>0:21:37</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:21:22</td>
+<td>0:22:27</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:21:24</td>
+<td>0:22:29</td>
+<td>13.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>Devoti D-Zero</td>
+<td>101</td>
+<td>KSC</td>
+<td>Rae Hughes</td>
+<td>&nbsp;</td>
+<td>1029</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>13.7</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>Laser Radial</td>
+<td>169698</td>
+<td>KSC</td>
+<td>Caroline Rice</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:25:52</td>
+<td>0:22:33</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>KSC</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:24:18</td>
+<td>0:23:14</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>Laser</td>
+<td>89875</td>
+<td>KSC</td>
+<td>Declan Carey</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:27:03</td>
+<td>0:24:35</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS Feva XL</td>
+<td>1485</td>
+<td>KSC</td>
+<td>Aoibhí Kiki Ryan</td>
+<td>Kate O'Brien</td>
+<td>1244</td>
+<td>0:20:14</td>
+<td>0:32:32</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>Laser</td>
+<td>215187</td>
+<td>KSC</td>
+<td>Shane Ryan</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>27.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r3">R3</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:29:21</td>
+<td>0:26:41</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 200</td>
+<td>938</td>
+<td>KSC</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:28:11</td>
+<td>0:26:57</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:29:41</td>
+<td>0:26:59</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>Laser</td>
+<td>193448</td>
+<td>KSC</td>
+<td>Sean Cunningham</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:30:14</td>
+<td>0:27:29</td>
+<td>4.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:31:34</td>
+<td>0:27:31</td>
+<td>5.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:26:16</td>
+<td>0:27:53</td>
+<td>6.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Henry Clifton Brown</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:33:50</td>
+<td>0:28:36</td>
+<td>7.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:27:46</td>
+<td>0:29:10</td>
+<td>8.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:32:40</td>
+<td>0:29:42</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Devoti D-Zero</td>
+<td>101</td>
+<td>KSC</td>
+<td>Rae Hughes</td>
+<td>&nbsp;</td>
+<td>1029</td>
+<td>0:30:37</td>
+<td>0:29:45</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:28:39</td>
+<td>0:30:06</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>KSC</td>
+<td>Bryan Bryce</td>
+<td>Kate O'Brien</td>
+<td>942</td>
+<td>0:28:33</td>
+<td>0:30:18</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Shirley O'Neill</td>
+<td>Declan Carey</td>
+<td>1183</td>
+<td>0:37:02</td>
+<td>0:31:18</td>
+<td>13.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>Laser</td>
+<td>188055</td>
+<td>KSC</td>
+<td>Declan Hartnett</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:34:34</td>
+<td>0:31:25</td>
+<td>14.0</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>KSC</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:34:15</td>
+<td>0:32:45</td>
+<td>15.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:38:46</td>
+<td>0:33:48</td>
+<td>16.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>Laser Radial</td>
+<td>182605</td>
+<td>KSC</td>
+<td>Frank McGrath</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:37:54</td>
+<td>1:06:05</td>
+<td>17.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS 400</td>
+<td>581</td>
+<td>KSC</td>
+<td>Donal Cullinane</td>
+<td>Enda</td>
+<td>942</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>RS Feva XL</td>
+<td>1485</td>
+<td>KSC</td>
+<td>Aoibhí Kiki Ryan</td>
+<td>Kate O'Brien</td>
+<td>1244</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>19.3</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r4">R4</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:12:23</td>
+<td>0:11:15</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:13:56</td>
+<td>0:12:40</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:12:47</td>
+<td>0:13:34</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>Devoti D-Zero</td>
+<td>101</td>
+<td>KSC</td>
+<td>Rae Hughes</td>
+<td>&nbsp;</td>
+<td>1029</td>
+<td>0:14:00</td>
+<td>0:13:36</td>
+<td>4.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Henry Clifton Brown</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:16:21</td>
+<td>0:13:49</td>
+<td>5.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:13:25</td>
+<td>0:14:06</td>
+<td>6.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 200</td>
+<td>938</td>
+<td>KSC</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:14:52</td>
+<td>0:14:13</td>
+<td>7.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>KSC</td>
+<td>Shirley O'Neill</td>
+<td>Declan Carey</td>
+<td>1183</td>
+<td>0:17:04</td>
+<td>0:14:26</td>
+<td>8.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:13:47</td>
+<td>0:14:29</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Laser</td>
+<td>193448</td>
+<td>KSC</td>
+<td>Sean Cunningham</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:15:57</td>
+<td>0:14:30</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:16:40</td>
+<td>0:14:32</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>KSC</td>
+<td>Bryan Bryce</td>
+<td>Kate O'Brien</td>
+<td>942</td>
+<td>0:14:31</td>
+<td>0:15:25</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:18:06</td>
+<td>0:16:27</td>
+<td>13.5</td>
+</tr>
+<tr class="odd racerow">
+<td>14</td>
+<td>Laser</td>
+<td>188055</td>
+<td>KSC</td>
+<td>Declan Hartnett</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:18:06</td>
+<td>0:16:27</td>
+<td>13.5</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>Laser Radial</td>
+<td>182605</td>
+<td>KSC</td>
+<td>Frank McGrath</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:18:57</td>
+<td>0:16:31</td>
+<td>15.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:19:12</td>
+<td>0:16:44</td>
+<td>16.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>KSC</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:19:00</td>
+<td>0:18:10</td>
+<td>17.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS 400</td>
+<td>581</td>
+<td>KSC</td>
+<td>Donal Cullinane</td>
+<td>Enda</td>
+<td>942</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>RS Feva XL</td>
+<td>1485</td>
+<td>KSC</td>
+<td>Aoibhí Kiki Ryan</td>
+<td>Kate O'Brien</td>
+<td>1244</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>19.3</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5">R5</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:19:59</td>
+<td>0:17:25</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:16:33</td>
+<td>0:17:34</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:19:20</td>
+<td>0:17:35</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>KSC</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>942</td>
+<td>0:16:57</td>
+<td>0:18:00</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:20:47</td>
+<td>0:18:07</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>0:17:11</td>
+<td>0:18:14</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:20:17</td>
+<td>0:18:26</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Laser</td>
+<td>177870</td>
+<td>KSC</td>
+<td>Frank Larkin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:20:26</td>
+<td>0:18:35</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:18:02</td>
+<td>0:18:57</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>9</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>KSC</td>
+<td>Bryan Bryce</td>
+<td>Kate O'Brien</td>
+<td>942</td>
+<td>0:18:30</td>
+<td>0:19:38</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Laser Radial</td>
+<td>182605</td>
+<td>KSC</td>
+<td>Frank McGrath</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:23:45</td>
+<td>0:20:42</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Laser</td>
+<td>89875</td>
+<td>KSC</td>
+<td>Declan Carey</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:23:28</td>
+<td>0:21:20</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:10:33</td>
+<td>0:22:10</td>
+<td>13.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 400</td>
+<td>581</td>
+<td>KSC</td>
+<td>Donal Cullinane</td>
+<td>Enda</td>
+<td>942</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>21.7</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6">R6</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>KSC</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>942</td>
+<td>0:13:19</td>
+<td>0:14:08</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser Radial</td>
+<td>163413</td>
+<td>KSC</td>
+<td>Susie Coote</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:16:14</td>
+<td>0:14:09</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>KSC</td>
+<td>Aoise / Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:16:27</td>
+<td>0:14:21</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Laser</td>
+<td>177870</td>
+<td>KSC</td>
+<td>Frank Larkin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:15:52</td>
+<td>0:14:25</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>KSC</td>
+<td>John Callanan</td>
+<td>Eoin Enright</td>
+<td>942</td>
+<td>0:13:55</td>
+<td>0:14:46</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser</td>
+<td>190759</td>
+<td>KSC</td>
+<td>Dave Scott</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>0:16:21</td>
+<td>0:14:52</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>KSC</td>
+<td>Jim Ryan</td>
+<td>Dave Tanner</td>
+<td>952</td>
+<td>0:14:27</td>
+<td>0:15:11</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>KSC</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>942</td>
+<td>0:14:24</td>
+<td>0:15:17</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Laser</td>
+<td>147731</td>
+<td>KSC</td>
+<td>Brian Griffin</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>9</td>
+<td>Laser Radial</td>
+<td>182605</td>
+<td>KSC</td>
+<td>Frank McGrath</td>
+<td>&nbsp;</td>
+<td>1147</td>
+<td>0:18:00</td>
+<td>0:15:42</td>
+<td>9.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>KSC</td>
+<td>Bryan Bryce</td>
+<td>Kate O'Brien</td>
+<td>942</td>
+<td>0:15:33</td>
+<td>0:16:30</td>
+<td>10.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Fireball</td>
+<td>14655</td>
+<td>KSC</td>
+<td>John Bolger</td>
+<td>Maia Bolger</td>
+<td>952</td>
+<td>0:18:26</td>
+<td>0:19:22</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Laser</td>
+<td>99752</td>
+<td>KSC</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>OCS</td>
+<td>&nbsp;</td>
+<td>14.0</td>
+</tr>
+<tr class="even racerow">
+<td>13</td>
+<td>Laser</td>
+<td>89875</td>
+<td>KSC</td>
+<td>Declan Carey</td>
+<td>&nbsp;</td>
+<td>1100</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 400</td>
+<td>581</td>
+<td>KSC</td>
+<td>Donal Cullinane</td>
+<td>Enda</td>
+<td>942</td>
+<td>OOD</td>
+<td>&nbsp;</td>
+<td>21.7</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="http://https://www.killaloesailingclub.com">https://www.killaloesailingclub.com</a><br /><a href="mailto:info@killaloesailingclub.com">info@killaloesailingclub.com</a></p>
+<p class="hardright"><a href="http://https://www.killaloesailingclub.com">https://www.killaloesailingclub.com</a><br /><a href="mailto:info@killaloesailingclub.com">info@killaloesailingclub.com</a></p>
+<p>Sailwave Scoring Software 2.29.0<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

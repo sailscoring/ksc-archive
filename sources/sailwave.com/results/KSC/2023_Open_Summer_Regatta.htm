@@ -1,0 +1,2888 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for KSC Open Summer Regatta at Lough Derg 2023</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=HighlightWins.js
+//  dependencies=
+//  description=Highlight winning scores in summary tables.
+//  author=Colin Jenkins
+//  version=1.0
+//  date=2015-07-27
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  twitter=@op12no2
+//
+
+var winsText     = '1.0';
+var winsColour   = '#ffd700';
+var winsSelector = '.summarytable td';
+
+$(function () {
+  $(winsSelector).filter(function() {
+    return $(this).text() === winsText;
+  }).css("background", winsColour);
+});
+
+//
+//  name=HighlightWins3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2015-08-18
+//  version=1.6 2018-11-15
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var winsSelector = '.summaryrace';
+var winsText     = /\b1\.0/;
+var twoText              = /\b2\.0/;
+var threeText    = /\b3\.0/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+//var twoColour  = '#ffe768';
+//var threeColour  = '#fff0a1';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(winsSelector).filter(function() {
+    return winsText.test($(this).text());
+  }).css("background", winsColour);
+  $(winsSelector).filter(function() {
+        return twoText.test($(this).text());
+  }).css("background", twoColour);
+  $(winsSelector).filter(function() {
+        return threeText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+//
+//  name=HighlightWins3v3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2016-07-04
+//  version=3.0  For use with Sailwave from V2.22.x
+//  Requires the following lines in the Results.htm file (Results.htm is in the Templates directory)
+//  string.set("summary.col.race.rank1.td",   "rank1")
+//  string.set("summary.col.race.rank2.td",   "rank2")
+//  string.set("summary.col.race.rank3.td",   "rank3")
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var selectorRank1 = '.rank1';
+var selectorRank2 = '.rank2';
+var selectorRank3 = '.rank3';
+
+// Results with these codes will not get highlighted add or remove codes to your choice
+var ignoreText   = /^(?!.*\b(DNC|DNF|DNS|OCS|BFD|UFD|RET|DSQ|DGM|DNE)\b).*/i
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+
+
+// Change the background color for cells with class of rank1-3 and don't have a code specified
+$(function () {
+
+  $(selectorRank1).filter(function() {
+    return ignoreText.test($(this).text());
+  }).css("background", winsColour);
+  $(selectorRank2).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", twoColour);
+  $(selectorRank3).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+
+<h1>KSC Open Summer Regatta</h1>
+<h2>Lough Derg</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 15:30 on September  3, 2023</h3>
+<h3 class="summarytitle">Overall</h3>
+<div class="caption summarycaption">Sailed: 8, Discards: 2, To count: 6, Rating system: PY, Entries: 27, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="17">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th><a class="racelink" href="#r1">R1</a></th>
+<th><a class="racelink" href="#r2">R2</a></th>
+<th><a class="racelink" href="#r3">R3</a></th>
+<th><a class="racelink" href="#r4">R4</a></th>
+<th><a class="racelink" href="#r5">R5</a></th>
+<th><a class="racelink" href="#r6">R6</a></th>
+<th><a class="racelink" href="#r7">R7</a></th>
+<th><a class="racelink" href="#r8">R8</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td class="rank1">1.0</td>
+<td>(4.0)</td>
+<td class="rank3">3.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>(5.0)</td>
+<td class="rank2">2.0</td>
+<td>19.0</td>
+<td>10.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>(7.0)</td>
+<td>4.0</td>
+<td>(11.0)</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>39.0</td>
+<td>21.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>6.0</td>
+<td>5.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>(10.0)</td>
+<td>6.0</td>
+<td>(8.0)</td>
+<td>45.0</td>
+<td>27.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>7.0</td>
+<td>9.0</td>
+<td>6.0</td>
+<td class="rank2">2.0</td>
+<td>(16.0)</td>
+<td>(11.0)</td>
+<td>57.0</td>
+<td>30.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>(14.0)</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>(8.0)</td>
+<td>7.5</td>
+<td>7.0</td>
+<td class="rank2">2.0</td>
+<td>7.0</td>
+<td>52.5</td>
+<td>30.5</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>4.0</td>
+<td>(13.0)</td>
+<td>6.0</td>
+<td class="rank3">3.0</td>
+<td>(19.0)</td>
+<td>9.0</td>
+<td>8.0</td>
+<td>9.0</td>
+<td>71.0</td>
+<td>39.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>7.0</td>
+<td>6.0</td>
+<td>11.0</td>
+<td>5.0</td>
+<td>(28.0 RET)</td>
+<td>(12.0)</td>
+<td>9.0</td>
+<td>10.0</td>
+<td>88.0</td>
+<td>48.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>8.0</td>
+<td>10.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>14.0</td>
+<td>(20.0)</td>
+<td>(19.0)</td>
+<td>16.0</td>
+<td>91.0</td>
+<td>52.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>5.0</td>
+<td>9.0</td>
+<td>10.0</td>
+<td>12.0</td>
+<td>(15.0)</td>
+<td>(16.0)</td>
+<td>13.0</td>
+<td>12.0</td>
+<td>92.0</td>
+<td>61.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>10.0</td>
+<td>7.0</td>
+<td>(28.0 DNF)</td>
+<td>6.0</td>
+<td>11.5</td>
+<td>13.0</td>
+<td>14.0</td>
+<td>(18.0)</td>
+<td>107.5</td>
+<td>61.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>9.0</td>
+<td>11.0</td>
+<td>8.0</td>
+<td>(28.0 DNF)</td>
+<td>10.0</td>
+<td>(19.0)</td>
+<td>10.0</td>
+<td>14.0</td>
+<td>109.0</td>
+<td>62.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>13.0</td>
+<td>8.0</td>
+<td>12.0</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>(17.0)</td>
+<td>(17.0)</td>
+<td>13.0</td>
+<td>99.0</td>
+<td>65.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>13th</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>Killaloe Sailing Club</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>940</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>7.5</td>
+<td>4.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>128.5</td>
+<td>72.5</td>
+</tr>
+<tr class="even summaryrow">
+<td>14th</td>
+<td>Laser Radial</td>
+<td>179316A</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoise Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>7.0</td>
+<td class="rank3">3.0</td>
+<td>130.0</td>
+<td>74.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>15th</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>9.0</td>
+<td>11.0</td>
+<td>17.0</td>
+<td>14.0</td>
+<td>(20.0)</td>
+<td>(20.0)</td>
+<td>115.0</td>
+<td>75.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>16th</td>
+<td>Laser</td>
+<td>210101</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Foley</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>13.0</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td class="rank1">1.0</td>
+<td>132.0</td>
+<td>76.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>17th</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>14.0</td>
+<td>16.0</td>
+<td>15.0</td>
+<td>11.0</td>
+<td>5.0</td>
+<td>145.0</td>
+<td>89.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>18th</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>11.0</td>
+<td>14.0</td>
+<td>13.0</td>
+<td>13.0</td>
+<td>20.0</td>
+<td>22.0</td>
+<td>(28.0 DNF)</td>
+<td>(28.0 DNS)</td>
+<td>149.0</td>
+<td>93.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>19th</td>
+<td>Laser II</td>
+<td>6869</td>
+<td>Killaloe Sailing Club</td>
+<td>Kiki Ryan</td>
+<td>Richard Kennedy</td>
+<td>1130</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>11.5</td>
+<td>8.0</td>
+<td>12.0</td>
+<td>17.0</td>
+<td>160.5</td>
+<td>104.5</td>
+</tr>
+<tr class="even summaryrow">
+<td>20th</td>
+<td>Laser Radial</td>
+<td>203275</td>
+<td>Killaloe Sailing Club</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td class="rank1">1.0</td>
+<td>6.0</td>
+<td>28.0 DNS</td>
+<td>28.0 DNS</td>
+<td>175.0</td>
+<td>119.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>21st</td>
+<td>RS 400</td>
+<td>581</td>
+<td>Killaloe Sailing Club</td>
+<td>Paul Cullinane</td>
+<td>Eanna Coleman</td>
+<td>940</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>18.0</td>
+<td>18.0</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>178.0</td>
+<td>122.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>22nd</td>
+<td>RS FEVA XL - No Spinnaker</td>
+<td>3672</td>
+<td>Killaloe Sailing Club</td>
+<td>Kate O'Brien</td>
+<td>Lia O'Donovan</td>
+<td>1298</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>22.0</td>
+<td>21.0</td>
+<td>18.0</td>
+<td>19.0</td>
+<td>192.0</td>
+<td>136.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>23rd</td>
+<td>RS Zest Single</td>
+<td>2</td>
+<td>Lough Ree Yacht Club</td>
+<td>Fionn McNamara</td>
+<td>&nbsp;</td>
+<td>1300</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>21.0</td>
+<td>23.0</td>
+<td>21.0</td>
+<td>21.0</td>
+<td>198.0</td>
+<td>142.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>24th</td>
+<td>RS Zest Single</td>
+<td>1</td>
+<td>Killaloe Sailing Club</td>
+<td>Ruby Carroll</td>
+<td>Ruari Cooper</td>
+<td>1300</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>23.0</td>
+<td>24.0</td>
+<td>22.0</td>
+<td>22.0</td>
+<td>203.0</td>
+<td>147.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>25th</td>
+<td>RS 100 8.4</td>
+<td>183</td>
+<td>Killaloe Sailing Club</td>
+<td>Dave Tarr</td>
+<td>&nbsp;</td>
+<td>1002</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>224.0</td>
+<td>168.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>25th</td>
+<td>GP14</td>
+<td>14130</td>
+<td>Cullaun Sailing Club</td>
+<td>Damien Hawkins</td>
+<td>Maebh Hawkins</td>
+<td>1133</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>224.0</td>
+<td>168.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>25th</td>
+<td>Laser</td>
+<td>99752</td>
+<td>Killaloe Sailing Club</td>
+<td>Alex Voye</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>(28.0 DNC)</td>
+<td>(28.0 DNC)</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>28.0 DNC</td>
+<td>224.0</td>
+<td>168.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1">R1</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:22:44</td>
+<td>0:24:11</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:26:08</td>
+<td>0:24:59</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:31:20</td>
+<td>0:26:29</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:25:05</td>
+<td>0:26:41</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:26:11</td>
+<td>0:27:51</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:28:16</td>
+<td>0:29:42</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:34:46</td>
+<td>0:30:14</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:34:47</td>
+<td>0:30:15</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:31:57</td>
+<td>0:30:33</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:35:09</td>
+<td>0:30:34</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:29:14</td>
+<td>0:30:42</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:33:48</td>
+<td>0:30:44</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:21:13</td>
+<td>0:35:52</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:21:20</td>
+<td>0:37:06</td>
+<td>14.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2">R2</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:23:57</td>
+<td>0:22:54</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:26:41</td>
+<td>0:23:12</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:28:00</td>
+<td>0:23:40</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:22:37</td>
+<td>0:24:04</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:22:59</td>
+<td>0:24:09</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:27:58</td>
+<td>0:24:19</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:17</td>
+<td>0:24:36</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:29:27</td>
+<td>0:24:54</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:23:28</td>
+<td>0:24:58</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:54</td>
+<td>0:25:08</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:26:28</td>
+<td>0:25:18</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:27:56</td>
+<td>0:25:24</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:23:59</td>
+<td>0:25:31</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:26:52</td>
+<td>0:28:13</td>
+<td>14.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r3">R3</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:24:29</td>
+<td>0:25:43</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:29:45</td>
+<td>0:25:52</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:24:20</td>
+<td>0:25:53</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:27:19</td>
+<td>0:26:07</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:30:53</td>
+<td>0:26:51</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:25:18</td>
+<td>0:26:55</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:32:14</td>
+<td>0:27:15</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:28:45</td>
+<td>0:27:29</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:30:18</td>
+<td>0:27:33</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:26:32</td>
+<td>0:28:14</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:32:36</td>
+<td>0:28:21</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:35:20</td>
+<td>0:29:52</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:30:20</td>
+<td>0:31:52</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r4">R4</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:23:29</td>
+<td>0:24:59</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:29:53</td>
+<td>0:25:59</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:24:39</td>
+<td>0:26:13</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:25:25</td>
+<td>0:26:42</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:30:43</td>
+<td>0:26:43</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:31:21</td>
+<td>0:27:16</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:28:39</td>
+<td>0:27:23</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:31:31</td>
+<td>0:27:24</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:32:53</td>
+<td>0:27:48</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:33:35</td>
+<td>0:28:23</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:31:28</td>
+<td>0:28:36</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:28:53</td>
+<td>0:30:44</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:30:59</td>
+<td>0:32:33</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>0:33:58</td>
+<td>0:32:43</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5">R5</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser Radial</td>
+<td>203275</td>
+<td>Killaloe Sailing Club</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:21</td>
+<td>0:24:39</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:23:13</td>
+<td>0:24:42</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser Radial</td>
+<td>179316A</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoise Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:29:05</td>
+<td>0:25:17</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:27:05</td>
+<td>0:25:54</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:24:43</td>
+<td>0:25:58</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:31:02</td>
+<td>0:26:14</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:30:33</td>
+<td>0:26:34</td>
+<td>7.5</td>
+</tr>
+<tr class="even racerow">
+<td>7</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>Killaloe Sailing Club</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>940</td>
+<td>0:24:58</td>
+<td>0:26:34</td>
+<td>7.5</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:31:53</td>
+<td>0:26:57</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:28:14</td>
+<td>0:27:00</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:31:07</td>
+<td>0:27:03</td>
+<td>11.5</td>
+</tr>
+<tr class="even racerow">
+<td>11</td>
+<td>Laser II</td>
+<td>6869</td>
+<td>Killaloe Sailing Club</td>
+<td>Kiki Ryan</td>
+<td>Richard Kennedy</td>
+<td>1130</td>
+<td>0:30:34</td>
+<td>0:27:03</td>
+<td>11.5</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Laser</td>
+<td>210101</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Foley</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>0:29:48</td>
+<td>0:27:04</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:31:10</td>
+<td>0:27:06</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:25:39</td>
+<td>0:27:17</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>0:28:31</td>
+<td>0:27:28</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:30:15</td>
+<td>0:27:30</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>RS 400</td>
+<td>581</td>
+<td>Killaloe Sailing Club</td>
+<td>Paul Cullinane</td>
+<td>Eanna Coleman</td>
+<td>940</td>
+<td>0:26:52</td>
+<td>0:28:35</td>
+<td>18.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:28:12</td>
+<td>0:30:00</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:29:17</td>
+<td>0:30:46</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>21</td>
+<td>RS Zest Single</td>
+<td>2</td>
+<td>Lough Ree Yacht Club</td>
+<td>Fionn McNamara</td>
+<td>&nbsp;</td>
+<td>1300</td>
+<td>0:20:44</td>
+<td>0:31:54</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>22</td>
+<td>RS FEVA XL - No Spinnaker</td>
+<td>3672</td>
+<td>Killaloe Sailing Club</td>
+<td>Kate O'Brien</td>
+<td>Lia O'Donovan</td>
+<td>1298</td>
+<td>0:25:25</td>
+<td>0:39:10</td>
+<td>22.0</td>
+</tr>
+<tr class="odd racerow">
+<td>23</td>
+<td>RS Zest Single</td>
+<td>1</td>
+<td>Killaloe Sailing Club</td>
+<td>Ruby Carroll</td>
+<td>Ruari Cooper</td>
+<td>1300</td>
+<td>0:29:33</td>
+<td>0:45:28</td>
+<td>23.0</td>
+</tr>
+<tr class="even racerow">
+<td>24</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6">R6</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:20:55</td>
+<td>0:22:15</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:26:58</td>
+<td>0:22:48</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser</td>
+<td>210101</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Foley</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>0:25:14</td>
+<td>0:22:55</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>Killaloe Sailing Club</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>940</td>
+<td>0:21:33</td>
+<td>0:22:56</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Laser Radial</td>
+<td>179316A</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoise Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:26:56</td>
+<td>0:23:25</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Laser Radial</td>
+<td>203275</td>
+<td>Killaloe Sailing Club</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:27:15</td>
+<td>0:23:42</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:27:18</td>
+<td>0:23:44</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Laser II</td>
+<td>6869</td>
+<td>Killaloe Sailing Club</td>
+<td>Kiki Ryan</td>
+<td>Richard Kennedy</td>
+<td>1130</td>
+<td>0:26:53</td>
+<td>0:23:47</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:22:42</td>
+<td>0:24:09</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:23:00</td>
+<td>0:24:10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:25:43</td>
+<td>0:24:35</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:24</td>
+<td>0:24:42</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:29</td>
+<td>0:24:46</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:27:40</td>
+<td>0:25:09</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>0:26:07</td>
+<td>0:25:10</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:23:40</td>
+<td>0:25:11</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:29:57</td>
+<td>0:25:19</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>RS 400</td>
+<td>581</td>
+<td>Killaloe Sailing Club</td>
+<td>Paul Cullinane</td>
+<td>Eanna Coleman</td>
+<td>940</td>
+<td>0:23:56</td>
+<td>0:25:28</td>
+<td>18.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:26:43</td>
+<td>0:25:33</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:32:30</td>
+<td>0:28:16</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>21</td>
+<td>RS FEVA XL - No Spinnaker</td>
+<td>3672</td>
+<td>Killaloe Sailing Club</td>
+<td>Kate O'Brien</td>
+<td>Lia O'Donovan</td>
+<td>1298</td>
+<td>0:36:53</td>
+<td>0:28:25</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>22</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>0:27:36</td>
+<td>0:28:59</td>
+<td>22.0</td>
+</tr>
+<tr class="odd racerow">
+<td>23</td>
+<td>RS Zest Single</td>
+<td>2</td>
+<td>Lough Ree Yacht Club</td>
+<td>Fionn McNamara</td>
+<td>&nbsp;</td>
+<td>1300</td>
+<td>0:22:59</td>
+<td>0:35:22</td>
+<td>23.0</td>
+</tr>
+<tr class="even racerow">
+<td>24</td>
+<td>RS Zest Single</td>
+<td>1</td>
+<td>Killaloe Sailing Club</td>
+<td>Ruby Carroll</td>
+<td>Ruari Cooper</td>
+<td>1300</td>
+<td>0:26:52</td>
+<td>0:41:20</td>
+<td>24.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r7">R7</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>Killaloe Sailing Club</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>940</td>
+<td>0:21:42</td>
+<td>0:23:05</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:26:48</td>
+<td>0:23:18</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser</td>
+<td>210101</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Foley</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>0:25:45</td>
+<td>0:23:23</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:24:36</td>
+<td>0:23:31</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:22:09</td>
+<td>0:23:34</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:22:30</td>
+<td>0:23:38</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>179316A</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoise Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:27:36</td>
+<td>0:24:00</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:22:52</td>
+<td>0:24:20</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:06</td>
+<td>0:24:26</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:25:38</td>
+<td>0:24:30</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>0:25:36</td>
+<td>0:24:40</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>Laser II</td>
+<td>6869</td>
+<td>Killaloe Sailing Club</td>
+<td>Kiki Ryan</td>
+<td>Richard Kennedy</td>
+<td>1130</td>
+<td>0:28:02</td>
+<td>0:24:48</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:23:20</td>
+<td>0:24:49</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:33</td>
+<td>0:24:50</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 400</td>
+<td>581</td>
+<td>Killaloe Sailing Club</td>
+<td>Paul Cullinane</td>
+<td>Eanna Coleman</td>
+<td>940</td>
+<td>0:23:39</td>
+<td>0:25:10</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:29:49</td>
+<td>0:25:12</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:32:07</td>
+<td>0:27:09</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>RS FEVA XL - No Spinnaker</td>
+<td>3672</td>
+<td>Killaloe Sailing Club</td>
+<td>Kate O'Brien</td>
+<td>Lia O'Donovan</td>
+<td>1298</td>
+<td>0:17:50</td>
+<td>0:27:29</td>
+<td>18.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:33:48</td>
+<td>0:29:23</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:17:35</td>
+<td>0:31:58</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>21</td>
+<td>RS Zest Single</td>
+<td>2</td>
+<td>Lough Ree Yacht Club</td>
+<td>Fionn McNamara</td>
+<td>&nbsp;</td>
+<td>1300</td>
+<td>0:24:02</td>
+<td>0:36:58</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>22</td>
+<td>RS Zest Single</td>
+<td>1</td>
+<td>Killaloe Sailing Club</td>
+<td>Ruby Carroll</td>
+<td>Ruari Cooper</td>
+<td>1300</td>
+<td>0:25:17</td>
+<td>0:38:54</td>
+<td>22.0</td>
+</tr>
+<tr class="odd racerow">
+<td>23</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+<tr class="even racerow">
+<td>23</td>
+<td>Laser Radial</td>
+<td>203275</td>
+<td>Killaloe Sailing Club</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r8">R8</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="rating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>PY</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Laser</td>
+<td>210101</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Foley</td>
+<td>&nbsp;</td>
+<td>1101</td>
+<td>0:26:06</td>
+<td>0:23:42</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS 400</td>
+<td>1076</td>
+<td>Killaloe Sailing Club</td>
+<td>Andrew Mullally</td>
+<td>Leon Mullally</td>
+<td>940</td>
+<td>0:22:37</td>
+<td>0:24:04</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Laser Radial</td>
+<td>179316A</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoise Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:27:44</td>
+<td>0:24:07</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS 400</td>
+<td>1452</td>
+<td>Killaloe Sailing Club</td>
+<td>Govan Berridge</td>
+<td>David Coleman</td>
+<td>940</td>
+<td>0:23:10</td>
+<td>0:24:39</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>ALBACORE</td>
+<td>7173</td>
+<td>Killaloe Sailing Club</td>
+<td>Jonathan Cooper</td>
+<td>Elizabeth Cooper</td>
+<td>1038</td>
+<td>0:25:42</td>
+<td>0:24:46</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS 200</td>
+<td>938</td>
+<td>Killaloe Sailing Club</td>
+<td>Pat Culloo</td>
+<td>Susan Le Mignon</td>
+<td>1046</td>
+<td>0:26:08</td>
+<td>0:24:59</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Laser Radial</td>
+<td>166313</td>
+<td>Killaloe Sailing Club</td>
+<td>Aoibhí Ryan</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:28:56</td>
+<td>0:25:10</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Fireball</td>
+<td>14584</td>
+<td>Killaloe Sailing Club</td>
+<td>Jim Ryan</td>
+<td>David Tanner</td>
+<td>952</td>
+<td>0:24:02</td>
+<td>0:25:15</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS 400</td>
+<td>1436</td>
+<td>Killaloe Sailing Club  / Lough Ree YC</td>
+<td>John Callanan</td>
+<td>Martin McNamara</td>
+<td>940</td>
+<td>0:23:56</td>
+<td>0:25:28</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>Laser Radial</td>
+<td>136519</td>
+<td>Killaloe Sailing Club</td>
+<td>Charlie MacDonnell</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:29:21</td>
+<td>0:25:31</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS VISION no Spinnaker</td>
+<td>1263</td>
+<td>Killaloe Sailing Club</td>
+<td>Shirley O'Neill</td>
+<td>Jo Kramer</td>
+<td>1183</td>
+<td>0:30:59</td>
+<td>0:26:11</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS 400</td>
+<td>1035</td>
+<td>Killaloe Sailing Club</td>
+<td>Bryan Bryce</td>
+<td>Pat O'Donnell</td>
+<td>940</td>
+<td>0:24:44</td>
+<td>0:26:19</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS VISION no Spinnaker</td>
+<td>226</td>
+<td>Killaloe Sailing Club</td>
+<td>Declan Carey</td>
+<td>Margaret Watts</td>
+<td>1183</td>
+<td>0:31:18</td>
+<td>0:26:27</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS 200</td>
+<td>1336</td>
+<td>Killaloe Sailing Club</td>
+<td>Stephen O'Brien</td>
+<td>Colin Haugh</td>
+<td>1046</td>
+<td>0:27:57</td>
+<td>0:26:43</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS 400</td>
+<td>581</td>
+<td>Killaloe Sailing Club</td>
+<td>Paul Cullinane</td>
+<td>Eanna Coleman</td>
+<td>940</td>
+<td>0:25:14</td>
+<td>0:26:51</td>
+<td>15.0</td>
+</tr>
+<tr class="even racerow">
+<td>16</td>
+<td>Laser Radial</td>
+<td>134668</td>
+<td>Foynes Yacht Club</td>
+<td>Darragh Wale</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:31:57</td>
+<td>0:27:47</td>
+<td>16.0</td>
+</tr>
+<tr class="odd racerow">
+<td>17</td>
+<td>Laser II</td>
+<td>6869</td>
+<td>Killaloe Sailing Club</td>
+<td>Kiki Ryan</td>
+<td>Richard Kennedy</td>
+<td>1130</td>
+<td>0:31:35</td>
+<td>0:27:57</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>18</td>
+<td>Laser Radial</td>
+<td>179316</td>
+<td>Killaloe Sailing Club</td>
+<td>Proinnsias McGrath</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>0:32:20</td>
+<td>0:28:07</td>
+<td>18.0</td>
+</tr>
+<tr class="odd racerow">
+<td>19</td>
+<td>RS FEVA XL - No Spinnaker</td>
+<td>3672</td>
+<td>Killaloe Sailing Club</td>
+<td>Kate O'Brien</td>
+<td>Lia O'Donovan</td>
+<td>1298</td>
+<td>0:36:53</td>
+<td>0:28:25</td>
+<td>19.0</td>
+</tr>
+<tr class="even racerow">
+<td>20</td>
+<td>420</td>
+<td>53053</td>
+<td>Lough Ree YC</td>
+<td>Siofra MacNamara</td>
+<td>John Paul</td>
+<td>1100</td>
+<td>0:31:46</td>
+<td>0:28:53</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>21</td>
+<td>RS Zest Single</td>
+<td>2</td>
+<td>Lough Ree Yacht Club</td>
+<td>Fionn McNamara</td>
+<td>&nbsp;</td>
+<td>1300</td>
+<td>0:20:37</td>
+<td>0:31:43</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>22</td>
+<td>RS Zest Single</td>
+<td>1</td>
+<td>Killaloe Sailing Club</td>
+<td>Ruby Carroll</td>
+<td>Ruari Cooper</td>
+<td>1300</td>
+<td>0:24:03</td>
+<td>0:37:00</td>
+<td>22.0</td>
+</tr>
+<tr class="odd racerow">
+<td>23</td>
+<td>Fireball</td>
+<td>14244</td>
+<td>Killaloe Sailing Club</td>
+<td>Andres Gonzales</td>
+<td>Ana Gonzales</td>
+<td>952</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+<tr class="even racerow">
+<td>23</td>
+<td>Laser Radial</td>
+<td>203275</td>
+<td>Killaloe Sailing Club</td>
+<td>Orla Imhoff</td>
+<td>&nbsp;</td>
+<td>1150</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>28.0</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="http://https://www.killaloesailingclub.com">https://www.killaloesailingclub.com</a><br /><a href="mailto:info@killaloesailingclub.com">info@killaloesailingclub.com</a></p>
+<p>Sailwave Scoring Software 2.29.0<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

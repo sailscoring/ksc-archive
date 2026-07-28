@@ -1,0 +1,94 @@
+# As-published archive ingest (ADR-010, sailscoring#283).
+#
+# On every push to main, regenerate the ingest documents from the capture and
+# push them to the production workspace. Ingest is idempotent — the server
+# no-ops unchanged documents by content hash — so this can run on every push
+# without churn. The idempotency key is the document, though, so a render-only
+# change in the app doesn't re-publish; dispatch manually with `force` to
+# re-apply everything after one.
+#
+# Secrets:
+#   APP_REPO_TOKEN              read access to sailscoring/sailscoring
+#   SAILSCORING_ARCHIVIST_TOKEN the ksc workspace's archivist API key
+#                               (workspace- and capability-scoped: it can only
+#                               write as-published series)
+#
+# NOTE: not armed. The push step is gated on the secret being configured, and
+# two things must land first: the ksc workspace must exist, and app #344 (the
+# generator's UTF-8 assumption, which mangles accented names) must be fixed —
+# see CLARIFICATIONS.md.
+name: as-published
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sources/**'
+      - 'as-published.config.json'
+      - 'as-published-skips.json'
+      - 'scripts/**'
+      - '.github/workflows/as-published.yml'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: >-
+          Re-apply every document even if unchanged. Needed after an app-side
+          render change: ingest is idempotent on the document hash, so a
+          render-only change (which leaves the document identical) won't
+          otherwise re-publish the pages.
+        type: boolean
+        default: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    env:
+      SAILSCORING_TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: sailscoring/sailscoring
+          token: ${{ secrets.APP_REPO_TOKEN }}
+          path: app
+
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: app/package.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install archive dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install app dependencies
+        working-directory: app
+        run: pnpm install --frozen-lockfile
+
+      - name: Rebuild the catalogue
+        run: pnpm catalog
+
+      - name: Emit the as-published config
+        run: pnpm emit-as-published
+
+      # The committed config is the reviewable artifact: if a source change
+      # moves it, the change should be committed, not applied silently.
+      - name: Catalogue and config are committed and current
+        run: git diff --exit-code sources/catalog.json as-published.config.json as-published-skips.json
+
+      - name: Generate ingest documents
+        working-directory: app
+        run: pnpm archive-generate ${{ github.workspace }}/as-published.config.json
+
+      # The `secrets` context isn't available in `if:` expressions, so the
+      # arming gate tests the secret through the job env instead: unset
+      # secret -> empty env var -> step skipped.
+      - name: Push to the workspace
+        if: env.SAILSCORING_TOKEN != ''
+        working-directory: app
+        run: pnpm cli as-published push ${{ github.workspace }}/as-published --workspace ksc ${{ inputs.force && '--force' || '' }}
