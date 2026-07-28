@@ -82,6 +82,15 @@ function stripClubPrefix(name: string): string {
   return rest.split(/\s+/).length >= 2 ? rest : name;
 }
 
+/** The venue, from the Sailwave `<h2>`: "Lough Derg" on almost every page,
+ *  "Killaloe Sailing Club" on three. Two pages need help — one gives the
+ *  club's website in the venue slot, and one spells the lake "Lough derg". */
+function venueOf(page: CatalogPage): string {
+  const line = page.venueLine?.trim() ?? '';
+  if (!line || /^https?:\/\//i.test(line)) return 'Lough Derg';
+  return /^lough\s+derg$/i.test(line) ? 'Lough Derg' : line;
+}
+
 /** The display name, preferring KSC's own curated heading from their year
  *  page ("Brass Monkey / Winter Racing Results" -> "Brass Monkey / Winter")
  *  over the Sailwave `<h1>`, which is the same scorer's less-tended wording
@@ -196,9 +205,7 @@ function main(): void {
       id: seriesIdForKey(REPO_KEY, key),
       publishedSlug: String(page.year),
       name: displayName(page),
-      // The `<h2>` is the venue as published — "Lough Derg" on most pages,
-      // "Killaloe Sailing Club" on a few.
-      venue: page.venueLine?.trim() || 'Lough Derg',
+      venue: venueOf(page),
       venueUrl: VENUE_URL,
       // The club's own archive page for the season, where it is public.
       ...(page.clubYearPage && /^20\d{2}$/.test(page.clubYearPage)
