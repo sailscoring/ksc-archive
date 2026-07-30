@@ -132,16 +132,32 @@ function displayName(page: CatalogPage): string {
   return `${base || 'Series'}${alternate} ${page.year}`;
 }
 
+/** The event's display name without the trailing season year — the folder
+ *  label (app ADR-011): under a "2024" season folder, "GP14 Munsters", not
+ *  "GP14 Munsters 2024". */
+function eventLabel(page: CatalogPage): string {
+  return displayName(page).replace(/\s*\b20\d{2}\b\s*$/, '');
+}
+
 /** The event's slug within its season — the sub-path all its fleet pages
  *  hang off. Derived from the display name so the URL matches what the page
  *  is called, and de-duplicated within the season. */
 function eventSlug(page: CatalogPage, taken: Set<string>): string {
-  const base = slug(displayName(page).replace(/\s*\b20\d{2}\b\s*$/, ''));
+  const base = slug(eventLabel(page));
   let candidate = base;
   let n = 2;
   while (taken.has(candidate)) candidate = `${base}-${n++}`;
   taken.add(candidate);
   return candidate;
+}
+
+/** The app's derived folder label (humanizeSlug): title-cased words. */
+function humanizeSegment(segment: string): string {
+  return segment
+    .split('-')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
 interface EmittedFleet {
@@ -214,10 +230,18 @@ function main(): void {
           }
         : {}),
       // No startDate/endDate: the capture states no reliable event dates.
-      // See CLARIFICATIONS.md — this is the main metadata gap.
+      // See CLARIFICATIONS.md — this is the main metadata gap. Seasons
+      // derive from the year slug (app ADR-011), so no category filing and
+      // no season pin.
       source: 'sailwave' as const,
-      category: String(page.year),
       fleets,
+      // A multi-fleet event's pages live in an interior folder; pin its
+      // display label where title-casing the segment would mangle it
+      // ("GP14 Munsters", not "Gp14 Munsters"). Single-page events are root
+      // pages and label themselves by their series name.
+      ...(multi && humanizeSegment(event) !== eventLabel(page)
+        ? { folders: [{ path: event, label: eventLabel(page) }] }
+        : {}),
     });
   }
 
