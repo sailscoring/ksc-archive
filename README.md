@@ -123,20 +123,33 @@ per year. CI re-ingests on every push to `main`.
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
-- ⬜ **Event dates** — the capture states none, so series don't order within a
-  season. The biggest remaining gap; see CLARIFICATIONS.md §6.
-- ⬜ **The club's naming for 2018–2023**, which sits behind their members-only
-  gate (§7). The results are unaffected — only the curated headings are
-  missing.
 - ✅ **The identity manifest** — 1,631 rows resolved to **278 sailors**
   (`identities.json`), so the same sailor links up across nine seasons and
-  feeds the career arc. Five pairs are left unlinked pending the club's word
-  (CLARIFICATIONS.md §9).
+  feeds the career arc.
+- ⬜ **The sailor pages aren't switched on** — the identities are applied, but
+  the public side is behind the `competitor-identity` feature gate, so
+  `/p/ksc/competitors` still 404s
+  ([#7](https://github.com/sailscoring/ksc-archive/issues/7)).
 - ⬜ **Crew identity** — 48% of rows carry a named crew and 196 people appear
   only ever as crew, with no sailor page. App
   [#348](https://github.com/sailscoring/sailscoring/issues/348).
-- ⬜ Refresh 2026 as the season finishes: `pnpm capture --refresh` picks up
-  re-uploads, and the five stub pages (§3) become real results.
+- ⬜ **Refresh 2026** as the season finishes
+  ([#8](https://github.com/sailscoring/ksc-archive/issues/8)).
+
+### Open questions for the club
+
+Much of what's left needs someone who knows the club, not more code. Each is
+filed as a [`club-input` issue](https://github.com/sailscoring/ksc-archive/issues?q=is%3Aissue+is%3Aopen+label%3Aclub-input)
+and written up in CLARIFICATIONS.md.
+
+| | Why it matters |
+|---|---|
+| [#1](https://github.com/sailscoring/ksc-archive/issues/1) **Event dates** | the corpus states none, so series don't order within a season — the biggest single gap |
+| [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
+| [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | including whether the autumn series is "Cooler" or "October" — the two sources disagree for 2024 |
+| [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | published twice, two scorings; which is official? |
+| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Five identity pairs** | same sailor or two, plus the correct spelling of one Fireball sailor's name |
+| [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | prize-winners, anything pre-2018, sailing instructions |
 
 ## Relationship to the app repo
 

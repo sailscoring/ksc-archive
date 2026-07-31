@@ -5,6 +5,10 @@ as-published, results are never recomputed, so a *results* delta cannot
 arise — but skipped pages, naming and dating approximations, and anything we
 inferred rather than read must be recorded here, not papered over.
 
+Questions that need the club's answer are also filed as
+[`club-input` issues](https://github.com/sailscoring/ksc-archive/issues?q=is%3Aissue+is%3Aopen+label%3Aclub-input);
+the ❓ blocks below link to them.
+
 ## Judgement calls
 
 ### 1. Which season a result belongs to
@@ -62,7 +66,7 @@ complete published result.
 apart on 2024-04-21. Both are part of the published record, so both are
 ingested; the second is named "GP14 Munsters (alternate scoring) 2024".
 
-> ❓ **For the club:** which of the two does the class consider the official
+> ❓ **For the club** ([#4](https://github.com/sailscoring/ksc-archive/issues/4))**:** which of the two does the class consider the official
 > result? If one supersedes the other we should skip it rather than publish
 > both.
 
@@ -81,7 +85,7 @@ the 2026 Warmer Series page is still headed "2025 Warmer Series", and the
 - for a numbered run of events (the 2024 June Sprints) the filename ordinal
   wins, being the only signal that separates them.
 
-> ❓ **For the club:** are "Baltic Series", "Warmer Series", "Cooler Series",
+> ❓ **For the club** ([#3](https://github.com/sailscoring/ksc-archive/issues/3))**:** are "Baltic Series", "Warmer Series", "Cooler Series",
 > "Mayfly Series" and "Brass Monkey" the names the club wants shown, and is
 > "Summer Series" the right label for what Sailwave files as "Summer Super
 > Series"? The 2024–2026 season pages say yes; the earlier seasons are
@@ -99,7 +103,7 @@ config omits `startDate`/`endDate` entirely.
 Consequence: seasons group correctly (each series is filed under its year),
 but series are not ordered *within* a season by when they were sailed.
 
-> ❓ **For the club:** the season sailing programme, or simply the start and
+> ❓ **For the club** ([#1](https://github.com/sailscoring/ksc-archive/issues/1))**:** the season sailing programme, or simply the start and
 > end date per series, would fill this. It is the single highest-value piece
 > of metadata missing.
 
@@ -111,7 +115,7 @@ sailwave.com — but for those six seasons we have no curated headings, so
 names come from the Sailwave `<h1>` alone (see §5), and no `eventUrl` links
 back to the club's presentation.
 
-> ❓ **For the club:** members-area access would let us confirm the 2018–2023
+> ❓ **For the club** ([#2](https://github.com/sailscoring/ksc-archive/issues/2))**:** members-area access would let us confirm the 2018–2023
 > naming, and would likely surface any results the club presents that were
 > never uploaded to the Sailwave folder.
 
@@ -160,7 +164,7 @@ Under-linking splits one sailor's record; over-linking puts another sailor's
 results in it. The second is worse and much harder to spot, so anything
 failing those tests is left apart and asked about instead:
 
-> ❓ **For the club:** are these the same sailor, or two?
+> ❓ **For the club** ([#5](https://github.com/sailscoring/ksc-archive/issues/5))**:** are these the same sailor, or two?
 >
 > | | |
 > |---|---|
