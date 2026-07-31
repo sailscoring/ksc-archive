@@ -82,14 +82,16 @@ as-published-skips.json        pages deliberately not ingested, with reasons
 4. **Ingest** — CI checks out the app repo, runs `pnpm archive-generate` over
    the config, and pushes with `pnpm cli as-published push … --workspace ksc`,
    authenticated by a workspace- and capability-scoped archivist token.
-   Ingest is idempotent — unchanged documents are no-ops by content hash.
-   **Not yet armed**: the push step is skipped until the workspace exists and
-   `SAILSCORING_ARCHIVIST_TOKEN` is configured.
+   Ingest is idempotent — unchanged documents are no-ops by content hash, so
+   a push that touches one capture re-publishes only what actually moved.
+   Publishing is automatic; there is no separate publish step.
 
 ## Status
 
-Current: **76 series / 82 fleet pages / 1,631 competitor rows** across
-2018–2026 emit and `archive-generate` cleanly (0 failures).
+**Live.** All **76 series / 82 fleet pages / 1,631 competitor rows** across
+2018–2026 are ingested into the `ksc` workspace and published at
+[app.sailscoring.ie/p/ksc](https://app.sailscoring.ie/p/ksc), one season index
+per year. CI re-ingests on every push to `main`.
 
 | Season | Series | Notes |
 |---|--:|---|
@@ -109,9 +111,17 @@ Current: **76 series / 82 fleet pages / 1,631 competitor rows** across
 - ✅ Accented Irish names survive ingest — 34 of the 88 pages are
   windows-1252, and the app decodes captures by their encoding
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
-- ⬜ Provision the `ksc` workspace and the archivist token; arm the CI push.
-- ⬜ Event dates — the capture states none (see CLARIFICATIONS.md).
-- ⬜ The identity manifest, once the corpus is ingested.
+- ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
+  published (2026-07-31).
+- ⬜ **Event dates** — the capture states none, so series don't order within a
+  season. The biggest remaining gap; see CLARIFICATIONS.md §6.
+- ⬜ **The club's naming for 2018–2023**, which sits behind their members-only
+  gate (§7). The results are unaffected — only the curated headings are
+  missing.
+- ⬜ **The identity manifest** — pinned cross-series identities, so the same
+  sailor links up across nine seasons and feeds the career arc.
+- ⬜ Refresh 2026 as the season finishes: `pnpm capture --refresh` picks up
+  re-uploads, and the five stub pages (§3) become real results.
 
 ## Relationship to the app repo
 

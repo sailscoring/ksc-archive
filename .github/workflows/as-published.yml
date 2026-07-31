@@ -20,10 +20,11 @@
 #                               (workspace- and capability-scoped: it can only
 #                               write as-published series)
 #
-# NOTE: not armed. Every step that needs the app is gated on APP_REPO_TOKEN, so
-# until that secret exists the job succeeds having done nothing rather than
-# failing red. The remaining step before arming is the ksc workspace itself,
-# and the archivist token scoped to it.
+# Armed since 2026-07-31 — this pushes to production. Both secrets are gates
+# as well as credentials: every step needing the app is conditional on
+# APP_REPO_TOKEN, and the push on SAILSCORING_ARCHIVIST_TOKEN, so a fork or a
+# secret-less clone degrades to a job that succeeds having done nothing rather
+# than one that fails red.
 name: as-published
 
 on:
@@ -60,10 +61,11 @@ jobs:
         with:
           path: ksc-archive
 
-      - name: Report that the ingest is not armed
+      - name: Report that this run has no credentials
         if: env.APP_REPO_TOKEN == ''
         run: |
-          echo "APP_REPO_TOKEN is not configured — skipping the ingest." >> "$GITHUB_STEP_SUMMARY"
+          echo "APP_REPO_TOKEN is not available here — skipping the ingest." >> "$GITHUB_STEP_SUMMARY"
+          echo "Expected on a fork or a clone; on sailscoring/ksc-archive it means the secret is missing." >> "$GITHUB_STEP_SUMMARY"
           echo "See the note at the top of .github/workflows/as-published.yml." >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/checkout@v7
