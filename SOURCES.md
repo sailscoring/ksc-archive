@@ -31,8 +31,9 @@ Notes on the format:
   `<div class="caption">`, and a `<table class="summarytable">` per section,
   with per-race detail tables following the same shape.
 - They declare **ISO-8859-1**, and 34 of the 88 carry high-bit bytes
-  (accented Irish given names). Decode by the declared charset; see
-  CLARIFICATIONS.md.
+  (accented Irish given names) that decode as **windows-1252**. Never decode
+  one by hand — use the app's `decodeCapture`, which both the catalogue and
+  `archive-generate` read through.
 - The server is case-insensitive, and the club's pages link the same file as
   both `/results/KSC/` and `/results/ksc/`. Filenames are compared
   lowercased throughout.

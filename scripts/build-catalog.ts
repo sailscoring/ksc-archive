@@ -23,6 +23,7 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 
+import { decodeCapture } from '../../sailscoring/lib/archive-kit/capture-encoding';
 import { parseSailwaveHtml } from '../../sailscoring/lib/archive-kit/sailwave-html';
 
 const CAPTURE_DIR = 'sources/sailwave.com/results/KSC';
@@ -42,23 +43,12 @@ function normaliseFilename(raw: string): string {
   return raw.trim().replace(/\\/g, '/').split('/').pop()!.toLowerCase();
 }
 
-/** Sailwave publishes ISO-8859-1 (34 of the 88 KSC pages carry high-bit
- *  bytes — accented Irish given names). Decode by the declared charset, not
- *  by hope: reading these as UTF-8 mangles the names identity matching then
- *  has to work from. */
+/** Sailwave publishes ISO-8859-1, and 34 of the 88 KSC pages carry high-bit
+ *  bytes — accented Irish given names. Decoding is the app's job
+ *  (`decodeCapture`), the same reader `archive-generate` uses, so the
+ *  catalogue can never disagree with what gets ingested. */
 function readCapture(path: string): { text: string; encoding: string } {
-  const buf = readFileSync(path);
-  const head = buf.subarray(0, 2048).toString('latin1');
-  const declared = /charset=\s*"?([a-z0-9-]+)/i.exec(head)?.[1]?.toLowerCase();
-  try {
-    const text = new TextDecoder('utf-8', { fatal: true }).decode(buf);
-    return { text, encoding: 'utf-8' };
-  } catch {
-    return {
-      text: buf.toString('latin1'),
-      encoding: declared ?? 'iso-8859-1',
-    };
-  }
+  return decodeCapture(readFileSync(path));
 }
 
 function stripTags(html: string): string {

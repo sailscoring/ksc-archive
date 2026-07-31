@@ -51,11 +51,12 @@ pnpm archive-generate ../ksc-archive/as-published.config.json
    why the config carries no event dates at all: the corpus states none, and
    plausible ones would be invention.
 
-4. **Decode by the declared charset.** Sailwave publishes ISO-8859-1 and 34
-   of the 88 pages carry accented Irish names. Reading them as UTF-8 silently
-   mangles the very names the identity spine matches on. `readCapture` in
-   `scripts/build-catalog.ts` does this correctly; the app generator does not
-   yet (app #344), which currently blocks ingest.
+4. **Never decode a capture by hand.** Sailwave publishes ISO-8859-1 and 34
+   of the 88 pages carry accented Irish names, so reading them as UTF-8
+   silently mangles the very names the identity spine matches on. Use the
+   app's `decodeCapture` (`lib/archive-kit/capture-encoding.ts`) — the same
+   reader `archive-generate` uses, so the catalogue can never disagree with
+   what gets ingested. A local re-implementation is how the two drift apart.
 
 5. **Never rename an emitted series `key`.** Series ids are deterministic
    UUIDv5 over `ksc-archive/series/<key>`; renaming a key re-mints the id and

@@ -5,28 +5,9 @@ as-published, results are never recomputed, so a *results* delta cannot
 arise — but skipped pages, naming and dating approximations, and anything we
 inferred rather than read must be recorded here, not papered over.
 
-## Blocking
-
-### 1. Accented names are corrupted by the generator
-
-Sailwave publishes ISO-8859-1. The app's `archive-generate` reads captures as
-UTF-8, so every high-bit byte becomes U+FFFD.
-
-- 34 of 88 captured pages contain non-UTF-8 bytes
-- 31 of 76 generated documents contain at least one mangled name
-- `Aoibhí Ryan` → `Aoibh<U+FFFD> Ryan`; also `Réaltín Boinnard`,
-  `Eanná Gallagher`
-
-Names are the identity spine's matching signal, so this corrupts exactly what
-the archive exists to carry faithfully — and it is silent.
-
-Tracked as app issue [#344](https://github.com/sailscoring/sailscoring/issues/344).
-`scripts/build-catalog.ts` here already decodes correctly (`readCapture`) and
-can be lifted. **Do not ingest until it is fixed.**
-
 ## Judgement calls
 
-### 2. Which season a result belongs to
+### 1. Which season a result belongs to
 
 The corpus offers four year signals and they disagree on 23 of 88 pages. The
 emit step resolves in this order, and every page records which signal won
@@ -46,7 +27,7 @@ emit step resolves in this order, and every page records which signal won
 The `<h1>` is never used for the year; where it states one it agrees with the
 filename.
 
-### 3. Which upload of a series is the published record
+### 2. Which upload of a series is the published record
 
 KSC re-uploads a running series as it progresses, sometimes under a variant
 filename. Where several uploads are the same series, the one with the most
@@ -62,7 +43,7 @@ races wins (ties break to the latest upload); the rest are recorded in
 | `Summer_Series_2022.htm` | `2022_Summer_Series.htm` | byte-identical, uploaded 21 s apart |
 | `2004_Summer_Super_Series.htm` | `2024_Summer_Super_Series.htm` | 8 races vs 16 |
 
-### 4. Pages with nothing sailed
+### 3. Pages with nothing sailed
 
 Six pages publish an entry list and "Sailed: 0" — stubs the scorer uploaded
 ahead of the season. They are skipped; there is no published result to
@@ -74,7 +55,7 @@ detail tables are present: several genuine results (e.g.
 `2018_Summer_Regatta.htm`, Sailed: 7) publish standings only, which is a
 complete published result.
 
-### 5. The 2024 GP14 Munsters was published twice
+### 4. The 2024 GP14 Munsters was published twice
 
 `2024_GP14_Munsters.htm` (Gold / Silver / Bronze fleets) and
 `2024_GP14_Munsters_alternate.htm` (a single overall) were uploaded a minute
@@ -85,7 +66,7 @@ ingested; the second is named "GP14 Munsters (alternate scoring) 2024".
 > result? If one supersedes the other we should skip it rather than publish
 > both.
 
-### 6. Event names
+### 5. Event names
 
 Where the club's season page gives a heading it wins, with "Racing Results"
 stripped. Otherwise the Sailwave `<h1>` is used. Both are the same scorer's
@@ -108,7 +89,7 @@ the 2026 Warmer Series page is still headed "2025 Warmer Series", and the
 
 ## Coverage gaps
 
-### 7. No event dates
+### 6. No event dates
 
 Nothing in the corpus states when a series was sailed. Only 3 of 76 pages
 carry dated race titles, and those look bulk-set by the scorer (every race in
@@ -122,19 +103,19 @@ but series are not ordered *within* a season by when they were sailed.
 > end date per series, would fill this. It is the single highest-value piece
 > of metadata missing.
 
-### 8. The club's naming for 2018–2023 is members-only
+### 7. The club's naming for 2018–2023 is members-only
 
 `/2018-…` through `/2023-archived-racing-results/` render a members-only gate
 anonymously. The **results are unaffected** — they are public on
 sailwave.com — but for those six seasons we have no curated headings, so
-names come from the Sailwave `<h1>` alone (see §6), and no `eventUrl` links
+names come from the Sailwave `<h1>` alone (see §5), and no `eventUrl` links
 back to the club's presentation.
 
 > ❓ **For the club:** members-area access would let us confirm the 2018–2023
 > naming, and would likely surface any results the club presents that were
 > never uploaded to the Sailwave folder.
 
-### 9. What the corpus does not contain
+### 8. What the corpus does not contain
 
 - **No prize-winners or trophies.** The sibling `dbsc-archive` carries a
   `yearbook/` of trophy winners transcribed from the club yearbook; nothing

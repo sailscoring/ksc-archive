@@ -106,9 +106,9 @@ Current: **76 series / 82 fleet pages / 1,631 competitor rows** across
 - ✅ Capture of both public sources, reproducible via `pnpm capture`.
 - ✅ Catalogue with per-field provenance; 0 pages with an unresolvable season.
 - ✅ As-published config + clean `archive-generate` over all nine seasons.
-- ⬜ **Blocked on app [#344](https://github.com/sailscoring/sailscoring/issues/344)** —
-  `archive-generate` reads captures as UTF-8, mangling the accented Irish
-  names in 31 of the 76 documents. Do not ingest until that is fixed.
+- ✅ Accented Irish names survive ingest — 34 of the 88 pages are
+  windows-1252, and the app decodes captures by their encoding
+  ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ⬜ Provision the `ksc` workspace and the archivist token; arm the CI push.
 - ⬜ Event dates — the capture states none (see CLARIFICATIONS.md).
 - ⬜ The identity manifest, once the corpus is ingested.

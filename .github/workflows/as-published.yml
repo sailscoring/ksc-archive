@@ -22,10 +22,8 @@
 #
 # NOTE: not armed. Every step that needs the app is gated on APP_REPO_TOKEN, so
 # until that secret exists the job succeeds having done nothing rather than
-# failing red. Two things must land before arming: the ksc workspace must
-# exist, and app #344 (the generator's UTF-8 assumption, which mangles the
-# accented names in 31 of the 76 documents) must be fixed — see
-# CLARIFICATIONS.md.
+# failing red. The remaining step before arming is the ksc workspace itself,
+# and the archivist token scoped to it.
 name: as-published
 
 on:
