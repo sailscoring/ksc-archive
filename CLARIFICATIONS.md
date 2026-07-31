@@ -127,3 +127,66 @@ back to the club's presentation.
   re-score.
 - **No results before 2018.** Whether the club has earlier records in any
   form is unknown.
+
+## Identity
+
+### 9. One name, one sailor — and where that stops
+
+The competitor-identity manifest (`identities.json`, app #218) groups the
+1,631 competitor rows into **278 sailors**. It is drafted by `pnpm identities`
+through the app's canonical matcher, then shaped by two rules.
+
+**The default: clusters sharing a name are one sailor.** The matcher is
+deliberately cautious about merging on a name alone, and wants sail-number,
+club, or age continuity to corroborate it. That caution is miscalibrated for
+this corpus: KSC shares boats around the club, so sail number tracks a *hull*,
+not a person (§10), and the corroboration mostly isn't there. Left alone the
+matcher splits regulars into several clusters — all 33 of its review
+suggestions were a name against itself, e.g. Stephen O'Brien across clusters
+of 45, 2 and 1. At a club whose entrants come from a few hundred members, two
+rows sharing a name are the same person, so those merge by default.
+
+**The exception: cross-spelling merges are listed, never guessed.**
+`identity-curation.json` records them, and an entry is only added when the
+variants share a club, never appear in the same series, and differ by an
+obvious slip — a doubled or dropped letter, a transposition, Mac/Mc spacing, a
+dropped `O'`, or a short form of a first name. That covers 23 groups, the
+largest being the Fireball sailor published as **Andreas Gonzalves / Andres
+Gonzalez / Andreas Gonzalez / Andres Gonzales / Andres Gonzalves** across
+2019–2024 (confirmed by the club; the correct spelling still isn't known, so
+the display name is simply the commonest of the five).
+
+Under-linking splits one sailor's record; over-linking puts another sailor's
+results in it. The second is worse and much harder to spot, so anything
+failing those tests is left apart and asked about instead:
+
+> ❓ **For the club:** are these the same sailor, or two?
+>
+> | | |
+> |---|---|
+> | `Brian Bryce` (42 rows, 2018–2026) / `Bryan Bryce` (8 rows, 2021–2023) | both KSC, never in the same series |
+> | `Siofra MacNamara` (3, Lough Ree YC, 2023) / `Siofra McNamara` (3, KSC, 2023–24) | same spelling pattern as Fionn McNamara, but the clubs differ |
+> | `Tim O'Neill` (20, KSC) / `Timothy O'Neill` (3, Cullaun SC) | different clubs |
+> | `Sean Cunningham` (43, KSC) / `John Cunningham` (1, Killaloe SC) | same club; Seán/John is the same name in Irish, but also two common ones |
+> | `Margaret Hayes` (1, Cullaun, 2019) / `Margaret Hynes` (2, KSC, 2025) | almost certainly two people — listed only for completeness |
+
+### 10. Boats are shared, so a sail number is not a sailor
+
+Fourteen `(series, sail)` pairs carry two different sailors — club ILCAs and
+RS Visions, several entered as `TBD`. The manifest addresses members by
+`(series-slug, sail)`, so those keys are ambiguous by construction; the apply
+resolves them by name-token overlap, and all 28 affected member rows resolve
+cleanly. `pnpm identities` re-checks this on every run and refuses to write a
+manifest that would lose a row.
+
+### 11. Crew have no identity
+
+Identity attaches to the helm. **48% of KSC rows carry a named crew, and 196
+people appear only ever as crew** — they sail the whole record and get no
+sailor page. Tracked as app
+[#348](https://github.com/sailscoring/sailscoring/issues/348).
+
+Six rows named two sailors in the helm cell itself (`Aoibhí Ryan / Aoise
+Ryan`). Each is attributed to the first named, matching how the matcher
+resolved the two it could settle by sail number — the second sailor loses a
+row they arguably should keep, which #348 is the real fix for.

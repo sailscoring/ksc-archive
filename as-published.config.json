@@ -1,6 +1,7 @@
 {
   "version": 1,
   "out": "as-published",
+  "identities": "identities.json",
   "series": [
     {
       "key": "ksc-2018-summer-regatta",

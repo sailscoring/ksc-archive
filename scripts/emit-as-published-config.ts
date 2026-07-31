@@ -247,7 +247,19 @@ function main(): void {
 
   writeFileSync(
     OUT,
-    `${JSON.stringify({ version: 1, out: 'as-published', series }, null, 2)}\n`,
+    `${JSON.stringify(
+      {
+        version: 1,
+        out: 'as-published',
+        // The competitor-identity manifest (app #218), maintained by
+        // `pnpm identities`. archive-generate copies it alongside the series
+        // documents and the ingest applies it.
+        identities: 'identities.json',
+        series,
+      },
+      null,
+      2,
+    )}\n`,
   );
 
   const skips = catalog.pages

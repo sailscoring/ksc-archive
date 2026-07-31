@@ -56,6 +56,9 @@ scripts/
   capture.ts                   refresh the capture      (`pnpm capture`)
   build-catalog.ts             capture → catalog.json   (`pnpm catalog`)
   emit-as-published-config.ts  catalog → ingest config  (`pnpm emit-as-published`)
+  bootstrap-identities.ts      rows → identities.json   (`pnpm identities`)
+identity-curation.json         hand-maintained input to `pnpm identities`
+identities.json                the competitor-identity manifest (committed)
 as-published.config.json       generated ingest config (committed; the input
                                to the app's `archive-generate`)
 as-published-skips.json        pages deliberately not ingested, with reasons
@@ -79,7 +82,14 @@ as-published-skips.json        pages deliberately not ingested, with reasons
    `/p/ksc/{year}/{event}/{fleet}` where an event scored several fleets).
    Series ids are UUIDv5 over `ksc-archive/series/<key>` and can never
    re-mint.
-4. **Ingest** — CI checks out the app repo, runs `pnpm archive-generate` over
+4. **Identities** — `pnpm identities` clusters the generated documents through
+   the app's canonical matcher and writes `identities.json`, the manifest the
+   ingest applies. It runs against `archive-generate`'s output, so it is an
+   operator step rather than a CI one; slugs are minted once and never move,
+   and a re-run only assigns rows that aren't claimed yet. Rows added between
+   refreshes still get identities — the ingest's auto-pass drafts them — they
+   just aren't curated until the next run.
+5. **Ingest** — CI checks out the app repo, runs `pnpm archive-generate` over
    the config, and pushes with `pnpm cli as-published push … --workspace ksc`,
    authenticated by a workspace- and capability-scoped archivist token.
    Ingest is idempotent — unchanged documents are no-ops by content hash, so
@@ -118,8 +128,13 @@ per year. CI re-ingests on every push to `main`.
 - ⬜ **The club's naming for 2018–2023**, which sits behind their members-only
   gate (§7). The results are unaffected — only the curated headings are
   missing.
-- ⬜ **The identity manifest** — pinned cross-series identities, so the same
-  sailor links up across nine seasons and feeds the career arc.
+- ✅ **The identity manifest** — 1,631 rows resolved to **278 sailors**
+  (`identities.json`), so the same sailor links up across nine seasons and
+  feeds the career arc. Five pairs are left unlinked pending the club's word
+  (CLARIFICATIONS.md §9).
+- ⬜ **Crew identity** — 48% of rows carry a named crew and 196 people appear
+  only ever as crew, with no sailor page. App
+  [#348](https://github.com/sailscoring/sailscoring/issues/348).
 - ⬜ Refresh 2026 as the season finishes: `pnpm capture --refresh` picks up
   re-uploads, and the five stub pages (§3) become real results.
 
