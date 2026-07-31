@@ -1,11 +1,18 @@
 # As-published archive ingest (ADR-010, sailscoring#283).
 #
-# On every push to main, regenerate the ingest documents from the capture and
-# push them to the production workspace. Ingest is idempotent — the server
-# no-ops unchanged documents by content hash — so this can run on every push
-# without churn. The idempotency key is the document, though, so a render-only
-# change in the app doesn't re-publish; dispatch manually with `force` to
-# re-apply everything after one.
+# On every push to main: rebuild the catalogue, re-emit the config, check both
+# are committed and current, regenerate the ingest documents, and push them to
+# the production workspace. Ingest is idempotent — the server no-ops unchanged
+# documents by content hash — so this can run on every push without churn. The
+# idempotency key is the document, though, so a render-only change in the app
+# doesn't re-publish; dispatch manually with `force` to re-apply after one.
+#
+# Checkout layout matters: this repo's scripts reuse the app's archive-kit by
+# relative import (`../../sailscoring/lib/archive-kit/…`), so the app must be a
+# *sibling* directory, not a subdirectory of this one.
+#
+#   $GITHUB_WORKSPACE/ksc-archive   this repo
+#   $GITHUB_WORKSPACE/sailscoring   the app
 #
 # Secrets:
 #   APP_REPO_TOKEN              read access to sailscoring/sailscoring
@@ -13,10 +20,12 @@
 #                               (workspace- and capability-scoped: it can only
 #                               write as-published series)
 #
-# NOTE: not armed. The push step is gated on the secret being configured, and
-# two things must land first: the ksc workspace must exist, and app #344 (the
-# generator's UTF-8 assumption, which mangles accented names) must be fixed —
-# see CLARIFICATIONS.md.
+# NOTE: not armed. Every step that needs the app is gated on APP_REPO_TOKEN, so
+# until that secret exists the job succeeds having done nothing rather than
+# failing red. Two things must land before arming: the ksc workspace must
+# exist, and app #344 (the generator's UTF-8 assumption, which mangles the
+# accented names in 31 of the 76 documents) must be fixed — see
+# CLARIFICATIONS.md.
 name: as-published
 
 on:
@@ -43,52 +52,75 @@ jobs:
   ingest:
     runs-on: ubuntu-latest
     env:
+      # The `secrets` context isn't available in `if:` expressions, so the
+      # gates below test the secrets through the job env instead: unset
+      # secret -> empty env var -> step skipped.
+      APP_REPO_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
       SAILSCORING_TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+        with:
+          path: ksc-archive
 
-      - uses: actions/checkout@v4
+      - name: Report that the ingest is not armed
+        if: env.APP_REPO_TOKEN == ''
+        run: |
+          echo "APP_REPO_TOKEN is not configured — skipping the ingest." >> "$GITHUB_STEP_SUMMARY"
+          echo "See the note at the top of .github/workflows/as-published.yml." >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/checkout@v7
+        if: env.APP_REPO_TOKEN != ''
         with:
           repository: sailscoring/sailscoring
           token: ${{ secrets.APP_REPO_TOKEN }}
-          path: app
+          path: sailscoring
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
+        if: env.APP_REPO_TOKEN != ''
         with:
-          package_json_file: app/package.json
+          package_json_file: sailscoring/package.json
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
+        if: env.APP_REPO_TOKEN != ''
         with:
           node-version: 24
           cache: pnpm
-          cache-dependency-path: app/pnpm-lock.yaml
+          cache-dependency-path: sailscoring/pnpm-lock.yaml
 
       - name: Install archive dependencies
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: ksc-archive
         run: pnpm install --frozen-lockfile
 
       - name: Install app dependencies
-        working-directory: app
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: sailscoring
         run: pnpm install --frozen-lockfile
 
       - name: Rebuild the catalogue
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: ksc-archive
         run: pnpm catalog
 
       - name: Emit the as-published config
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: ksc-archive
         run: pnpm emit-as-published
 
-      # The committed config is the reviewable artifact: if a source change
-      # moves it, the change should be committed, not applied silently.
+      # The committed catalogue and config are the reviewable artifacts: if a
+      # source change moves them, that should be committed, not applied
+      # silently on the way past.
       - name: Catalogue and config are committed and current
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: ksc-archive
         run: git diff --exit-code sources/catalog.json as-published.config.json as-published-skips.json
 
       - name: Generate ingest documents
-        working-directory: app
-        run: pnpm archive-generate ${{ github.workspace }}/as-published.config.json
+        if: env.APP_REPO_TOKEN != ''
+        working-directory: sailscoring
+        run: pnpm archive-generate ../ksc-archive/as-published.config.json
 
-      # The `secrets` context isn't available in `if:` expressions, so the
-      # arming gate tests the secret through the job env instead: unset
-      # secret -> empty env var -> step skipped.
       - name: Push to the workspace
-        if: env.SAILSCORING_TOKEN != ''
-        working-directory: app
-        run: pnpm cli as-published push ${{ github.workspace }}/as-published --workspace ksc ${{ inputs.force && '--force' || '' }}
+        if: env.APP_REPO_TOKEN != '' && env.SAILSCORING_TOKEN != ''
+        working-directory: sailscoring
+        run: pnpm cli as-published push ../ksc-archive/as-published --workspace ksc ${{ inputs.force && '--force' || '' }}
