@@ -124,12 +124,11 @@ per year. CI re-ingests on every push to `main`.
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
 - ✅ **The identity manifest** — 1,631 rows resolved to **278 sailors**
-  (`identities.json`), so the same sailor links up across nine seasons and
-  feeds the career arc.
-- ⬜ **The sailor pages aren't switched on** — the identities are applied, but
-  the public side is behind the `competitor-identity` feature gate, so
-  `/p/ksc/competitors` still 404s
-  ([#7](https://github.com/sailscoring/ksc-archive/issues/7)).
+  (`identities.json`), applied and live: the
+  [competitor index](https://app.sailscoring.ie/p/ksc/competitors) and a career
+  arc per sailor, spanning nine seasons
+  ([John Callanan](https://app.sailscoring.ie/p/ksc/competitor/john-callanan-dzwh)
+  has 56 series).
 - ⬜ **Crew identity** — 48% of rows carry a named crew and 196 people appear
   only ever as crew, with no sailor page. App
   [#348](https://github.com/sailscoring/sailscoring/issues/348).
@@ -144,7 +143,7 @@ and written up in CLARIFICATIONS.md.
 
 | | Why it matters |
 |---|---|
-| [#1](https://github.com/sailscoring/ksc-archive/issues/1) **Event dates** | the corpus states none, so series don't order within a season — the biggest single gap |
+| [#1](https://github.com/sailscoring/ksc-archive/issues/1) **Event dates** | the corpus states none, so every career arc shows `—` for its dates and isn't really ordered — the biggest single gap |
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
 | [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | including whether the autumn series is "Cooler" or "October" — the two sources disagree for 2024 |
 | [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | published twice, two scorings; which is official? |
