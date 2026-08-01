@@ -13,10 +13,11 @@
     "",
     "A merge is only listed here when the variants share a club, never appear in",
     "the same series, and differ by an obvious slip - a doubled or dropped",
-    "letter, a transposition, Mac/Mc spacing, or a dropped O'. Pairs that fail",
-    "any of those tests are left apart and asked about instead: under-linking",
-    "splits one sailor's record, but over-linking puts another sailor's results",
-    "in it, which is the worse error and the harder one to notice."
+    "letter, a transposition, Mac/Mc spacing, a dropped O', a `(J)` junior tag,",
+    "or a short form of a first name. Pairs that fail any of those tests are",
+    "left apart and asked about instead: under-linking splits one sailor's",
+    "record, but over-linking puts another sailor's results in it, which is the",
+    "worse error and the harder one to notice."
   ],
 
   "unify": [
@@ -26,9 +27,20 @@
         "Andreas Gonzalves",
         "Andres Gonzalez",
         "Andreas Gonzalez",
-        "Andres Gonzales"
+        "Andres Gonzales",
+        "Andreas"
       ],
-      "note": "One Fireball sailor, published under five spellings across 2019-2024 (all KSC, all Fireball). Confirmed by the club. The display name is the commonest of the five; the correct spelling is still to be confirmed."
+      "note": "One Fireball sailor, published under six spellings across 2019-2024 (all KSC, all Fireball). Confirmed by the club. The display name is the commonest; the correct spelling is still to be confirmed. The bare 'Andreas' is the 2020 Summer Series entry on Fireball 1471 with 'Ana' crewing — 1471 is this boat in every other year it appears."
+    },
+    {
+      "name": "Ana Gonzalves",
+      "aliases": ["Ana Gonzalez", "Ana Gonzales"],
+      "note": "Andres Gonzalves's crew on Fireball 14244, 2022-2024, all KSC. Her surname tracks his spelling row for row. Whether she is also the 'Ana Maria Grande' who crews the same boat is a question for the club, not a merge — see CLARIFICATIONS.md §9."
+    },
+    {
+      "name": "Ana Maria Grande",
+      "aliases": ["Ana-Marie Grande", "Ana-Maria Grande", "Ana Marie Grande", "Anna Marie Grande"],
+      "note": "Five spellings of Andres Gonzalves's Fireball crew, 2019-2023, all KSC, never two in one series. The corpus splits 7/5/1/1/1 in favour of 'Ana-Marie Grande'; the Spanish form is published here to match his own name, and the correct spelling is unconfirmed."
     },
     {
       "name": "Charlie McDonnell",
@@ -42,20 +54,37 @@
     { "name": "Jonathan Cooper", "aliases": ["Jonathon Cooper", "Johnathon Cooper"] },
     { "name": "Dominic O'Sullivan", "aliases": ["Dominic Sullivan", "Dominic Sulivan"] },
     { "name": "Henry Clifton Brown", "aliases": ["Henry Cliffton Brown"] },
-    { "name": "Susan Le Mignon", "aliases": ["Susian Le Mignon"] },
+    { "name": "Susan Le Mignon", "aliases": ["Susian Le Mignon", "Susan Mignon"] },
+    { "name": "Mila Le Mignon", "aliases": ["Mila La Mignon", "Mila Mignon"] },
     { "name": "Frank McGrath", "aliases": ["Frank Mc Grath"] },
     { "name": "Philip Despard", "aliases": ["Philp Despard"] },
     { "name": "Jonathan Foley", "aliases": ["Jonathon Foley"] },
     { "name": "Molly Kramers", "aliases": ["Molly Kramer"] },
+    { "name": "Jo Kramers", "aliases": ["Jo Kramer"], "note": "Shirley O'Neill's crew on RS Vision 1263, 2019-2025, all KSC; the two spellings split 5/5 and the family surname is Kramers (cf. Molly Kramers)." },
     { "name": "Des MacMahon", "aliases": ["Des Mac Mahon"] },
     { "name": "Daniel Butler", "aliases": ["Daniel Bulter"] },
     { "name": "Donal Cullinane", "aliases": ["Donall Cullinane"] },
     { "name": "Orla Imhoff", "aliases": ["Orla Imhoof"] },
-    { "name": "Bjorn Imhoff", "aliases": ["Bjorn Imhoof"] },
+    { "name": "Bjorn Imhoff", "aliases": ["Bjorn Imhoof", "Bjorn Ihoff"] },
     { "name": "William Bennett-Quaid", "aliases": ["William Bennette-Quaid"] },
-    { "name": "Azizbek Shamsiddinov", "aliases": ["Aziz Shamsiddinov"] },
-    { "name": "Damian Hawkins", "aliases": ["Damien Hawkins"], "note": "Both Cullaun Sailing Club, 2023 and 2024." },
     { "name": "Kieran Concannon", "aliases": ["Kieron Concannon"] },
+    { "name": "Sue Concannon", "aliases": ["Sue Connannon"] },
+    { "name": "Emma O'Farrell", "aliases": ["Emma Farrell"] },
+    { "name": "Fionnuala Keogh", "aliases": ["Fionnula Keogh"] },
+    { "name": "Margaret Watts", "aliases": ["Margarett Watts"] },
+    { "name": "Tara Harris", "aliases": ["Tarris Harris"] },
+    { "name": "Stefany Gorski", "aliases": ["Stephany Gorski"] },
+    { "name": "Ruairi Cooper", "aliases": ["Ruari Cooper"], "note": "Three spellings across four rows (Ruari x2, Ruarí, Ruairi), all KSC juniors 2022-2025. The fullest spelling is published, from the one row he entered as helm." },
+    {
+      "name": "Margaret Hynes",
+      "aliases": ["Margaret Hayes"],
+      "note": "Wayfarer 10826 with Mike Hayes crewing, in 2019 (Cullaun) and 2025 (KSC / Cullaun SC) — the same private boat and the same crew either side of a gap. 'Margaret Hayes' appears once, on the row where the crew cell immediately below reads 'Mike Hayes'; 'Margaret Hynes' appears twice, on rows where the two surnames differ. The doubled surname is read as the slip, so Hynes is published. CLARIFICATIONS.md §9 previously listed this pair as almost certainly two people; the crew field is what settled it."
+    },
+    {
+      "name": "Damian Hawkins",
+      "aliases": ["Damien Hawkins"],
+      "note": "Both Cullaun Sailing Club, 2023 and 2024."
+    },
     {
       "name": "Barry O'Donovan",
       "aliases": ["Barry Donovan"],
@@ -66,6 +95,11 @@
       "aliases": ["Fionn MacNamara"],
       "note": "Both Lough Ree, 2023 — unlike his namesake Siofra, whose two spellings carry different clubs and are left apart."
     },
+    {
+      "name": "Hugo Michka",
+      "aliases": ["Hugo Micka"],
+      "note": "Fireball crew at the 2022 Munsters (DMYC) and the 2023 Munsters/Leinsters (Malahide YC). The clubs differ, which normally holds a pair apart — allowed here because the surname is rare enough that a one-letter variant is not a coincidence, both are Dublin clubs, and a sailor changing club between seasons is ordinary. Worth confirming."
+    },
 
     { "name": "David Scott", "aliases": ["Dave Scott"] },
     { "name": "Dave Tarr", "aliases": ["David Tarr"] },
@@ -73,13 +107,62 @@
     { "name": "Ed Carroll", "aliases": ["Edmond Carroll"] },
 
     {
+      "name": "Azizbek Shamsiddinov",
+      "aliases": ["Aziz Shamsiddinov", "Aziz Shadimavov", "Aziz Shasimov", "Aziz"],
+      "note": "Wayfarer 8170, KSC, 2018-2019 — the only sailor the corpus ever puts in that boat, under four spellings of the surname plus a bare 'Aziz'."
+    },
+    {
+      "name": "Birgit Strohwald",
+      "aliases": ["Birgit"],
+      "note": "Bare first name, 2019 Summer Series, KSC. The boat is a shared club Zest and corroborates nothing; the merge rests on hers being the only Birgit the corpus names, at the same club."
+    },
+    {
+      "name": "Reggie Quinn",
+      "aliases": ["Reggie"],
+      "note": "Bare first name, 2023 Warmer Series, KSC, helming RS 200 761 — a shared club boat, but he is the only Reggie the corpus names and he sailed 761 in 2019 and 2021."
+    },
+
+    {
+      "name": "Aoibhí Ryan",
+      "aliases": ["Aoibí Ryan", "Aoibhi Ryan (J)"],
+      "note": "The '(J)' rows are the 2023 Mayfly and Warmer Series, where the scorer tagged five juniors that way and no untagged spelling of the same name appears."
+    },
+    { "name": "Kiki Ryan", "aliases": ["Kiki Ryan (J)"] },
+    { "name": "Colin Haugh", "aliases": ["Colin Haugh (J)"] },
+    { "name": "Richard Kennedy", "aliases": ["Richard Kennedy (J)"] },
+    {
+      "name": "Tim O'Neill",
+      "aliases": ["Timothy O'Neill", "Tim O'Neill (J)", "Tim O'Neill / Michelle Kennedy"],
+      "note": "CLARIFICATIONS.md §9 previously held 'Timothy O'Neill' apart because it carried Cullaun rather than KSC. Reading crew as well as helms settled it: both spellings helm RS 200 1059 with Martin Bon in 2022 and with Aoibhí Ryan in 2023, and 'Tim O'Neill' himself is entered as Cullaun in 2022 and as 'Cullaun / KSC' in 2023."
+    },
+
+    {
       "name": "Brian Keane",
       "aliases": ["Brian Keane / Molly Kramers"],
-      "note": "A boat entered under two sailors' names in the helm field; attributed to the first named, as the matcher already did for the two Ryan rows it could resolve by sail number. The second sailor loses a row they arguably should keep — sailscoring#348 (crew identity) is the real fix."
+      "note": "A boat entered under two sailors' names in the helm field; attributed to the first named, as the matcher already did for the two Ryan rows it could resolve by sail number. The second sailor loses a row they arguably should keep — ksc-archive#10 is the real fix."
     },
     { "name": "Rae Hughes", "aliases": ["Rae Hughes / David Coleman"] },
     { "name": "Sean Hogan", "aliases": ["Sean Hogan / Orla Imhoff"] },
-    { "name": "Tim O'Neill", "aliases": ["Tim O'Neill / Michelle Kennedy"] }
+    {
+      "name": "Andrew Mullally",
+      "aliases": ["Andrew Mullally/Thomas Drayton"],
+      "note": "Helm cell naming two sailors, RS 400 1076 in the 2023 Mayfly Series — his own boat. Attributed to the first named, as above."
+    },
+    {
+      "name": "Amber Robson",
+      "aliases": ["Amber Robson Maeve Derven"],
+      "note": "A crew cell naming the boat's two crews for the series with nothing but a space between them (Maeve Dervan is published as 'Derven' here). Splitting on whitespace would break every sailor whose own name runs to three words, so it is attributed to the first named until ksc-archive#9 lands."
+    },
+    {
+      "name": "Leon Mullally",
+      "aliases": ["Leon Mullally Dominic O'Sullivan"],
+      "note": "Space-separated two-crew cell, RS 400 1076 in the 2023 Summer Series; same treatment as above. The same pair is slash-separated in three other series, where the split works and both sailors keep their row."
+    },
+    {
+      "name": "James Purcell",
+      "aliases": ["James Purcell Kiki Ryan"],
+      "note": "Space-separated two-crew cell, RS 200 1059 in the 2024 June Series; attributed to the first named, which costs Kiki Ryan a row she keeps in the June Sprint 2 entry for the same boat."
+    }
   ],
 
   "separate": [],

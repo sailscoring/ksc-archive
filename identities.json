@@ -446,20 +446,14 @@
           "ksc-2018-junior-regatta",
           "1541",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "amber-robson-maeve-derven-2smk",
-      "name": "Amber Robson Maeve Derven",
-      "club": "KSC",
-      "members": [
+        ],
         [
           "ksc-2021-junior-regatta",
           "1539",
           "crew"
         ]
-      ]
+      ],
+      "note": "A crew cell naming the boat's two crews for the series with nothing but a space between them (Maeve Dervan is published as 'Derven' here). Splitting on whitespace would break every sailor whose own name runs to three words, so it is attributed to the first named until ksc-archive#9 lands."
     },
     {
       "slug": "amelie-soffe-gfxa",
@@ -485,34 +479,15 @@
       ]
     },
     {
-      "slug": "ana-gonzales-zv8e",
-      "name": "Ana Gonzales",
-      "club": "Killaloe Sailing Club",
-      "members": [
-        [
-          "ksc-2023-open-summer-regatta",
-          "14244",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "ana-gonzalez-dtj4",
-      "name": "Ana Gonzalez",
+      "slug": "ana-gonzalves-rgze",
+      "name": "Ana Gonzalves",
       "club": "Killaloe Sailing Club",
       "members": [
         [
           "ksc-2022-fireball-munsters",
           "14244",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "ana-gonzalves-rgze",
-      "name": "Ana Gonzalves",
-      "club": "Killaloe Sailing Club",
-      "members": [
+        ],
         [
           "ksc-2023-brass-monkey-series",
           "14244",
@@ -520,6 +495,11 @@
         ],
         [
           "ksc-2023-october-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
           "14244",
           "crew"
         ],
@@ -533,13 +513,19 @@
           "14244",
           "crew"
         ]
-      ]
+      ],
+      "note": "Andres Gonzalves's crew on Fireball 14244, 2022-2024, all KSC. Her surname tracks his spelling row for row. Whether she is also the 'Ana Maria Grande' who crews the same boat is a question for the club, not a merge — see CLARIFICATIONS.md §9."
     },
     {
-      "slug": "ana-maria-grande-dvn5",
+      "slug": "ana-marie-grande-83t2",
       "name": "Ana Maria Grande",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2019-cooler-series",
+          "1471",
+          "crew"
+        ],
         [
           "ksc-2019-june-series",
           "1471",
@@ -558,28 +544,6 @@
         [
           "ksc-2019-warmer-series",
           "14740",
-          "crew"
-        ],
-        [
-          "ksc-2022-summer-series",
-          "14244",
-          "crew"
-        ],
-        [
-          "ksc-2022-warmer-series",
-          "1471",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "ana-marie-grande-83t2",
-      "name": "Ana-Marie Grande",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-cooler-series",
-          "1471",
           "crew"
         ],
         [
@@ -613,22 +577,27 @@
           "crew"
         ],
         [
+          "ksc-2022-summer-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1471",
+          "crew"
+        ],
+        [
           "ksc-2023-summer-series",
           "14244",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "andreas-js98",
-      "name": "Andreas",
-      "club": "KSC",
-      "members": [
+        ],
         [
-          "ksc-2020-summer-series",
-          "1471"
+          "ksc-2023-warmer-series",
+          "1476",
+          "crew"
         ]
-      ]
+      ],
+      "note": "Five spellings of Andres Gonzalves's Fireball crew, 2019-2023, all KSC, never two in one series. The corpus splits 7/5/1/1/1 in favour of 'Ana-Marie Grande'; the Spanish form is published here to match his own name, and the correct spelling is unconfirmed."
     },
     {
       "slug": "andres-gonzalves-wa9d",
@@ -654,6 +623,10 @@
         [
           "ksc-2019-warmer-series",
           "14740"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1471"
         ],
         [
           "ksc-2021-cooler-series",
@@ -720,7 +693,7 @@
           "14244"
         ]
       ],
-      "note": "One Fireball sailor, published under five spellings across 2019-2024 (all KSC, all Fireball). Confirmed by the club. The display name is the commonest of the five; the correct spelling is still to be confirmed."
+      "note": "One Fireball sailor, published under six spellings across 2019-2024 (all KSC, all Fireball). Confirmed by the club. The display name is the commonest; the correct spelling is still to be confirmed. The bare 'Andreas' is the 2020 Summer Series entry on Fireball 1471 with 'Ana' crewing — 1471 is this boat in every other year it appears."
     },
     {
       "slug": "andrew-flanagan-jcch",
@@ -730,17 +703,6 @@
         [
           "ksc-2022-rs-inlands",
           "492"
-        ]
-      ]
-    },
-    {
-      "slug": "andrew-mullally-thomas-drayton-2ygb",
-      "name": "Andrew Mullally/Thomas Drayton",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-mayfly-series",
-          "1076"
         ]
       ]
     },
@@ -875,6 +837,10 @@
           "1076"
         ],
         [
+          "ksc-2023-mayfly-series",
+          "1076"
+        ],
+        [
           "ksc-2023-october-series",
           "1976"
         ],
@@ -966,7 +932,8 @@
           "ksc-2026-warmer-series",
           "1436"
         ]
-      ]
+      ],
+      "note": "Helm cell naming two sailors, RS 400 1076 in the 2023 Mayfly Series — his own boat. Attributed to the first named, as above."
     },
     {
       "slug": "andy-anderson-djw3",
@@ -1020,18 +987,6 @@
         [
           "ksc-2026-summer-sunday-series",
           "182605"
-        ]
-      ]
-    },
-    {
-      "slug": "anna-marie-grande-882c",
-      "name": "Anna Marie Grande",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "1476",
-          "crew"
         ]
       ]
     },
@@ -1200,6 +1155,11 @@
           "166313"
         ],
         [
+          "ksc-2022-open-summer-regatta",
+          "184",
+          "crew"
+        ],
+        [
           "ksc-2022-september-series",
           "1485"
         ],
@@ -1215,6 +1175,10 @@
         ],
         [
           "ksc-2023-june-series",
+          "134668"
+        ],
+        [
+          "ksc-2023-mayfly-series",
           "134668"
         ],
         [
@@ -1243,6 +1207,10 @@
           "ksc-2023-summer-series",
           "1059",
           "crew"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "162732"
         ],
         [
           "ksc-2024-brass-monkey-winter",
@@ -1317,34 +1285,8 @@
           "1545",
           "crew"
         ]
-      ]
-    },
-    {
-      "slug": "aoibhi-ryan-j-69pb",
-      "name": "Aoibhi Ryan (J)",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-mayfly-series",
-          "134668"
-        ],
-        [
-          "ksc-2023-warmer-series",
-          "162732"
-        ]
-      ]
-    },
-    {
-      "slug": "aoibi-ryan-mhbt",
-      "name": "Aoibí Ryan",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2022-open-summer-regatta",
-          "184",
-          "crew"
-        ]
-      ]
+      ],
+      "note": "The '(J)' rows are the 2023 Mayfly and Warmer Series, where the scorer tagged five juniors that way and no untagged spelling of the same name appears."
     },
     {
       "slug": "aoise-carroll-9wtw",
@@ -1592,45 +1534,20 @@
       ]
     },
     {
-      "slug": "aziz-hyka",
-      "name": "Aziz",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-spring-regatta",
-          "8170"
-        ]
-      ]
-    },
-    {
-      "slug": "aziz-shadimavov-9k2b",
-      "name": "Aziz Shadimavov",
-      "club": "Killaloe SC",
-      "members": [
-        [
-          "ksc-2018-summer-regatta",
-          "8170"
-        ]
-      ]
-    },
-    {
-      "slug": "aziz-shasimov-x5qx",
-      "name": "Aziz Shasimov",
-      "club": "Killaloe Sailing Club",
-      "members": [
-        [
-          "ksc-2018-baltic-series",
-          "8170"
-        ]
-      ]
-    },
-    {
       "slug": "azizbek-shamsiddinov-39rb",
       "name": "Azizbek Shamsiddinov",
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-baltic-series",
+          "8170"
+        ],
+        [
           "ksc-2018-cooler-series",
+          "8170"
+        ],
+        [
+          "ksc-2018-summer-regatta",
           "8170"
         ],
         [
@@ -1643,10 +1560,15 @@
           "8170"
         ],
         [
+          "ksc-2019-spring-regatta",
+          "8170"
+        ],
+        [
           "ksc-2019-warmer-series",
           "8170"
         ]
-      ]
+      ],
+      "note": "Wayfarer 8170, KSC, 2018-2019 — the only sailor the corpus ever puts in that boat, under four spellings of the surname plus a bare 'Aziz'."
     },
     {
       "slug": "barry-o-donovan-svgm",
@@ -1723,38 +1645,20 @@
     },
     {
       "slug": "birgit-4bnw",
-      "name": "Birgit",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-summer-series",
-          "2"
-        ]
-      ]
-    },
-    {
-      "slug": "birgit-strohwald-h8u7",
       "name": "Birgit Strohwald",
-      "club": "Killaloe SC",
+      "club": "KSC",
       "members": [
         [
           "ksc-2018-summer-regatta",
           "1263",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "bjorn-ihoff-f7u2",
-      "name": "Bjorn Ihoff",
-      "club": "KSC",
-      "members": [
+        ],
         [
-          "ksc-2021-winter-regatta",
-          "611",
-          "crew"
+          "ksc-2019-summer-series",
+          "2"
         ]
-      ]
+      ],
+      "note": "Bare first name, 2019 Summer Series, KSC. The boat is a shared club Zest and corroborates nothing; the merge rests on hers being the only Birgit the corpus names, at the same club."
     },
     {
       "slug": "bjorn-imhoff-dws8",
@@ -1779,6 +1683,11 @@
         ],
         [
           "ksc-2019-warmer-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
           "611",
           "crew"
         ],
@@ -2238,7 +2147,7 @@
           "18234"
         ]
       ],
-      "note": "A boat entered under two sailors' names in the helm field; attributed to the first named, as the matcher already did for the two Ryan rows it could resolve by sail number. The second sailor loses a row they arguably should keep — sailscoring#348 (crew identity) is the real fix."
+      "note": "A boat entered under two sailors' names in the helm field; attributed to the first named, as the matcher already did for the two Ryan rows it could resolve by sail number. The second sailor loses a row they arguably should keep — ksc-archive#10 is the real fix."
     },
     {
       "slug": "brian-walker-wxgd",
@@ -2949,6 +2858,10 @@
           "crew"
         ],
         [
+          "ksc-2023-warmer-series",
+          "1336"
+        ],
+        [
           "ksc-2024-brass-monkey-winter",
           "1336",
           "crew"
@@ -3041,17 +2954,6 @@
           "ksc-2025-warmer-series",
           "1336",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "colin-haugh-j-ayc7",
-      "name": "Colin Haugh (J)",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "1336"
         ]
       ]
     },
@@ -5129,43 +5031,6 @@
       ]
     },
     {
-      "slug": "emma-farrell-v7kb",
-      "name": "Emma Farrell",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2021-junior-regatta",
-          "1",
-          "crew"
-        ],
-        [
-          "ksc-2021-september-series",
-          "1545",
-          "crew"
-        ],
-        [
-          "ksc-2021-summer-series",
-          "3",
-          "crew"
-        ],
-        [
-          "ksc-2024-october-series",
-          "226",
-          "crew"
-        ],
-        [
-          "ksc-2024-september-series",
-          "1545",
-          "crew"
-        ],
-        [
-          "ksc-2024-summer-series",
-          "1541",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "emma-o-farrell-64md",
       "name": "Emma O'Farrell",
       "club": "KSC",
@@ -5206,8 +5071,38 @@
           "1"
         ],
         [
+          "ksc-2021-junior-regatta",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "3",
+          "crew"
+        ],
+        [
           "ksc-2023-summer-series",
           "9999",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1541",
           "crew"
         ]
       ]
@@ -5632,20 +5527,13 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2020-summer-regatta",
+          "14817"
+        ],
+        [
           "ksc-2020-summer-series",
           "14710",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "fionnula-keogh-658g",
-      "name": "Fionnula Keogh",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2020-summer-regatta",
-          "14817"
         ]
       ]
     },
@@ -6567,20 +6455,14 @@
           "ksc-2022-fireball-munsters",
           "14915",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "hugo-micka-6zdk",
-      "name": "Hugo Micka",
-      "club": "Malahide Yacht Club",
-      "members": [
+        ],
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14740",
           "crew"
         ]
-      ]
+      ],
+      "note": "Fireball crew at the 2022 Munsters (DMYC) and the 2023 Munsters/Leinsters (Malahide YC). The clubs differ, which normally holds a pair apart — allowed here because the surname is rare enough that a one-letter variant is not a coincidence, both are Dublin clubs, and a sailor changing club between seasons is ordinary. Worth confirming."
     },
     {
       "slug": "isabel-leech-j7j7",
@@ -6752,7 +6634,7 @@
     },
     {
       "slug": "james-purcell-kiki-ryan-g29g",
-      "name": "James Purcell Kiki Ryan",
+      "name": "James Purcell",
       "club": "Killaloe Sailing Club",
       "members": [
         [
@@ -6760,7 +6642,8 @@
           "1059",
           "crew"
         ]
-      ]
+      ],
+      "note": "Space-separated two-crew cell, RS 200 1059 in the 2024 June Series; attributed to the first named, which costs Kiki Ryan a row she keeps in the June Sprint 2 entry for the same boat."
     },
     {
       "slug": "jennifer-bryce-v7qr",
@@ -6974,7 +6857,7 @@
     },
     {
       "slug": "jo-kramer-s8eb",
-      "name": "Jo Kramer",
+      "name": "Jo Kramers",
       "club": "KSC",
       "members": [
         [
@@ -6983,7 +6866,22 @@
           "crew"
         ],
         [
+          "ksc-2021-june-series",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "1263",
+          "crew"
+        ],
+        [
           "ksc-2023-mayfly-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
           "1263",
           "crew"
         ],
@@ -7001,28 +6899,6 @@
           "ksc-2023-spring-regatta",
           "1263",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "jo-kramers-2an5",
-      "name": "Jo Kramers",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2021-june-series",
-          "1",
-          "crew"
-        ],
-        [
-          "ksc-2023-brass-monkey-series",
-          "1263",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1263",
-          "crew"
         ],
         [
           "ksc-2023-summer-series",
@@ -7034,7 +6910,8 @@
           "1263",
           "crew"
         ]
-      ]
+      ],
+      "note": "Shirley O'Neill's crew on RS Vision 1263, 2019-2025, all KSC; the two spellings split 5/5 and the family surname is Kramers (cf. Molly Kramers)."
     },
     {
       "slug": "john-barry-a7na",
@@ -7926,17 +7803,6 @@
       ]
     },
     {
-      "slug": "kiki-ryan-j-6u8b",
-      "name": "Kiki Ryan (J)",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "1485"
-        ]
-      ]
-    },
-    {
       "slug": "kiki-ryan-rkvu",
       "name": "Kiki Ryan",
       "club": "KSC",
@@ -7988,6 +7854,10 @@
         [
           "ksc-2023-summer-series",
           "6869"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1485"
         ],
         [
           "ksc-2024-june-series",
@@ -8133,18 +8003,6 @@
         [
           "ksc-2018-summer-regatta",
           "3672"
-        ]
-      ]
-    },
-    {
-      "slug": "leon-mullally-dominic-o-sullivan-3aab",
-      "name": "Leon Mullally Dominic O'Sullivan",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-summer-series",
-          "1076",
-          "crew"
         ]
       ]
     },
@@ -8322,6 +8180,11 @@
           "crew"
         ],
         [
+          "ksc-2023-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
           "ksc-2023-warmer-series",
           "1076",
           "crew"
@@ -8416,7 +8279,8 @@
           "1436",
           "crew"
         ]
-      ]
+      ],
+      "note": "Space-separated two-crew cell, RS 400 1076 in the 2023 Summer Series; same treatment as above. The same pair is slash-separated in three other series, where the split works and both sailors keep their row."
     },
     {
       "slug": "lia-o-donovan-5j3s",
@@ -8871,21 +8735,14 @@
       ]
     },
     {
-      "slug": "margaret-hayes-c6za",
-      "name": "Margaret Hayes",
-      "club": "Cullaun",
-      "members": [
-        [
-          "ksc-2019-spring-regatta",
-          "10826"
-        ]
-      ]
-    },
-    {
       "slug": "margaret-hynes-fptm",
       "name": "Margaret Hynes",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2019-spring-regatta",
+          "10826"
+        ],
         [
           "ksc-2025-spring-open-regatta",
           "10826"
@@ -8894,7 +8751,8 @@
           "ksc-2025-summer-open-regatta",
           "10826"
         ]
-      ]
+      ],
+      "note": "Wayfarer 10826 with Mike Hayes crewing, in 2019 (Cullaun) and 2025 (KSC / Cullaun SC) — the same private boat and the same crew either side of a gap. 'Margaret Hayes' appears once, on the row where the crew cell immediately below reads 'Mike Hayes'; 'Margaret Hynes' appears twice, on rows where the two surnames differ. The doubled surname is read as the slip, so Hynes is published. CLARIFICATIONS.md §9 previously listed this pair as almost certainly two people; the crew field is what settled it."
     },
     {
       "slug": "margaret-watts-c5mh",
@@ -9046,6 +8904,11 @@
           "crew"
         ],
         [
+          "ksc-2023-summer-series",
+          "226",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "228",
           "crew"
@@ -9081,18 +8944,6 @@
         ],
         [
           "ksc-2025-summer-sunday-series",
-          "226",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "margarett-watts-x39d",
-      "name": "Margarett Watts",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-summer-series",
           "226",
           "crew"
         ],
@@ -9603,25 +9454,23 @@
       ]
     },
     {
-      "slug": "mila-la-mignon-9jua",
-      "name": "Mila La Mignon",
-      "club": "Killaloe SC",
-      "members": [
-        [
-          "ksc-2018-junior-regatta",
-          "2511",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "mila-le-mignon-mfn7",
       "name": "Mila Le Mignon",
       "club": "Killaloe Sailing Club",
       "members": [
         [
+          "ksc-2018-baltic-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2018-cooler-series",
           "2511"
+        ],
+        [
+          "ksc-2018-junior-regatta",
+          "2511",
+          "crew"
         ],
         [
           "ksc-2018-september-series",
@@ -9676,18 +9525,6 @@
         [
           "ksc-2021-summer-series",
           "611",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "mila-mignon-mwcx",
-      "name": "Mila Mignon",
-      "club": "Killaloe Sailing Club",
-      "members": [
-        [
-          "ksc-2018-baltic-series",
-          "938",
           "crew"
         ]
       ]
@@ -11128,6 +10965,10 @@
           "00000"
         ],
         [
+          "ksc-2023-warmer-series",
+          "761"
+        ],
+        [
           "ksc-2024-summer-series",
           "1263",
           "crew"
@@ -11137,18 +10978,8 @@
           "1263",
           "crew"
         ]
-      ]
-    },
-    {
-      "slug": "reggie-svb9",
-      "name": "Reggie",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "761"
-        ]
-      ]
+      ],
+      "note": "Bare first name, 2023 Warmer Series, KSC, helming RS 200 761 — a shared club boat, but he is the only Reggie the corpus names and he sailed 761 in 2019 and 2021."
     },
     {
       "slug": "reuben-cooper-zz55",
@@ -11178,18 +11009,6 @@
       ]
     },
     {
-      "slug": "richard-kennedy-j-gv83",
-      "name": "Richard Kennedy (J)",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "1485",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "richard-kennedy-uwzq",
       "name": "Richard Kennedy",
       "club": "Killaloe Sailing Club",
@@ -11202,6 +11021,11 @@
         [
           "ksc-2023-open-summer-regatta",
           "6869",
+          "crew"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1485",
           "crew"
         ]
       ]
@@ -11430,19 +11254,8 @@
       ]
     },
     {
-      "slug": "ruairi-cooper-945n",
-      "name": "Ruairi Cooper",
-      "club": "KIllaloe SC",
-      "members": [
-        [
-          "ksc-2025-summer-open-regatta",
-          "1"
-        ]
-      ]
-    },
-    {
       "slug": "ruari-cooper-sqfy",
-      "name": "Ruari Cooper",
+      "name": "Ruairi Cooper",
       "club": "Killaloe Sailing Club",
       "members": [
         [
@@ -11459,8 +11272,13 @@
           "ksc-2023-open-summer-regatta",
           "1",
           "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1"
         ]
-      ]
+      ],
+      "note": "Three spellings across four rows (Ruari x2, Ruarí, Ruairi), all KSC juniors 2022-2025. The fullest spelling is published, from the one row he entered as helm."
     },
     {
       "slug": "ruby-carroll-w6ne",
@@ -12313,6 +12131,11 @@
           "crew"
         ],
         [
+          "ksc-2018-september-series",
+          "14740",
+          "crew"
+        ],
+        [
           "ksc-2019-baltic-series",
           "14995",
           "crew"
@@ -12357,18 +12180,6 @@
         [
           "ksc-2022-fireball-munsters",
           "15061",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "stephany-gorski-y8cy",
-      "name": "Stephany Gorski",
-      "club": "Killaloe Sailing Club",
-      "members": [
-        [
-          "ksc-2018-september-series",
-          "14740",
           "crew"
         ]
       ]
@@ -12643,6 +12454,11 @@
           "crew"
         ],
         [
+          "ksc-2019-baltic-series",
+          "",
+          "crew"
+        ],
+        [
           "ksc-2019-summer-series",
           "22183"
         ],
@@ -12681,25 +12497,33 @@
       ]
     },
     {
-      "slug": "sue-connannon-epf2",
-      "name": "Sue Connannon",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-baltic-series",
-          "",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "susan-le-mignon-8jqc",
       "name": "Susan Le Mignon",
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-baltic-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
+          "611",
+          "crew"
+        ],
+        [
           "ksc-2019-cooler-series",
           "1"
+        ],
+        [
+          "ksc-2019-june-series",
+          "435",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "435",
+          "crew"
         ],
         [
           "ksc-2019-summer-series",
@@ -12902,33 +12726,6 @@
       ]
     },
     {
-      "slug": "susan-mignon-gtf2",
-      "name": "Susan Mignon",
-      "club": "Killaloe Sailing Club",
-      "members": [
-        [
-          "ksc-2018-baltic-series",
-          "611",
-          "crew"
-        ],
-        [
-          "ksc-2018-cooler-series",
-          "611",
-          "crew"
-        ],
-        [
-          "ksc-2019-june-series",
-          "435",
-          "crew"
-        ],
-        [
-          "ksc-2019-mayfly-series",
-          "435",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "susie-coote-pyu3",
       "name": "Susie Coote",
       "club": "KSC",
@@ -13089,6 +12886,11 @@
           "crew"
         ],
         [
+          "ksc-2019-mayfly-series",
+          "3672",
+          "crew"
+        ],
+        [
           "ksc-2019-summer-series",
           "3672",
           "crew"
@@ -13101,18 +12903,6 @@
         [
           "ksc-2020-summer-regatta",
           "1495",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "tarris-harris-keyf",
-      "name": "Tarris Harris",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-mayfly-series",
-          "3672",
           "crew"
         ]
       ]
@@ -13302,18 +13092,6 @@
       ]
     },
     {
-      "slug": "tim-o-neill-j-my4c",
-      "name": "Tim O'Neill (J)",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-warmer-series",
-          "1336",
-          "crew"
-        ]
-      ]
-    },
-    {
       "slug": "tim-o-neill-ncbn",
       "name": "Tim O'Neill",
       "club": "KSC",
@@ -13323,12 +13101,29 @@
           "1059"
         ],
         [
+          "ksc-2022-rs-inlands",
+          "1059"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "1049"
+        ],
+        [
           "ksc-2023-october-series",
+          "1059"
+        ],
+        [
+          "ksc-2023-spring-regatta",
           "1059"
         ],
         [
           "ksc-2023-summer-series",
           "1059"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1336",
+          "crew"
         ],
         [
           "ksc-2024-brass-monkey-winter",
@@ -13417,26 +13212,8 @@
           "ksc-2026-warmer-series",
           "1549"
         ]
-      ]
-    },
-    {
-      "slug": "timothy-o-neill-a7dg",
-      "name": "Timothy O'Neill",
-      "club": "Cullaun Sailing Club",
-      "members": [
-        [
-          "ksc-2022-rs-inlands",
-          "1059"
-        ],
-        [
-          "ksc-2023-brass-monkey-series",
-          "1049"
-        ],
-        [
-          "ksc-2023-spring-regatta",
-          "1059"
-        ]
-      ]
+      ],
+      "note": "CLARIFICATIONS.md §9 previously held 'Timothy O'Neill' apart because it carried Cullaun rather than KSC. Reading crew as well as helms settled it: both spellings helm RS 200 1059 with Martin Bon in 2022 and with Aoibhí Ryan in 2023, and 'Tim O'Neill' himself is entered as Cullaun in 2022 and as 'Cullaun / KSC' in 2023."
     },
     {
       "slug": "tom-ryan-ta5a",

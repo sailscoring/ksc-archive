@@ -138,7 +138,7 @@ back to the club's presentation.
 
 The competitor-identity manifest (`identities.json`, app #218) groups the
 **2,406 people** named across the 1,631 competitor rows — helms and crew
-alike (§11) — into **444 sailors**. It is drafted by `pnpm identities`
+alike (§11) — into **410 sailors**. It is drafted by `pnpm identities`
 through the app's canonical matcher, then shaped by two rules.
 
 **The default: clusters sharing a name are one sailor.** The matcher is
@@ -156,12 +156,32 @@ default.
 **The exception: cross-spelling merges are listed, never guessed.**
 `identity-curation.json` records them, and an entry is only added when the
 variants share a club, never appear in the same series, and differ by an
-obvious slip — a doubled or dropped letter, a transposition, Mac/Mc spacing, a
-dropped `O'`, or a short form of a first name. That covers 23 groups, the
-largest being the Fireball sailor published as **Andreas Gonzalves / Andres
-Gonzalez / Andreas Gonzalez / Andres Gonzales / Andres Gonzalves** across
-2019–2024 (confirmed by the club; the correct spelling still isn't known, so
-the display name is simply the commonest of the five).
+obvious slip. The slips that qualify:
+
+- a doubled or dropped letter (`Sue Connannon`, `Bjorn Ihoff`), a
+  transposition, Mac/Mc spacing, or a dropped `O'` (`Emma Farrell`,
+  `Susan Mignon`);
+- a short form of a first name (`Timothy` / `Tim`, `Dave` / `David`);
+- a trailing **`(J)`** junior tag. Five sailors carry one, all in the 2023
+  Mayfly and Warmer Series, where the scorer marked juniors that way and no
+  untagged spelling of the same name appears in the same series;
+- a **bare first name** where the corpus names exactly one such person, at the
+  same club, and a boat corroborates it — `Andreas` on Fireball 1471 with
+  `Ana` crewing, `Aziz` on Wayfarer 8170. `Birgit` and `Reggie` are merged on
+  the name being unique alone, since the boats they sailed are shared club
+  hulls (§10) and corroborate nothing.
+
+That covers 54 groups and 78 alternative spellings, the largest being the
+Fireball sailor published as **Andreas Gonzalves / Andres Gonzalez / Andreas
+Gonzalez / Andres Gonzales / Andreas / Andres Gonzalves** across 2019–2024
+(confirmed by the club; the correct spelling still isn't known, so the display
+name is simply the commonest).
+
+Where a merge picks a display name the corpus does not favour by count — `Ana
+Maria Grande` over the commoner `Ana-Marie Grande`, `Jo Kramers` over `Jo
+Kramer` — the curation file says why. Only the label moves: the slug is the
+public URL and the seed of the identity's UUIDv5, so it stays exactly where it
+was minted even when the name printed on the page changes.
 
 Under-linking splits one sailor's record; over-linking puts another sailor's
 results in it. The second is worse and much harder to spot, so anything
@@ -173,9 +193,23 @@ failing those tests is left apart and asked about instead:
 > |---|---|
 > | `Brian Bryce` (42 rows, 2018–2026) / `Bryan Bryce` (8 rows, 2021–2023) | both KSC, never in the same series |
 > | `Siofra MacNamara` (3, Lough Ree YC, 2023) / `Siofra McNamara` (3, KSC, 2023–24) | same spelling pattern as Fionn McNamara, but the clubs differ |
-> | `Tim O'Neill` (20, KSC) / `Timothy O'Neill` (3, Cullaun SC) | different clubs |
 > | `Sean Cunningham` (43, KSC) / `John Cunningham` (1, Killaloe SC) | same club; Seán/John is the same name in Irish, but also two common ones |
-> | `Margaret Hayes` (1, Cullaun, 2019) / `Margaret Hynes` (2, KSC, 2025) | almost certainly two people — listed only for completeness |
+> | `Ana Gonzalves` (6, KSC, 2022–24) / `Ana Maria Grande` (15, KSC, 2019–23) | the same seat on the same Fireball, crewing for Andres Gonzalves, never in the same series — but a different surname is not a slip, so they are left apart |
+> | `Colin` (1, KSC, 2020) — `Colin Hart` or `Colin Haugh`? | he helmed RS 200 761, a shared club boat Colin Hart, Mike Hart, Reggie Quinn and Shirley O'Neill all used, so it settles nothing |
+> | `Liam` (1, 2024), `Paul` (1, 2025) | two Liams and four Pauls in the corpus |
+>
+> Two 2019–2022 helm entries are recorded as `??`, and stand as a single
+> sailor named `??` for want of anything to call them.
+
+Two rows were on that list and have come off it. `Tim O'Neill` / `Timothy
+O'Neill` were held apart for carrying different clubs; reading crew as well as
+helms (§11) showed both spellings helming RS 200 1059 with the same crew in
+the same seasons, and `Tim O'Neill` himself entered as Cullaun in 2022. And
+`Margaret Hayes` / `Margaret Hynes`, called "almost certainly two people",
+turn out to be one: the same privately owned Wayfarer 10826 with the same
+crew, `Mike Hayes`, in 2019 and 2025. The single `Hayes` row is the one whose
+crew cell repeats that surname, so it reads as the slip and `Margaret Hynes`
+is published.
 
 ### 10. Boats are shared, so a sail number is not a sailor
 
@@ -193,11 +227,11 @@ named crew contributed nobody, and the people who only ever crew sailed the
 whole record and got no sailor page. App
 [#348](https://github.com/sailscoring/sailscoring/issues/348) fixed that:
 every person on a boat is a member row of its own, tagged with the slot they
-filled. The manifest went from 278 sailors to **444** — **166 who had no
-record at all**, and **59 existing sailors who turn out to helm some seasons
-and crew others**.
+filled. The manifest went from 278 sailors to 444, and to **410** once the
+cross-spelling merges in §9 were applied: **143 of them appear only ever as
+crew** and had no record at all before this, and **62 both helm and crew**.
 
-Two consequences worth knowing.
+Three consequences worth knowing.
 
 **Crew names are looser than helm names.** Twenty-five mentions name nobody
 identifiable — `??`, `?????`, `TBD`, bare first names (`Michael`, `Daragh`,
@@ -216,14 +250,22 @@ crew. On this corpus that means the raw matcher returns 647 clusters where it
 returned 352, which the one-name-one-sailor merge in §9 then collapses. That
 merge was already carrying most of the weight here; it now carries more.
 
-A handful of rows name two sailors in the **helm** cell itself (`Aoibhí Ryan /
-Aoise Ryan`, `Andrew Mullally/Thomas Drayton`). Those are still one identity
-carrying both names, because that is the primary slot rather than the crew
-one — the app models it (`names` is a list), but this corpus's capture doesn't
-split the cell. Tracked as [#10](https://github.com/sailscoring/ksc-archive/issues/10).
+**Eleven cells name two sailors, and only one of them gets the row.** Eight
+are **helm** cells (`Aoibhí Ryan / Aoise Ryan`, `Andrew Mullally/Thomas
+Drayton`, `Brian Keane / Molly Kramers`, …), where the crew-cell split does
+not reach — the app models a multi-person row (`names` is a list), but this
+corpus's capture doesn't split the primary cell. Three are **crew** cells
+naming the boat's two crews for the series with nothing but a space between
+them (`Amber Robson Maeve Derven`, `Leon Mullally Dominic O'Sullivan`, `James
+Purcell Kiki Ryan`); splitting on whitespace automatically would break every
+sailor whose own name runs to three or four words.
 
-Three crew cells name two people separated by nothing but a space
-(`Amber Robson Maeve Derven`). Splitting those automatically would break every
-sailor whose own name runs to three or four words, so they stay joined until
-someone names them. Tracked as
-[#9](https://github.com/sailscoring/ksc-archive/issues/9).
+All eleven are attributed to the **first sailor named** — three by the matcher
+itself, eight by an alias in `identity-curation.json` so that they stop standing
+as identities called things like "Andrew Mullally/Thomas Drayton". That is a
+lossy compromise, not a fix: the second sailor loses a row they really sailed.
+Splitting a cell properly needs the ingest document to carry both names, which
+is app-side work. Tracked as
+[#10](https://github.com/sailscoring/ksc-archive/issues/10) (helm cells) and
+[#9](https://github.com/sailscoring/ksc-archive/issues/9) (space-separated
+crew cells).

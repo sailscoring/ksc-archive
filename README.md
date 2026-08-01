@@ -123,7 +123,7 @@ per year. CI re-ingests on every push to `main`.
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
-- ✅ **The identity manifest** — 1,631 rows resolved to **444 sailors**
+- ✅ **The identity manifest** — 1,631 rows resolved to **410 sailors**
   (`identities.json`), applied and live: the
   [competitor index](https://app.sailscoring.ie/p/ksc/competitors) and a career
   arc per sailor, spanning nine seasons
@@ -133,8 +133,12 @@ per year. CI re-ingests on every push to `main`.
   [#348](https://github.com/sailscoring/sailscoring/issues/348)) — 48% of rows
   name a crew, and reading the helm field alone left those people out of the
   record entirely. Each person on a boat is now a sailor in their own right:
-  **166 who had no page at all**, and **59 existing sailors** who turn out to
+  **143 who had no page at all**, and **62 existing sailors** who turn out to
   helm some seasons and crew others. See CLARIFICATIONS §11.
+- ✅ **Cross-spelling merges** — 54 curated groups covering 78 alternative
+  spellings, including the `(J)` junior tag and five bare first names, took
+  444 drafted sailors to 410. Two pairs that had been put to the club as
+  open questions turned out to be one sailor each. See CLARIFICATIONS §9.
 - ⬜ **Refresh 2026** as the season finishes
   ([#8](https://github.com/sailscoring/ksc-archive/issues/8)).
 
@@ -150,7 +154,7 @@ and written up in CLARIFICATIONS.md.
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
 | [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | including whether the autumn series is "Cooler" or "October" — the two sources disagree for 2024 |
 | [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | published twice, two scorings; which is official? |
-| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Five identity pairs** | same sailor or two, plus the correct spelling of one Fireball sailor's name |
+| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Six identity questions** | same sailor or two — two of the original five have since been answered from the crew field — plus the correct spelling of one Fireball sailor's name and three helms entered under a first name alone |
 | [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | prize-winners, anything pre-2018, sailing instructions |
 
 ## Relationship to the app repo
