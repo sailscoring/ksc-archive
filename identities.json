@@ -91,6 +91,42 @@
       ]
     },
     {
+      "slug": "adam-mac-mahon-efce",
+      "name": "Adam Mac Mahon",
+      "club": "Cullaun SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "14182",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "aidan-caulfield-kxnj",
+      "name": "Aidan caulfield",
+      "club": "DMYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14613",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "aine-sweeney-pwk4",
+      "name": "Aine Sweeney",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "1539",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "alan-blay-drtt",
       "name": "Alan Blay",
       "club": "Sutton Dinghy Club/ Howth Yacht Club",
@@ -102,6 +138,30 @@
         [
           "ksc-2024-gp14-munsters",
           "14235"
+        ]
+      ]
+    },
+    {
+      "slug": "alan-claffey-fvp3",
+      "name": "Alan Claffey",
+      "club": "BLSC / NYC",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1111",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "alan-leddy-u8h8",
+      "name": "Alan Leddy",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1514",
+          "crew"
         ]
       ]
     },
@@ -366,6 +426,54 @@
       ]
     },
     {
+      "slug": "aly-o-sullivan-9z5r",
+      "name": "Aly O Sullivan",
+      "club": "BLSC and GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "IRL 55281",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "amber-robson-7z82",
+      "name": "Amber Robson",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "amber-robson-maeve-derven-2smk",
+      "name": "Amber Robson Maeve Derven",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-junior-regatta",
+          "1539",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "amelie-soffe-gfxa",
+      "name": "Amelie Soffe",
+      "club": "Malahide Yacht Club",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "IRL 55248",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "amilie-brogan-fg2s",
       "name": "Amilie Brogan",
       "club": "Foynes YC",
@@ -373,6 +481,141 @@
         [
           "ksc-2023-warmer-series",
           "213700"
+        ]
+      ]
+    },
+    {
+      "slug": "ana-gonzales-zv8e",
+      "name": "Ana Gonzales",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-open-summer-regatta",
+          "14244",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "ana-gonzalez-dtj4",
+      "name": "Ana Gonzalez",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14244",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "ana-gonzalves-rgze",
+      "name": "Ana Gonzalves",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-brass-monkey-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "14244",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "ana-maria-grande-dvn5",
+      "name": "Ana Maria Grande",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-june-series",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "14710",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "14171",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "14740",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1471",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "ana-marie-grande-83t2",
+      "name": "Ana-Marie Grande",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-cooler-series",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1471",
+          "crew"
+        ],
+        [
+          "ksc-2022-june-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2022-mayfly-series",
+          "14244",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "14244",
+          "crew"
         ]
       ]
     },
@@ -587,6 +830,11 @@
           "1076"
         ],
         [
+          "ksc-2022-june-series",
+          "1452",
+          "crew"
+        ],
+        [
           "ksc-2022-mayfly-series",
           "1076"
         ],
@@ -608,11 +856,11 @@
         ],
         [
           "ksc-2022-summer-series",
-          "1"
+          "1076"
         ],
         [
           "ksc-2022-summer-series",
-          "1076"
+          "1"
         ],
         [
           "ksc-2022-summer-series",
@@ -776,17 +1024,91 @@
       ]
     },
     {
+      "slug": "anna-marie-grande-882c",
+      "name": "Anna Marie Grande",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-warmer-series",
+          "1476",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "annabella-de-swart-dg5d",
+      "name": "Annabella De Swart",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-warmer-series",
+          "1539",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "anne-gleeson-u8p4",
       "name": "Anne Gleeson",
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-baltic-series",
+          "14584",
+          "crew"
+        ],
+        [
           "ksc-2018-cooler-series",
           "1539"
         ],
         [
+          "ksc-2018-cooler-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2018-september-series",
+          "14700",
+          "crew"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "14120",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "14120",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "14120",
+          "crew"
+        ],
+        [
           "ksc-2019-june-series",
           "624"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "14120",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "624",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "14120",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "14120",
+          "crew"
         ],
         [
           "ksc-2020-summer-regatta",
@@ -797,12 +1119,42 @@
           "226"
         ],
         [
+          "ksc-2021-september-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2021-summer-series",
           "226"
         ],
         [
+          "ksc-2022-cooler-series",
+          "14362",
+          "crew"
+        ],
+        [
+          "ksc-2022-fireball-munsters",
+          "14362",
+          "crew"
+        ],
+        [
           "ksc-2022-spring-challenge-open-regatta",
           "226"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "14013",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "14301",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1471",
+          "crew"
         ],
         [
           "ksc-2025-mayfly-series",
@@ -815,6 +1167,26 @@
         [
           "ksc-2025-warmer-series",
           "226"
+        ],
+        [
+          "ksc-2026-june-series",
+          "1243",
+          "crew"
+        ],
+        [
+          "ksc-2026-mayfly-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1246",
+          "crew"
+        ],
+        [
+          "ksc-2026-summer-sunday-series",
+          "18234",
+          "crew"
         ]
       ]
     },
@@ -832,8 +1204,23 @@
           "1485"
         ],
         [
+          "ksc-2022-summer-series",
+          "184",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "1049",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "134668"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1059",
+          "crew"
         ],
         [
           "ksc-2023-open-junior-summer-regatta",
@@ -848,6 +1235,21 @@
           "134668"
         ],
         [
+          "ksc-2023-spring-regatta",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "1046",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "166313A"
         ],
@@ -856,12 +1258,47 @@
           "166313"
         ],
         [
+          "ksc-2024-summer-open-regatta",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "1059",
+          "crew"
+        ],
+        [
           "ksc-2025-brass-monkey-winter",
           "166313"
         ],
         [
           "ksc-2025-cooler-series",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2025-cooler-series",
           "166313"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1059",
+          "crew"
         ],
         [
           "ksc-2026-june-series",
@@ -874,6 +1311,11 @@
         [
           "ksc-2026-summer-series",
           "134668"
+        ],
+        [
+          "ksc-2026-summer-sunday-series",
+          "1545",
+          "crew"
         ]
       ]
     },
@@ -893,10 +1335,27 @@
       ]
     },
     {
+      "slug": "aoibi-ryan-mhbt",
+      "name": "Aoibí Ryan",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-open-summer-regatta",
+          "184",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "aoise-carroll-9wtw",
       "name": "Aoise Carroll",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14584",
+          "crew"
+        ],
         [
           "ksc-2023-october-series",
           "166313"
@@ -983,6 +1442,11 @@
         ],
         [
           "ksc-2026-mayfly-series",
+          "1128",
+          "crew"
+        ],
+        [
+          "ksc-2026-mayfly-series",
           "190759A"
         ],
         [
@@ -1053,8 +1517,18 @@
           "166313"
         ],
         [
+          "ksc-2023-june-series",
+          "6869",
+          "crew"
+        ],
+        [
           "ksc-2023-mayfly-series",
           "166313"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "184",
+          "crew"
         ],
         [
           "ksc-2023-open-summer-regatta",
@@ -1067,6 +1541,23 @@
       ]
     },
     {
+      "slug": "arann-murphy-w3d4",
+      "name": "Arann Murphy",
+      "club": "Tralee Bay Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13677",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13677",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "arthur-o-connor-a4ac",
       "name": "Arthur O'Connor",
       "club": "Monkstown Bay SC",
@@ -1074,6 +1565,18 @@
         [
           "ksc-2025-ilca-westerns",
           "178336"
+        ]
+      ]
+    },
+    {
+      "slug": "astrid-plaas-7qrw",
+      "name": "Astrid Plaas",
+      "club": "Galway Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "492",
+          "crew"
         ]
       ]
     },
@@ -1131,6 +1634,11 @@
           "8170"
         ],
         [
+          "ksc-2019-baltic-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2019-mayfly-series",
           "8170"
         ],
@@ -1164,6 +1672,18 @@
         [
           "ksc-2025-cooler-series",
           "19075A"
+        ]
+      ]
+    },
+    {
+      "slug": "ben-schumacher-rb5x",
+      "name": "Ben Schumacher",
+      "club": "GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "52229",
+          "crew"
         ]
       ]
     },
@@ -1213,6 +1733,30 @@
       ]
     },
     {
+      "slug": "birgit-strohwald-h8u7",
+      "name": "Birgit Strohwald",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "1263",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "bjorn-ihoff-f7u2",
+      "name": "Bjorn Ihoff",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-winter-regatta",
+          "611",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "bjorn-imhoff-dws8",
       "name": "Bjorn Imhoff",
       "club": "Killaloe Sailing Club",
@@ -1232,6 +1776,21 @@
         [
           "ksc-2019-mayfly-series",
           "435"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "611",
+          "crew"
         ]
       ]
     },
@@ -1281,6 +1840,11 @@
       "name": "Brenda nash",
       "club": "DMYC",
       "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14663",
+          "crew"
+        ],
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14613"
@@ -1459,6 +2023,28 @@
         [
           "ksc-2026-spring-series",
           "1035"
+        ]
+      ]
+    },
+    {
+      "slug": "brian-cunningham-xqnk",
+      "name": "Brian Cunningham",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-june-series",
+          "14750",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "14750",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "14750",
+          "crew"
         ]
       ]
     },
@@ -1643,11 +2229,33 @@
           "1471"
         ],
         [
+          "ksc-2025-mayfly-series",
+          "13211",
+          "crew"
+        ],
+        [
           "ksc-2026-summer-sunday-series",
           "18234"
         ]
       ],
       "note": "A boat entered under two sailors' names in the helm field; attributed to the first named, as the matcher already did for the two Ryan rows it could resolve by sail number. The second sailor loses a row they arguably should keep — sailscoring#348 (crew identity) is the real fix."
+    },
+    {
+      "slug": "brian-walker-wxgd",
+      "name": "Brian Walker",
+      "club": "Mullingar Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14284",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14284",
+          "crew"
+        ]
+      ]
     },
     {
       "slug": "bryan-bryce-p2mc",
@@ -1689,6 +2297,18 @@
       ]
     },
     {
+      "slug": "canice-keane-wyex",
+      "name": "Canice Keane",
+      "club": "Blessington Lakes Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1240",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "caoilinn-mcdonnell-6bxc",
       "name": "Caoilinn McDonnell",
       "club": "Royal St George YC",
@@ -1696,6 +2316,35 @@
         [
           "ksc-2025-ilca-westerns",
           "216894"
+        ]
+      ]
+    },
+    {
+      "slug": "caolan-ryan-hd33",
+      "name": "Caolan Ryan",
+      "club": "Blessington Lakes Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "350",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "cara-mcdowell-7jru",
+      "name": "Cara McDowell",
+      "club": "NSC/MYC/SSC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14695",
+          "crew"
+        ],
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14629",
+          "crew"
         ]
       ]
     },
@@ -1750,6 +2399,23 @@
       ]
     },
     {
+      "slug": "carolyn-mccaldin-hua5",
+      "name": "Carolyn Mccaldin",
+      "club": "Lough Erne Yacht club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14237",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14237",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "casper-roycroft-3qq8",
       "name": "Casper Roycroft",
       "club": "KSC",
@@ -1768,6 +2434,18 @@
         [
           "ksc-2025-ilca-westerns",
           "210988"
+        ]
+      ]
+    },
+    {
+      "slug": "catherine-goerg-rec9",
+      "name": "Catherine Goerg",
+      "club": "LRYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "IRL 49801",
+          "crew"
         ]
       ]
     },
@@ -1953,6 +2631,63 @@
       ]
     },
     {
+      "slug": "charlotte-carway-d7p5",
+      "name": "Charlotte Carway",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1525",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1525",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "chris-bateman-sdmj",
       "name": "Chris Bateman",
       "club": "MBSC/Malahide Yacht Club",
@@ -1986,6 +2721,23 @@
       ]
     },
     {
+      "slug": "christopher-miller-jndx",
+      "name": "Christopher Miller",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-junior-regatta",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "cian-gallagher-a8qz",
       "name": "Cian Gallagher",
       "club": "Greystones Sailing Club",
@@ -1997,10 +2749,27 @@
       ]
     },
     {
+      "slug": "cillan-o-connor-kf2v",
+      "name": "Cillan O'Connor",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2024-september-series",
+          "938",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "cillian-o-connor-rc8g",
       "name": "Cillian O'Connor",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2023-summer-series",
+          "6869",
+          "crew"
+        ],
         [
           "ksc-2024-june-series",
           "180593"
@@ -2059,6 +2828,16 @@
         [
           "ksc-2018-summer-regatta",
           "1207"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "637",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1207",
+          "crew"
         ]
       ]
     },
@@ -2090,6 +2869,131 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2021-cooler-series",
+          "1539",
+          "crew"
+        ],
+        [
+          "ksc-2021-junior-regatta",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1539",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "1338",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "1335",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-sprint-1",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-sprint-2",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-open-regatta",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "1336",
+          "crew"
+        ],
+        [
           "ksc-2025-cooler-series",
           "188055"
         ],
@@ -2099,7 +3003,17 @@
         ],
         [
           "ksc-2025-june-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
           "188055"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "1336",
+          "crew"
         ],
         [
           "ksc-2025-spring-open-regatta",
@@ -2111,7 +3025,22 @@
         ],
         [
           "ksc-2025-summer-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
           "180593"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "1336",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "1336",
+          "crew"
         ]
       ]
     },
@@ -2149,6 +3078,33 @@
       ]
     },
     {
+      "slug": "colm-o-leary-6wm8",
+      "name": "Colm O'Leary",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2020-summer-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "7173",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "colman-grimes-dzb5",
       "name": "Colman Grimes",
       "club": "Skerries SC / Derwent reservoir",
@@ -2175,6 +3131,30 @@
         [
           "ksc-2022-warmer-series",
           "1545"
+        ]
+      ]
+    },
+    {
+      "slug": "connie-siddle-nv24",
+      "name": "Connie Siddle",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-brass-monkey-series",
+          "1545",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "conor-bryce-eb6u",
+      "name": "Conor Bryce",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -2208,6 +3188,18 @@
         [
           "ksc-2025-ilca-westerns",
           "218869"
+        ]
+      ]
+    },
+    {
+      "slug": "conor-flynn-26xj",
+      "name": "Conor Flynn",
+      "club": "TBSC\\NYC\\BISC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14750",
+          "crew"
         ]
       ]
     },
@@ -2260,6 +3252,38 @@
       ]
     },
     {
+      "slug": "cora-beddows-xr2e",
+      "name": "Cora Beddows",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2026-june-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1485",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2026-summer-sunday-series",
+          "1245",
+          "crew"
+        ],
+        [
+          "ksc-2026-warmer-series",
+          "1485",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "cora-mcnaughton-3n9z",
       "name": "Cora McNaughton",
       "club": "BLSC and GBSC",
@@ -2267,6 +3291,18 @@
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "IRL 55281"
+        ]
+      ]
+    },
+    {
+      "slug": "cormac-power-breen-yzsr",
+      "name": "Cormac Power Breen",
+      "club": "DMYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14683",
+          "crew"
         ]
       ]
     },
@@ -2290,6 +3326,11 @@
       "name": "Damian Hawkins",
       "club": "Cullaun Sailing Club",
       "members": [
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "13228",
+          "crew"
+        ],
         [
           "ksc-2023-open-summer-regatta",
           "14130"
@@ -2423,12 +3464,122 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-summer-regatta",
+          "15061",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "14854",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
           "ksc-2022-mayfly-series",
           "87"
         ],
         [
+          "ksc-2022-september-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-cooler-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "14584",
+          "crew"
+        ],
+        [
           "ksc-2025-june-series",
           "84"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2026-june-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2026-mayfly-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2026-summer-series",
+          "14584",
+          "crew"
         ]
       ]
     },
@@ -2468,6 +3619,16 @@
         [
           "ksc-2024-june-series",
           "183"
+        ],
+        [
+          "ksc-2024-june-sprint-2",
+          "1138",
+          "crew"
+        ],
+        [
+          "ksc-2024-mayfly-series",
+          "1138",
+          "crew"
         ],
         [
           "ksc-2024-october-series",
@@ -2537,20 +3698,255 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-cooler-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2018-september-series",
+          "637",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-mayfly-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1452",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2024-mayfly-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-open-regatta",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "1549",
+          "crew"
+        ],
+        [
           "ksc-2025-brass-monkey-winter",
           "1035"
+        ],
+        [
+          "ksc-2025-cooler-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1436",
+          "crew"
         ],
         [
           "ksc-2025-june-series",
           "1549"
         ],
         [
+          "ksc-2025-mayfly-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-open-regatta",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1549",
+          "crew"
+        ],
+        [
           "ksc-2025-summer-series",
           "1549"
         ],
         [
+          "ksc-2025-summer-sunday-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2026-june-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1549",
+          "crew"
+        ],
+        [
           "ksc-2026-summer-series",
           "1549"
+        ],
+        [
+          "ksc-2026-summer-sunday-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2026-warmer-series",
+          "1549",
+          "crew"
         ]
       ]
     },
@@ -2566,6 +3962,35 @@
         [
           "ksc-2024-gp14-munsters",
           "14203"
+        ]
+      ]
+    },
+    {
+      "slug": "david-griffin-mw68",
+      "name": "David Griffin",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1143",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "david-kennedy-2sk3",
+      "name": "David Kennedy",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -2784,6 +4209,123 @@
       ]
     },
     {
+      "slug": "david-tanner-czjk",
+      "name": "David Tanner",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-baltic-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2022-fireball-munsters",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "15584",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2025-brass-monkey-winter",
+          "14584",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "david-wallace-psdw",
       "name": "David Wallace",
       "club": "Visitor",
@@ -2801,6 +4343,11 @@
       "members": [
         [
           "ksc-2018-cooler-series",
+          "1541",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
           "2"
         ],
         [
@@ -2814,6 +4361,11 @@
         [
           "ksc-2018-summer-regatta",
           "1541"
+        ],
+        [
+          "ksc-2019-baltic-series",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2019-baltic-series",
@@ -2849,11 +4401,11 @@
         ],
         [
           "ksc-2019-summer-series",
-          "1"
+          "1541"
         ],
         [
           "ksc-2019-summer-series",
-          "1541"
+          "1"
         ],
         [
           "ksc-2019-summer-series",
@@ -2868,12 +4420,42 @@
           "89875"
         ],
         [
+          "ksc-2020-summer-regatta",
+          "624",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "624",
+          "crew"
+        ],
+        [
           "ksc-2020-summer-series",
           "89875"
         ],
         [
           "ksc-2021-cooler-series",
           "89175"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "624",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2021-mayfly-series",
@@ -2885,7 +4467,17 @@
         ],
         [
           "ksc-2021-summer-series",
+          "624",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
           "89875"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2022-cooler-series",
@@ -2893,7 +4485,22 @@
         ],
         [
           "ksc-2022-june-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2022-june-series",
           "1"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "226",
+          "crew"
         ],
         [
           "ksc-2022-september-series",
@@ -2902,6 +4509,11 @@
         [
           "ksc-2022-spring-challenge-open-regatta",
           "89875"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2022-warmer-series",
@@ -3109,6 +4721,18 @@
       ]
     },
     {
+      "slug": "denis-cully-y44w",
+      "name": "Denis Cully",
+      "club": "BLSC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14044",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "des-macmahon-bkp9",
       "name": "Des MacMahon",
       "club": "Cullaun SC",
@@ -3132,6 +4756,23 @@
       ]
     },
     {
+      "slug": "dierdre-foley-fy9g",
+      "name": "Dierdre Foley",
+      "club": "Greystones SC",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13669 / 14270",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13669 / 14270",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "dominic-o-sullivan-9367",
       "name": "Dominic O'Sullivan",
       "club": "Killaloe Sailing Club",
@@ -3149,12 +4790,81 @@
           "637"
         ],
         [
+          "ksc-2019-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2020-summer-series",
           "1207"
         ],
         [
+          "ksc-2021-june-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1308",
+          "crew"
+        ],
+        [
           "ksc-2024-september-series",
           "1076"
+        ],
+        [
+          "ksc-2025-brass-monkey-winter",
+          "1035",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "dominic-o-sullivan-david-coleman-989n",
+      "name": "Dominic O'Sullivan/David Coleman",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-baltic-series",
+          "1452",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "dominic-o-sullivan-leon-mullally-s5z4",
+      "name": "Dominic O'Sullivan / Leon Mullally",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-cooler-series",
+          "1076",
+          "crew"
         ]
       ]
     },
@@ -3163,6 +4873,11 @@
       "name": "Donal Cullinane",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2018-baltic-series",
+          "581",
+          "crew"
+        ],
         [
           "ksc-2022-september-series",
           "581"
@@ -3178,10 +4893,54 @@
       ]
     },
     {
+      "slug": "donal-houlihan-p5bz",
+      "name": "Donal Houlihan",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "1485",
+          "crew"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "1485",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "dylan-culloo-aksb",
+      "name": "Dylan Culloo",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-baltic-series",
+          "363",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "363",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "363",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "eanna-coleman-42qy",
       "name": "Eanna Coleman",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "1297",
+          "crew"
+        ],
         [
           "ksc-2020-summer-regatta",
           "188055"
@@ -3189,6 +4948,28 @@
         [
           "ksc-2020-summer-series",
           "188055"
+        ],
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "581",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "581",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "eanna-gallagher-ufzt",
+      "name": "Eanná Gallagher",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1144",
+          "crew"
         ]
       ]
     },
@@ -3200,6 +4981,11 @@
         [
           "ksc-2022-fireball-munsters",
           "14969"
+        ],
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14915",
+          "crew"
         ],
         [
           "ksc-2023-fireball-munsters-420-leinsters",
@@ -3301,6 +5087,84 @@
       ]
     },
     {
+      "slug": "eimer-moriarty-2mys",
+      "name": "Eimer Moriarty",
+      "club": "Tralee Bay Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "142371",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "142371",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "elizabeth-cooper-fkru",
+      "name": "Elizabeth Cooper",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-open-summer-regatta",
+          "7173",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "emer-connolly-x4rm",
+      "name": "Emer Connolly",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-cooler-series",
+          "1269",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "emma-farrell-v7kb",
+      "name": "Emma Farrell",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-junior-regatta",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "3",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1545",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "emma-o-farrell-64md",
       "name": "Emma O'Farrell",
       "club": "KSC",
@@ -3308,6 +5172,11 @@
         [
           "ksc-2018-junior-regatta",
           "1541"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1485",
+          "crew"
         ],
         [
           "ksc-2019-september-series",
@@ -3322,8 +5191,30 @@
           "1545"
         ],
         [
+          "ksc-2021-cooler-series",
+          "1541",
+          "crew"
+        ],
+        [
           "ksc-2021-june-series",
           "1"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "9999",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "emma-wright-hdfy",
+      "name": "Emma Wright",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-brass-monkey-winter",
+          "1128",
+          "crew"
         ]
       ]
     },
@@ -3366,13 +5257,47 @@
       ]
     },
     {
+      "slug": "enda-nicholl-43ye",
+      "name": "Enda nicholl",
+      "club": "KIllaloe SC",
+      "members": [
+        [
+          "ksc-2025-summer-open-regatta",
+          "581",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "eoghan-keogh-rzwv",
+      "name": "Eoghan Keogh",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2020-summer-regatta",
+          "3672",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "eoin-enright-k4zm",
       "name": "Eoin Enright",
       "club": "KSC",
       "members": [
         [
+          "ksc-2020-summer-regatta",
+          "1436",
+          "crew"
+        ],
+        [
           "ksc-2020-summer-series",
           "1436"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "1436",
+          "crew"
         ],
         [
           "ksc-2021-june-series",
@@ -3381,6 +5306,178 @@
         [
           "ksc-2021-mayfly-series",
           "1436"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-june-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-mayfly-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-brass-monkey-winter",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-open-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "1436",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "eoin-hogan-n8t2",
+      "name": "Eoin Hogan",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-cooler-series",
+          "14700",
+          "crew"
         ]
       ]
     },
@@ -3407,6 +5504,18 @@
       ]
     },
     {
+      "slug": "evan-smith-thhz",
+      "name": "Evan Smith",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "637",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "fiona-heenan-7hre",
       "name": "Fiona Heenan",
       "club": "Killaloe Sailing Club",
@@ -3426,6 +5535,30 @@
         [
           "ksc-2024-summer-series",
           "162732"
+        ]
+      ]
+    },
+    {
+      "slug": "fionan-sweeney-pced",
+      "name": "Fionan Sweeney",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-cooler-series",
+          "1",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "fionn-mac-conghaile-cek3",
+      "name": "Fionn Mac Conghaile",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "58",
+          "crew"
         ]
       ]
     },
@@ -3484,6 +5617,18 @@
         [
           "ksc-2018-junior-regatta",
           "1"
+        ]
+      ]
+    },
+    {
+      "slug": "fionnuala-keogh-8666",
+      "name": "Fionnuala Keogh",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2020-summer-series",
+          "14710",
+          "crew"
         ]
       ]
     },
@@ -3723,6 +5868,21 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2019-baltic-series",
+          "1539",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1539",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1539",
+          "crew"
+        ],
+        [
           "ksc-2019-september-series",
           "1"
         ],
@@ -3796,6 +5956,23 @@
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14915"
+        ]
+      ]
+    },
+    {
+      "slug": "frank-mulqueen-87m9",
+      "name": "Frank Mulqueen",
+      "club": "Cullaun Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13238",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13238",
+          "crew"
         ]
       ]
     },
@@ -3882,6 +6059,18 @@
       ]
     },
     {
+      "slug": "geraldine-lynch-dsqd",
+      "name": "Geraldine Lynch",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-mayfly-series",
+          "87",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "gerry-cannon-3vdb",
       "name": "Gerry Cannon",
       "club": "GSC / KSC",
@@ -3889,6 +6078,18 @@
         [
           "ksc-2022-rs-inlands",
           "1308"
+        ]
+      ]
+    },
+    {
+      "slug": "gillian-normile-wub8",
+      "name": "Gillian Normile",
+      "club": "Cullaun SC / KSC",
+      "members": [
+        [
+          "ksc-2024-warmer-series",
+          "13238",
+          "crew"
         ]
       ]
     },
@@ -4140,6 +6341,18 @@
       ]
     },
     {
+      "slug": "harry-thompson-vdf6",
+      "name": "Harry Thompson",
+      "club": "WHBTC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "15156",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "henrietta-leech-wzwz",
       "name": "Henrietta Leech",
       "club": "LRYC",
@@ -4162,6 +6375,11 @@
         [
           "ksc-2019-cooler-series",
           "14120"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "8170",
+          "crew"
         ],
         [
           "ksc-2019-september-series",
@@ -4258,6 +6476,18 @@
       ]
     },
     {
+      "slug": "hermine-o-keeffe-3wzf",
+      "name": "Hermine O Keeffe",
+      "club": "RSGYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "15016",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "hugh-cahill-xnka",
       "name": "Hugh Cahill",
       "club": "Dublin Bay SC",
@@ -4280,6 +6510,81 @@
         [
           "ksc-2024-gp14-munsters",
           "14275"
+        ]
+      ]
+    },
+    {
+      "slug": "hugh-mcnally-gpsr",
+      "name": "Hugh McNally",
+      "club": "Sutton Dinghy Club/ Howth Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13300",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14235",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13300",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14235",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "hugo-crinon-chgy",
+      "name": "Hugo Crinon",
+      "club": "KIllaloe SC",
+      "members": [
+        [
+          "ksc-2025-summer-open-regatta",
+          "1",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "hugo-michka-phu6",
+      "name": "Hugo Michka",
+      "club": "DMYC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14915",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "hugo-micka-6zdk",
+      "name": "Hugo Micka",
+      "club": "Malahide Yacht Club",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14740",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "isabel-leech-j7j7",
+      "name": "Isabel Leech",
+      "club": "LRYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "54368",
+          "crew"
         ]
       ]
     },
@@ -4310,6 +6615,18 @@
         [
           "ksc-2021-junior-regatta",
           "1541"
+        ]
+      ]
+    },
+    {
+      "slug": "jack-keane-emma-o-farrell-q46g",
+      "name": "Jack Keane / Emma O'Farrell",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-summer-series",
+          "1485",
+          "crew"
         ]
       ]
     },
@@ -4400,6 +6717,42 @@
         [
           "ksc-2025-ilca-westerns",
           "211091"
+        ]
+      ]
+    },
+    {
+      "slug": "james-harvey-7cqb",
+      "name": "James Harvey",
+      "club": "CSS",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "51742",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "james-malone-qube",
+      "name": "James Malone",
+      "club": "GCSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "5405",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "james-purcell-kiki-ryan-g29g",
+      "name": "James Purcell Kiki Ryan",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2024-june-series",
+          "1059",
+          "crew"
         ]
       ]
     },
@@ -4614,6 +6967,65 @@
       ]
     },
     {
+      "slug": "jo-kramer-s8eb",
+      "name": "Jo Kramer",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-spring-regatta",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "1263",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "jo-kramers-2an5",
+      "name": "Jo Kramers",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-june-series",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1263",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "john-barry-a7na",
       "name": "John Barry",
       "club": "Galway Bay Sailing Club",
@@ -4705,8 +7117,28 @@
           "1436"
         ],
         [
+          "ksc-2020-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
           "ksc-2021-cooler-series",
           "1436"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "1436",
+          "crew"
         ],
         [
           "ksc-2021-september-series",
@@ -4883,6 +7315,35 @@
       ]
     },
     {
+      "slug": "john-callanan-leon-mullally-rkuz",
+      "name": "John Callanan / Leon Mullally",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-baltic-series",
+          "1076",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "john-clarke-4sjj",
+      "name": "John Clarke",
+      "club": "Cullaun Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13228",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13228",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "john-cunningham-gjce",
       "name": "John Cunningham",
       "club": "Killaloe SC",
@@ -4890,6 +7351,11 @@
         [
           "ksc-2018-summer-regatta",
           "14750"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1138",
+          "crew"
         ]
       ]
     },
@@ -4905,6 +7371,23 @@
       ]
     },
     {
+      "slug": "john-paul-4nfw",
+      "name": "John Paul",
+      "club": "Lough Ree YC",
+      "members": [
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "53053",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "53053",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "john-ryan-n76d",
       "name": "John Ryan",
       "club": "Blessington Lakes Sailing Club",
@@ -4912,6 +7395,18 @@
         [
           "ksc-2022-rs-inlands",
           "350"
+        ]
+      ]
+    },
+    {
+      "slug": "jonathan-brennan-au2c",
+      "name": "Jonathan Brennan",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "8170",
+          "crew"
         ]
       ]
     },
@@ -5007,6 +7502,11 @@
         [
           "ksc-2025-mayfly-series",
           "7173"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "7173",
+          "crew"
         ],
         [
           "ksc-2025-summer-open-regatta",
@@ -5166,6 +7666,23 @@
       ]
     },
     {
+      "slug": "josh-lloyd-jbfw",
+      "name": "Josh Lloyd",
+      "club": "Blessington Lakes Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13981",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13981",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "josh-porter-b8af",
       "name": "Josh Porter",
       "club": "NSC/MYC/SSC",
@@ -5216,12 +7733,27 @@
           "2"
         ],
         [
+          "ksc-2022-september-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1485",
+          "crew"
+        ],
+        [
           "ksc-2023-open-junior-summer-regatta",
           "3672"
         ],
         [
           "ksc-2023-open-summer-regatta",
           "3672"
+        ],
+        [
+          "ksc-2024-june-series",
+          "6869",
+          "crew"
         ]
       ]
     },
@@ -5252,6 +7784,59 @@
       ]
     },
     {
+      "slug": "keelan-darby-cdht",
+      "name": "Keelan Darby",
+      "club": "LRYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "53967",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "keith-drayton-mk65",
+      "name": "Keith Drayton",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "1207",
+          "crew"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "1207",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "kev-brezel-afzj",
+      "name": "Kev Brezel",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1099",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "kev-johnson-a9g2",
+      "name": "Kev johnson",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1141",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "kieran-concannon-tb9k",
       "name": "Kieran Concannon",
       "club": "KSC",
@@ -5265,8 +7850,23 @@
           ""
         ],
         [
+          "ksc-2019-summer-series",
+          "22183",
+          "crew"
+        ],
+        [
           "ksc-2021-june-series",
           "22183"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "22183",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "22183",
+          "crew"
         ],
         [
           "ksc-2021-summer-series",
@@ -5284,8 +7884,40 @@
           "154606"
         ],
         [
+          "ksc-2025-summer-open-regatta",
+          "7173",
+          "crew"
+        ],
+        [
           "ksc-2026-mayfly-series",
           "TBD"
+        ]
+      ]
+    },
+    {
+      "slug": "kieran-ruane-c9u3",
+      "name": "Kieran Ruane",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -5358,6 +7990,11 @@
           "6869"
         ],
         [
+          "ksc-2024-june-sprint-2",
+          "1059",
+          "crew"
+        ],
+        [
           "ksc-2024-may-fun-event",
           "166313"
         ],
@@ -5386,8 +8023,25 @@
           "166313"
         ],
         [
+          "ksc-2025-summer-open-regatta",
+          "1521",
+          "crew"
+        ],
+        [
           "ksc-2025-summer-sunday-series",
           "166313"
+        ]
+      ]
+    },
+    {
+      "slug": "killian-mathieu-d2r8",
+      "name": "Killian mathieu",
+      "club": "GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "51607",
+          "crew"
         ]
       ]
     },
@@ -5410,6 +8064,23 @@
         [
           "ksc-2025-ilca-westerns",
           "157595"
+        ]
+      ]
+    },
+    {
+      "slug": "lara-killen-vss4",
+      "name": "Lara Killen",
+      "club": "East Down YC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14546",
+          "crew"
+        ],
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14546",
+          "crew"
         ]
       ]
     },
@@ -5462,17 +8133,291 @@
       ]
     },
     {
+      "slug": "leon-mullally-dominic-o-sullivan-nktb",
+      "name": "Leon Mullally / Dominic O'Sullivan",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1976",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "1076",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "leon-mullally-tkc4",
       "name": "Leon Mullally",
       "club": "Killaloe SC",
       "members": [
         [
+          "ksc-2018-cooler-series",
+          "1297",
+          "crew"
+        ],
+        [
           "ksc-2018-junior-regatta",
           "1297"
         ],
         [
+          "ksc-2018-september-series",
+          "1297",
+          "crew"
+        ],
+        [
           "ksc-2018-summer-regatta",
           "1297"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "1297",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "1297",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "637",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "1297",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-open-regatta",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2026-june-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2026-mayfly-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2026-summer-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2026-summer-sunday-series",
+          "1436",
+          "crew"
+        ],
+        [
+          "ksc-2026-warmer-series",
+          "1436",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "lia-o-donovan-5j3s",
+      "name": "Lia O'Donovan",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "3672",
+          "crew"
         ]
       ]
     },
@@ -5488,6 +8433,23 @@
       ]
     },
     {
+      "slug": "liam-hart-2wqz",
+      "name": "Liam Hart",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "761",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "761",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "liam-talbot-yryh",
       "name": "Liam Talbot",
       "club": "KSC",
@@ -5495,6 +8457,35 @@
         [
           "ksc-2021-summer-series",
           "154606"
+        ]
+      ]
+    },
+    {
+      "slug": "libby-tierney-za7s",
+      "name": "Libby Tierney",
+      "club": "Blessington Lakes Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "4",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "4",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "liz-cooper-8k8f",
+      "name": "Liz Cooper",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-october-series",
+          "7173",
+          "crew"
         ]
       ]
     },
@@ -5514,6 +8505,18 @@
       ]
     },
     {
+      "slug": "luca-grogan-2um3",
+      "name": "Luca Grogan",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "10",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "luca-mccormack-83g4",
       "name": "Luca McCormack",
       "club": "Foynes YC",
@@ -5521,6 +8524,18 @@
         [
           "ksc-2023-warmer-series",
           "90585"
+        ]
+      ]
+    },
+    {
+      "slug": "lucy-o-sullivan-jvcm",
+      "name": "Lucy O'Sullivan",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2026-june-series",
+          "1539",
+          "crew"
         ]
       ]
     },
@@ -5599,6 +8614,23 @@
       ]
     },
     {
+      "slug": "luke-henderson-wmk2",
+      "name": "Luke Henderson",
+      "club": "Sligo Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14257",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14257",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "luke-simpson-urqf",
       "name": "Luke Simpson",
       "club": "County Antrim YC",
@@ -5615,8 +8647,96 @@
       "club": "Cullaun",
       "members": [
         [
+          "ksc-2023-open-summer-regatta",
+          "14130",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14130",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14130",
+          "crew"
+        ],
+        [
           "ksc-2025-spring-open-regatta",
           "14130"
+        ]
+      ]
+    },
+    {
+      "slug": "maedbh-butterly-wguc",
+      "name": "Maedbh Butterly",
+      "club": "Rush Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14036",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14036",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "maeve-dervan-7z82",
+      "name": "Maeve Dervan",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "maeve-leonard-txyx",
+      "name": "Maeve Leonard",
+      "club": "Mullaghmore Sailing Club",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14969",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "maia-bolger-bjxa",
+      "name": "Maia Bolger",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-june-series",
+          "14655",
+          "crew"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "14655",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "14655",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "3",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "14655",
+          "crew"
         ]
       ]
     },
@@ -5661,16 +8781,36 @@
           "83231"
         ],
         [
+          "ksc-2025-cooler-series",
+          "1128",
+          "crew"
+        ],
+        [
           "ksc-2025-june-series",
           "165480"
+        ],
+        [
+          "ksc-2025-june-series",
+          "938",
+          "crew"
         ],
         [
           "ksc-2025-september-series",
           "101"
         ],
         [
+          "ksc-2025-september-series",
+          "56112",
+          "crew"
+        ],
+        [
           "ksc-2025-summer-series",
           "56112"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "48234",
+          "crew"
         ],
         [
           "ksc-2026-june-series",
@@ -5679,6 +8819,11 @@
         [
           "ksc-2026-mayfly-series",
           "21639"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1128",
+          "crew"
         ],
         [
           "ksc-2026-spring-series",
@@ -5691,6 +8836,30 @@
         [
           "ksc-2026-warmer-series",
           "83231"
+        ]
+      ]
+    },
+    {
+      "slug": "marcus-wright-susan-le-mignon-qzqs",
+      "name": "Marcus Wright/Susan Le Mignon",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-summer-series",
+          "938",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "margaret-casey-tfby",
+      "name": "Margaret Casey",
+      "club": "DMYC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14775",
+          "crew"
         ]
       ]
     },
@@ -5730,8 +8899,231 @@
           "1541"
         ],
         [
+          "ksc-2018-summer-regatta",
+          "1541",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "1541",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1541",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2021-june-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-killaloe-sailing-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-mayfly-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-june-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-mayfly-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "228",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-open-regatta",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "226",
+          "crew"
+        ],
+        [
           "ksc-2025-mayfly-series",
           "226"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "226",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "margaret-watts-jo-kramer-dax4",
+      "name": "Margaret Watts/Jo Kramer",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-mayfly-series",
+          "1263",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "margarett-watts-x39d",
+      "name": "Margarett Watts",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-summer-series",
+          "226",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "226",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "margot-cronin-cfbr",
+      "name": "Margot Cronin",
+      "club": "Galway Bay Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "828",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "marieke-hilvering-uqdb",
+      "name": "Marieke Hilvering",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "1297",
+          "crew"
         ]
       ]
     },
@@ -5747,6 +9139,59 @@
         [
           "ksc-2019-mayfly-series",
           "164463"
+        ]
+      ]
+    },
+    {
+      "slug": "marta-wojcik-hdps",
+      "name": "Marta Wojcik",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2026-june-series",
+          "1540",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "martin-bon-b4u8",
+      "name": "Martin Bon",
+      "club": "Cullaun",
+      "members": [
+        [
+          "ksc-2022-open-summer-regatta",
+          "1059",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1059",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "martin-mcnamara-us49",
+      "name": "Martin McNamara",
+      "club": "Killaloe Sailing Club / Lough Ree YC",
+      "members": [
+        [
+          "ksc-2023-open-summer-regatta",
+          "1436",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "martin-roe-gnez",
+      "name": "Martin Roe",
+      "club": "Galway City Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "920",
+          "crew"
         ]
       ]
     },
@@ -5769,6 +9214,23 @@
         [
           "ksc-2025-ilca-westerns",
           "206447"
+        ]
+      ]
+    },
+    {
+      "slug": "matthew-cotter-nz9z",
+      "name": "Matthew Cotter",
+      "club": "Sutton Dinghy Club/ Howth Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14165",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14165",
+          "crew"
         ]
       ]
     },
@@ -5817,6 +9279,23 @@
       ]
     },
     {
+      "slug": "mel-morris-7way",
+      "name": "Mel Morris",
+      "club": "Wicklow SC, East Antrim BC",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14256",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14256",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "mia-kelleher-gmhg",
       "name": "Mia Kelleher",
       "club": "Skerries SC",
@@ -5839,6 +9318,18 @@
         [
           "ksc-2024-gp14-munsters",
           "14284"
+        ]
+      ]
+    },
+    {
+      "slug": "michael-collins-hc28",
+      "name": "Michael Collins",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-mayfly-series",
+          "14854",
+          "crew"
         ]
       ]
     },
@@ -5880,6 +9371,30 @@
       ]
     },
     {
+      "slug": "michael-higgins-4x28",
+      "name": "Michael higgins",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-cooler-series",
+          "2511",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "michael-keegan-fzg7",
+      "name": "Michael Keegan",
+      "club": "RSGYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14676",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "michael-kimber-4bfr",
       "name": "Michael Kimber",
       "club": "Ballyholme YC",
@@ -5891,10 +9406,27 @@
       ]
     },
     {
+      "slug": "michelle-coleman-ruan-hj89",
+      "name": "Michelle Coleman / Ruan",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2026-summer-series",
+          "1549",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "michelle-kennedy-qnk6",
       "name": "Michelle Kennedy",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2023-october-series",
+          "1",
+          "crew"
+        ],
         [
           "ksc-2025-warmer-series",
           "100175"
@@ -5902,6 +9434,50 @@
         [
           "ksc-2026-warmer-series",
           "TBD"
+        ]
+      ]
+    },
+    {
+      "slug": "michelle-rowley-d9eb",
+      "name": "Michelle Rowley",
+      "club": "Sutton Dinghy Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14279",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14279",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "mick-collins-p7j7",
+      "name": "Mick Collins",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-cooler-series",
+          "14854",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "14854",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "14854",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "14854",
+          "crew"
         ]
       ]
     },
@@ -5924,6 +9500,16 @@
         [
           "ksc-2018-summer-regatta",
           "43371"
+        ],
+        [
+          "ksc-2019-baltic-series",
+          "761",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "761",
+          "crew"
         ],
         [
           "ksc-2019-september-series",
@@ -5984,6 +9570,28 @@
       ]
     },
     {
+      "slug": "mike-hayes-nycy",
+      "name": "Mike Hayes",
+      "club": "Cullaun",
+      "members": [
+        [
+          "ksc-2019-spring-regatta",
+          "10826",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-open-regatta",
+          "10826",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "10826",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "mike-o-dea-hkwg",
       "name": "Mike O'Dea",
       "club": "KSC",
@@ -5995,6 +9603,18 @@
       ]
     },
     {
+      "slug": "mila-la-mignon-9jua",
+      "name": "Mila La Mignon",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "2511",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "mila-le-mignon-mfn7",
       "name": "Mila Le Mignon",
       "club": "Killaloe Sailing Club",
@@ -6002,6 +9622,73 @@
         [
           "ksc-2018-cooler-series",
           "2511"
+        ],
+        [
+          "ksc-2018-september-series",
+          "2511",
+          "crew"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-cooler-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "611",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "mila-mignon-mwcx",
+      "name": "Mila Mignon",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "938",
+          "crew"
         ]
       ]
     },
@@ -6015,8 +9702,38 @@
           "1485"
         ],
         [
+          "ksc-2019-mayfly-series",
+          "184",
+          "crew"
+        ],
+        [
+          "ksc-2019-september-series",
+          "1485",
+          "crew"
+        ],
+        [
+          "ksc-2019-spring-regatta",
+          "184",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "1545",
+          "crew"
+        ],
+        [
           "ksc-2021-cooler-series",
           "1541"
+        ],
+        [
+          "ksc-2021-june-series",
+          "1",
+          "crew"
         ],
         [
           "ksc-2021-junior-regatta",
@@ -6049,6 +9766,52 @@
       ]
     },
     {
+      "slug": "morris-ter-horst-jn5h",
+      "name": "Morris ter Horst",
+      "club": "DMYC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14790",
+          "crew"
+        ],
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14790",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "nadine-o-sullivan-vubn",
+      "name": "Nadine O'Sullivan",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-summer-series",
+          "1539",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "nathan-telford-8wbu",
+      "name": "Nathan Telford",
+      "club": "East Down Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14171",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14171",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "neil-colin-p6zn",
       "name": "Neil Colin",
       "club": "DMYC",
@@ -6056,6 +9819,40 @@
         [
           "ksc-2022-fireball-munsters",
           "14775"
+        ]
+      ]
+    },
+    {
+      "slug": "neil-cramer-9zzh",
+      "name": "Neil Cramer",
+      "club": "Royal St George",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "15016",
+          "crew"
+        ],
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "IRL 14938",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "neil-soffe-vq9w",
+      "name": "Neil Soffe",
+      "club": "Malahide Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14041",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14041",
+          "crew"
         ]
       ]
     },
@@ -6078,6 +9875,47 @@
         [
           "ksc-2025-ilca-westerns",
           "196981"
+        ]
+      ]
+    },
+    {
+      "slug": "nick-rowney-5ths",
+      "name": "Nick Rowney",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-september-series",
+          "22947",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "22947",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "nicola-keane-azup",
+      "name": "Nicola Keane",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-summer-series",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "noah-doherty-prtu",
+      "name": "Noah Doherty",
+      "club": "Cullaun",
+      "members": [
+        [
+          "ksc-2022-open-summer-regatta",
+          "548",
+          "crew"
         ]
       ]
     },
@@ -6137,6 +9975,18 @@
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14362"
+        ]
+      ]
+    },
+    {
+      "slug": "ollie-lloyd-4guk",
+      "name": "Ollie Lloyd",
+      "club": "Blessington",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14816",
+          "crew"
         ]
       ]
     },
@@ -6290,6 +10140,18 @@
       ]
     },
     {
+      "slug": "owen-cosgrove-5wzf",
+      "name": "Owen Cosgrove",
+      "club": "GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "49650",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "owen-laverty-vt3k",
       "name": "Owen Laverty",
       "club": "Royal St George YC",
@@ -6312,10 +10174,49 @@
       ]
     },
     {
+      "slug": "paddy-blackley-bbvc",
+      "name": "Paddy Blackley",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1251",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "pat-beisty-z5vy",
+      "name": "Pat Beisty",
+      "club": "Cullaun Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13353",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13353",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "13353",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "pat-culloo-vu6f",
       "name": "Pat Culloo",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2018-cooler-series",
+          "581",
+          "crew"
+        ],
         [
           "ksc-2019-baltic-series",
           "363"
@@ -6471,8 +10372,135 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2023-brass-monkey-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2023-mayfly-series",
           "134668X"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2023-spring-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-june-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-may-fun-event",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-september-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-brass-monkey-winter",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-cooler-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-open-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "1035",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "pat-o-donnell-simon-mcnamara-4t3f",
+      "name": "Pat O'Donnell/ Simon McNamara",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-summer-series",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -6484,6 +10512,21 @@
         [
           "ksc-2025-brass-monkey-winter",
           "223762"
+        ],
+        [
+          "ksc-2025-june-series",
+          "1549",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1128",
+          "crew"
+        ],
+        [
+          "ksc-2026-spring-series",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -6518,6 +10561,11 @@
         [
           "ksc-2023-open-summer-regatta",
           "581"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "581",
+          "crew"
         ],
         [
           "ksc-2024-summer-series",
@@ -6578,6 +10626,23 @@
       ]
     },
     {
+      "slug": "pepper-robson-ghdf",
+      "name": "Pepper Robson",
+      "club": "Killaloe SC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "9",
+          "crew"
+        ],
+        [
+          "ksc-2021-junior-regatta",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "peter-bayly-u66s",
       "name": "Peter Bayly",
       "club": "Greystones Sailing Club",
@@ -6600,10 +10665,39 @@
       ]
     },
     {
+      "slug": "peter-collins-z82w",
+      "name": "Peter Collins",
+      "club": "Cullaun",
+      "members": [
+        [
+          "ksc-2025-spring-open-regatta",
+          "14130",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "peter-hayes-mkzh",
+      "name": "Peter Hayes",
+      "club": "Glandore Harbour Yacht Club",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14637",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "peter-keogh-3xzx",
       "name": "Peter Keogh",
       "club": "KSC",
       "members": [
+        [
+          "ksc-2020-summer-regatta",
+          "14817",
+          "crew"
+        ],
         [
           "ksc-2020-summer-series",
           "14710"
@@ -6622,6 +10716,18 @@
         [
           "ksc-2018-september-series",
           "1347"
+        ]
+      ]
+    },
+    {
+      "slug": "phil-mcglade-da58",
+      "name": "Phil McGlade",
+      "club": "Monkstown Bay Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1140",
+          "crew"
         ]
       ]
     },
@@ -6955,10 +11061,6 @@
         ],
         [
           "ksc-2026-spring-series",
-          "1"
-        ],
-        [
-          "ksc-2026-spring-series",
           "1485"
         ],
         [
@@ -6966,16 +11068,47 @@
           "1545"
         ],
         [
+          "ksc-2026-spring-series",
+          "1"
+        ],
+        [
           "ksc-2026-summer-sunday-series",
           "1245"
         ],
         [
           "ksc-2026-warmer-series",
-          "1"
+          "1485"
         ],
         [
           "ksc-2026-warmer-series",
-          "1485"
+          "1"
+        ]
+      ]
+    },
+    {
+      "slug": "rebecca-voye-v6hg",
+      "name": "Rebecca Voye",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2021-cooler-series",
+          "1138",
+          "crew"
+        ],
+        [
+          "ksc-2021-september-series",
+          "1138",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "1138",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "1138",
+          "crew"
         ]
       ]
     },
@@ -6993,8 +11126,23 @@
           "761"
         ],
         [
+          "ksc-2021-cooler-series",
+          "761",
+          "crew"
+        ],
+        [
           "ksc-2021-september-series",
           "00000"
+        ],
+        [
+          "ksc-2024-summer-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "1263",
+          "crew"
         ]
       ]
     },
@@ -7006,6 +11154,18 @@
         [
           "ksc-2023-warmer-series",
           "761"
+        ]
+      ]
+    },
+    {
+      "slug": "reuben-cooper-zz55",
+      "name": "Reuben Cooper",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-summer-series",
+          "624",
+          "crew"
         ]
       ]
     },
@@ -7025,6 +11185,35 @@
       ]
     },
     {
+      "slug": "richard-kennedy-j-gv83",
+      "name": "Richard Kennedy (J)",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-warmer-series",
+          "1485",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "richard-kennedy-uwzq",
+      "name": "Richard Kennedy",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "6869",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "6869",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "richard-street-pkfq",
       "name": "Richard Street",
       "club": "Blessington",
@@ -7032,6 +11221,16 @@
         [
           "ksc-2022-fireball-munsters",
           "14816"
+        ],
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14275",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14275",
+          "crew"
         ]
       ]
     },
@@ -7110,6 +11309,30 @@
       ]
     },
     {
+      "slug": "robert-stafford-e9gg",
+      "name": "Robert Stafford",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-summer-series",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "roisin-mitchell-ward-6sr8",
+      "name": "Roisin Mitchell Ward",
+      "club": "WHSC / GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "56791",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "ronan-gilmartin-upx2",
       "name": "Ronan Gilmartin",
       "club": "KSC",
@@ -7182,6 +11405,23 @@
       ]
     },
     {
+      "slug": "ross-gingles-72mc",
+      "name": "Ross Gingles",
+      "club": "Skerries SC / Derwent reservoir",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "ruadhri-fitzgerald-t8ha",
       "name": "Ruadhri Fitzgerald",
       "club": "Killaloe SC",
@@ -7208,6 +11448,28 @@
       ]
     },
     {
+      "slug": "ruari-cooper-sqfy",
+      "name": "Ruari Cooper",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2022-open-summer-regatta",
+          "??",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-junior-summer-regatta",
+          "1",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "1",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "ruby-carroll-w6ne",
       "name": "Ruby Carroll",
       "club": "Killaloe Sailing Club",
@@ -7219,6 +11481,30 @@
         [
           "ksc-2023-open-summer-regatta",
           "1"
+        ]
+      ]
+    },
+    {
+      "slug": "sam-rigley-kmw8",
+      "name": "Sam Rigley",
+      "club": "GBSC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "50181",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "sam-sheehy-83fe",
+      "name": "Sam Sheehy",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2025-june-series",
+          "56112",
+          "crew"
         ]
       ]
     },
@@ -7244,10 +11530,16 @@
     {
       "slug": "sam-voye-fe6g",
       "name": "Sam Voye",
+      "club": "KSC",
       "members": [
         [
           "ksc-2021-junior-regatta",
           "99752"
+        ],
+        [
+          "ksc-2021-summer-series",
+          "1138",
+          "crew"
         ]
       ]
     },
@@ -7263,6 +11555,42 @@
         [
           "ksc-2024-gp14-munsters",
           "14257"
+        ]
+      ]
+    },
+    {
+      "slug": "sandra-rimmington-4xxt",
+      "name": "Sandra Rimmington",
+      "club": "Monkstown Bay Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "1321",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "saoirse-o-connor-buckley-wuzg",
+      "name": "Saoirse O'Connor Buckley",
+      "club": "RCYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "14362",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "sarah-thullier-zfga",
+      "name": "Sarah Thullier",
+      "club": "CSS / Kinsale",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "54739",
+          "crew"
         ]
       ]
     },
@@ -7307,6 +11635,11 @@
           "165480"
         ],
         [
+          "ksc-2025-summer-series",
+          "56112",
+          "crew"
+        ],
+        [
           "ksc-2025-warmer-series",
           "48234"
         ],
@@ -7321,6 +11654,35 @@
         [
           "ksc-2026-spring-series",
           "217238"
+        ]
+      ]
+    },
+    {
+      "slug": "seamus-walsh-pgtb",
+      "name": "Seamus Walsh",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2022-cooler-series",
+          "14584",
+          "crew"
+        ],
+        [
+          "ksc-2024-summer-open-regatta",
+          "14584",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "sean-collins-6cr9",
+      "name": "Sean Collins",
+      "club": "Sligo/ Mullaghmore/Skerries",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "14969",
+          "crew"
         ]
       ]
     },
@@ -7351,6 +11713,11 @@
         [
           "ksc-2018-september-series",
           "193448"
+        ],
+        [
+          "ksc-2018-summer-regatta",
+          "14750",
+          "crew"
         ],
         [
           "ksc-2021-june-series",
@@ -7667,6 +12034,11 @@
           "1263"
         ],
         [
+          "ksc-2018-baltic-series",
+          "1297",
+          "crew"
+        ],
+        [
           "ksc-2018-cooler-series",
           "1263"
         ],
@@ -7683,12 +12055,27 @@
           "1263"
         ],
         [
+          "ksc-2019-june-series",
+          "624",
+          "crew"
+        ],
+        [
           "ksc-2019-mayfly-series",
           "624"
         ],
         [
+          "ksc-2019-september-series",
+          "624",
+          "crew"
+        ],
+        [
           "ksc-2019-spring-regatta",
           "1263"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2020-summer-regatta",
@@ -7785,6 +12172,16 @@
         [
           "ksc-2024-summer-series",
           "1263"
+        ],
+        [
+          "ksc-2025-brass-monkey-winter",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2025-cooler-series",
+          "1263",
+          "crew"
         ],
         [
           "ksc-2025-june-series",
@@ -7896,6 +12293,116 @@
       ]
     },
     {
+      "slug": "stefany-gorski-ah5b",
+      "name": "Stefany Gorski",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
+          "14740",
+          "crew"
+        ],
+        [
+          "ksc-2019-baltic-series",
+          "14995",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "14990",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "14990",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "14013",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "14990",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "435",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "14990",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "stephan-oram-zc3s",
+      "name": "Stephan Oram",
+      "club": "NYC",
+      "members": [
+        [
+          "ksc-2022-fireball-munsters",
+          "15061",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "stephany-gorski-y8cy",
+      "name": "Stephany Gorski",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-september-series",
+          "14740",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "stephen-boyle-w4ug",
+      "name": "Stephen Boyle",
+      "club": "RStGYC / Sutton Dinghy Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14272",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14272",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "stephen-lynch-q3ss",
+      "name": "Stephen Lynch",
+      "club": "Greystones Sailing Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14185",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14185",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "stephen-o-brien-pzdp",
       "name": "Stephen O'Brien",
       "club": "KSC",
@@ -7931,6 +12438,11 @@
         [
           "ksc-2021-september-series",
           "1539"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "1035",
+          "crew"
         ],
         [
           "ksc-2022-cooler-series",
@@ -8077,6 +12589,11 @@
           "1336"
         ],
         [
+          "ksc-2026-june-series",
+          "xxx",
+          "crew"
+        ],
+        [
           "ksc-2026-mayfly-series",
           "188055"
         ],
@@ -8111,8 +12628,23 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2018-cooler-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2018-september-series",
+          "1263",
+          "crew"
+        ],
+        [
           "ksc-2019-summer-series",
           "22183"
+        ],
+        [
+          "ksc-2021-june-series",
+          "22183",
+          "crew"
         ],
         [
           "ksc-2021-killaloe-sailing-regatta",
@@ -8123,8 +12655,35 @@
           "22183"
         ],
         [
+          "ksc-2021-summer-series",
+          "22183",
+          "crew"
+        ],
+        [
           "ksc-2025-cooler-series",
           "1263"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "1283",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "1263",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "sue-connannon-epf2",
+      "name": "Sue Connannon",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-baltic-series",
+          "",
+          "crew"
         ]
       ]
     },
@@ -8142,6 +12701,21 @@
           "1263"
         ],
         [
+          "ksc-2020-summer-regatta",
+          "363",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-series",
+          "363",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2021-june-series",
           "1"
         ],
@@ -8150,20 +12724,105 @@
           "2"
         ],
         [
+          "ksc-2021-september-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2021-summer-series",
           "1"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-june-series",
+          "1035",
+          "crew"
         ],
         [
           "ksc-2022-mayfly-series",
           "149211"
         ],
         [
+          "ksc-2022-open-summer-regatta",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-september-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-spring-challenge-open-regatta",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2022-warmer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "149211"
         ],
         [
+          "ksc-2023-mayfly-series",
+          "1035",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2023-open-summer-regatta",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2023-spring-regatta",
           "149211"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "938",
+          "crew"
         ],
         [
           "ksc-2023-warmer-series",
@@ -8178,12 +12837,84 @@
           "149211"
         ],
         [
+          "ksc-2024-mayfly-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2024-september-series",
           "149211"
         ],
         [
+          "ksc-2024-summer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2024-warmer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2025-brass-monkey-winter",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2025-september-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2025-spring-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2025-summer-series",
           "199333"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "938",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "susan-mignon-gtf2",
+      "name": "Susan Mignon",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-baltic-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2018-cooler-series",
+          "611",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "435",
+          "crew"
+        ],
+        [
+          "ksc-2019-mayfly-series",
+          "435",
+          "crew"
         ]
       ]
     },
@@ -8294,6 +13025,89 @@
       ]
     },
     {
+      "slug": "tadhg-o-mara-eps5",
+      "name": "Tadhg O'Mara",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2018-junior-regatta",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "938",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1207",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "tara-findlay-gw4u",
+      "name": "Tara Findlay",
+      "club": "Strangford Lough Sailing Club",
+      "members": [
+        [
+          "ksc-2022-rs-inlands",
+          "877",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "tara-harris-wsjt",
+      "name": "Tara Harris",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2018-summer-regatta",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2019-warmer-series",
+          "3672",
+          "crew"
+        ],
+        [
+          "ksc-2020-summer-regatta",
+          "1495",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "tarris-harris-keyf",
+      "name": "Tarris Harris",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-mayfly-series",
+          "3672",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "tetiana-luzhanska-2534",
       "name": "Tetiana Luzhanska",
       "club": "Ukraine NYC",
@@ -8307,10 +13121,91 @@
     {
       "slug": "theron-robson-5szu",
       "name": "Theron Robson",
+      "club": "KSC",
       "members": [
+        [
+          "ksc-2019-cooler-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2019-june-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2021-cooler-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2021-winter-regatta",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2022-cooler-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2022-summer-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2023-brass-monkey-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2023-june-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2023-september-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2023-summer-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2024-october-series",
+          "624",
+          "crew"
+        ],
+        [
+          "ksc-2025-june-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "7173",
+          "crew"
+        ],
         [
           "ksc-2025-spring-series",
           "7173"
+        ],
+        [
+          "ksc-2025-summer-sunday-series",
+          "7173",
+          "crew"
+        ],
+        [
+          "ksc-2025-warmer-series",
+          "7173",
+          "crew"
         ]
       ]
     },
@@ -8365,6 +13260,11 @@
         [
           "ksc-2020-summer-regatta",
           "1207"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1035",
+          "crew"
         ]
       ]
     },
@@ -8376,6 +13276,30 @@
         [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14637"
+        ]
+      ]
+    },
+    {
+      "slug": "tiernan-farrell-t73d",
+      "name": "Tiernan Farrell",
+      "club": "LRYC",
+      "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "94847",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "tim-o-neill-j-my4c",
+      "name": "Tim O'Neill (J)",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-warmer-series",
+          "1336",
+          "crew"
         ]
       ]
     },
@@ -8445,12 +13369,22 @@
           "1549"
         ],
         [
+          "ksc-2025-spring-series",
+          "1336",
+          "crew"
+        ],
+        [
           "ksc-2025-summer-open-regatta",
           "1059"
         ],
         [
           "ksc-2025-summer-series",
           "1059"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "1549",
+          "crew"
         ],
         [
           "ksc-2026-june-series",
@@ -8463,6 +13397,11 @@
         [
           "ksc-2026-spring-series",
           "1549"
+        ],
+        [
+          "ksc-2026-summer-series",
+          "99",
+          "crew"
         ],
         [
           "ksc-2026-warmer-series",
@@ -8501,6 +13440,50 @@
         [
           "ksc-2022-summer-series",
           "4"
+        ],
+        [
+          "ksc-2024-may-fun-event",
+          "9058",
+          "crew"
+        ],
+        [
+          "ksc-2025-mayfly-series",
+          "56112",
+          "crew"
+        ],
+        [
+          "ksc-2025-summer-open-regatta",
+          "56112",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "una-clifton-brown-d44k",
+      "name": "Una Clifton-Brown",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2019-summer-series",
+          "1545",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "vivika-timmer-bezf",
+      "name": "Vivika Timmer",
+      "club": "Newtownards & Donaghadee Sailing Clubs",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "13865",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "13865",
+          "crew"
         ]
       ]
     },
@@ -8531,6 +13514,23 @@
       ]
     },
     {
+      "slug": "william-draper-ska2",
+      "name": "William Draper",
+      "club": "Sligo Yacht Club",
+      "members": [
+        [
+          "ksc-2024-gp14-munsters-alternate-scoring",
+          "14203",
+          "crew"
+        ],
+        [
+          "ksc-2024-gp14-munsters",
+          "14203",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "william-findlay-55af",
       "name": "William Findlay",
       "club": "Strangford Lough Sailing Club",
@@ -8542,6 +13542,18 @@
       ]
     },
     {
+      "slug": "yannis-zabetakis-6tad",
+      "name": "Yannis Zabetakis",
+      "club": "Killaloe Sailing Club",
+      "members": [
+        [
+          "ksc-2018-cooler-series",
+          "22183",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "zoe-o-farrell-ns6g",
       "name": "Zoe O'Farrell",
       "club": "Killaloe SC",
@@ -8549,6 +13561,23 @@
         [
           "ksc-2018-junior-regatta",
           "9"
+        ],
+        [
+          "ksc-2021-junior-regatta",
+          "1541",
+          "crew"
+        ]
+      ]
+    },
+    {
+      "slug": "zsuzsi-kidney-hb6t",
+      "name": "Zsuzsi Kidney",
+      "club": "Cullaun",
+      "members": [
+        [
+          "ksc-2022-open-summer-regatta",
+          "615",
+          "crew"
         ]
       ]
     }

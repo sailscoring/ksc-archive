@@ -183,14 +183,37 @@ resolves them by name-token overlap, and all 28 affected member rows resolve
 cleanly. `pnpm identities` re-checks this on every run and refuses to write a
 manifest that would lose a row.
 
-### 11. Crew have no identity
+### 11. Crew are sailors too
 
-Identity attaches to the helm. **48% of KSC rows carry a named crew, and 196
-people appear only ever as crew** — they sail the whole record and get no
-sailor page. Tracked as app
-[#348](https://github.com/sailscoring/sailscoring/issues/348).
+Identity used to attach to the helm alone, so the 48% of KSC rows carrying a
+named crew contributed nobody, and the people who only ever crew sailed the
+whole record and got no sailor page. App
+[#348](https://github.com/sailscoring/sailscoring/issues/348) fixed that:
+every person on a boat is a member row of its own, tagged with the slot they
+filled. The manifest went from 278 sailors to **449** — **171 who had no
+record at all**, and **59 existing sailors who turn out to helm some seasons
+and crew others**.
+
+Two consequences worth knowing.
+
+**Crew names are looser than helm names.** Twenty-four mentions name nobody
+identifiable — `??`, `?????`, `TBD`, bare first names (`Michael`, `Daragh`),
+initials (`AM`, `SG`, `AS`), and two half-names (`?? Roycroft`, `Colm ??`).
+They stay in the published results, where they are what the club recorded, but
+they don't become sailors: a page titled `???` serves nobody, and a lone
+surname is exactly the shape that fuses unrelated people (§9). `pnpm
+identities` lists every one it skipped, so if any of them *is* identifiable,
+the fix is a curated spelling in `identity-curation.json`.
+
+**The matcher splits crew harder than helms.** Everyone on a boat shares its
+club and its sail number, so neither can corroborate a crew's name match the
+way they do for a helm — the app deliberately demands more before merging a
+crew. On this corpus that means the raw matcher returns 650 clusters where it
+returned 352, which the one-name-one-sailor merge in §9 then collapses. That
+merge was already carrying most of the weight here; it now carries more.
 
 Six rows named two sailors in the helm cell itself (`Aoibhí Ryan / Aoise
-Ryan`). Each is attributed to the first named, matching how the matcher
-resolved the two it could settle by sail number — the second sailor loses a
-row they arguably should keep, which #348 is the real fix for.
+Ryan`). Each is still attributed to the first named — the second sailor loses
+a row they arguably should keep. That is a *multi-person helm* field rather
+than a crew field, so #348 doesn't reach it: the app models it (`names` is a
+list), but this corpus's capture doesn't split the cell.
