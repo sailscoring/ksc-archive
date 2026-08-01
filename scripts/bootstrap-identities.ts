@@ -399,9 +399,13 @@ function main(): void {
 
     identities.push({
       slug,
-      // A name already curated in the manifest is never overwritten by the
-      // commonest spelling — hand corrections outrank the count.
-      name: prior?.name ?? name,
+      // Hand corrections outrank the count: a name the curation file states
+      // wins, then whatever the manifest already published, and only then the
+      // commonest raw spelling. Curation has to come first or `rename` could
+      // never fix a name once it had been written — and a display name is not
+      // an identifier, so changing one moves nothing (the slug above is what
+      // must stay put).
+      name: displayFor.get(groupKey) ?? prior?.name ?? name,
       ...(prior?.club ?? club ? { club: prior?.club ?? club } : {}),
       members,
       ...(noteFor.get(groupKey) ? { note: noteFor.get(groupKey) } : {}),
