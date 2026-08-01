@@ -123,7 +123,7 @@ per year. CI re-ingests on every push to `main`.
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
-- ✅ **The identity manifest** — 1,631 rows resolved to **449 sailors**
+- ✅ **The identity manifest** — 1,631 rows resolved to **444 sailors**
   (`identities.json`), applied and live: the
   [competitor index](https://app.sailscoring.ie/p/ksc/competitors) and a career
   arc per sailor, spanning nine seasons
@@ -133,7 +133,7 @@ per year. CI re-ingests on every push to `main`.
   [#348](https://github.com/sailscoring/sailscoring/issues/348)) — 48% of rows
   name a crew, and reading the helm field alone left those people out of the
   record entirely. Each person on a boat is now a sailor in their own right:
-  **171 who had no page at all**, and **59 existing sailors** who turn out to
+  **166 who had no page at all**, and **59 existing sailors** who turn out to
   helm some seasons and crew others. See CLARIFICATIONS §11.
 - ⬜ **Refresh 2026** as the season finishes
   ([#8](https://github.com/sailscoring/ksc-archive/issues/8)).

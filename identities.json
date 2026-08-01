@@ -3708,6 +3708,11 @@
           "crew"
         ],
         [
+          "ksc-2019-baltic-series",
+          "1452",
+          "crew"
+        ],
+        [
           "ksc-2019-cooler-series",
           "1452",
           "crew"
@@ -4790,6 +4795,11 @@
           "637"
         ],
         [
+          "ksc-2019-baltic-series",
+          "1452",
+          "crew"
+        ],
+        [
           "ksc-2019-mayfly-series",
           "1035",
           "crew"
@@ -4834,6 +4844,16 @@
           "crew"
         ],
         [
+          "ksc-2023-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1976",
+          "crew"
+        ],
+        [
           "ksc-2024-september-series",
           "1076"
         ],
@@ -4841,26 +4861,7 @@
           "ksc-2025-brass-monkey-winter",
           "1035",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "dominic-o-sullivan-david-coleman-989n",
-      "name": "Dominic O'Sullivan/David Coleman",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-baltic-series",
-          "1452",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "dominic-o-sullivan-leon-mullally-s5z4",
-      "name": "Dominic O'Sullivan / Leon Mullally",
-      "club": "KSC",
-      "members": [
+        ],
         [
           "ksc-2025-cooler-series",
           "1076",
@@ -5181,6 +5182,11 @@
         [
           "ksc-2019-september-series",
           "1485"
+        ],
+        [
+          "ksc-2019-summer-series",
+          "1485",
+          "crew"
         ],
         [
           "ksc-2020-summer-regatta",
@@ -6619,8 +6625,8 @@
       ]
     },
     {
-      "slug": "jack-keane-emma-o-farrell-q46g",
-      "name": "Jack Keane / Emma O'Farrell",
+      "slug": "jack-keane-q46g",
+      "name": "Jack Keane",
       "club": "KSC",
       "members": [
         [
@@ -6977,6 +6983,11 @@
           "crew"
         ],
         [
+          "ksc-2023-mayfly-series",
+          "1263",
+          "crew"
+        ],
+        [
           "ksc-2023-open-summer-regatta",
           "1263",
           "crew"
@@ -7087,6 +7098,11 @@
         [
           "ksc-2018-summer-regatta",
           "1321"
+        ],
+        [
+          "ksc-2019-baltic-series",
+          "1076",
+          "crew"
         ],
         [
           "ksc-2019-june-series",
@@ -7311,18 +7327,6 @@
         [
           "ksc-2026-summer-sunday-series",
           "160921"
-        ]
-      ]
-    },
-    {
-      "slug": "john-callanan-leon-mullally-rkuz",
-      "name": "John Callanan / Leon Mullally",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2019-baltic-series",
-          "1076",
-          "crew"
         ]
       ]
     },
@@ -8133,20 +8137,10 @@
       ]
     },
     {
-      "slug": "leon-mullally-dominic-o-sullivan-nktb",
-      "name": "Leon Mullally / Dominic O'Sullivan",
+      "slug": "leon-mullally-dominic-o-sullivan-3aab",
+      "name": "Leon Mullally Dominic O'Sullivan",
       "club": "KSC",
       "members": [
-        [
-          "ksc-2023-mayfly-series",
-          "1076",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1976",
-          "crew"
-        ],
         [
           "ksc-2023-summer-series",
           "1076",
@@ -8176,6 +8170,11 @@
         [
           "ksc-2018-summer-regatta",
           "1297"
+        ],
+        [
+          "ksc-2019-baltic-series",
+          "1076",
+          "crew"
         ],
         [
           "ksc-2019-cooler-series",
@@ -8298,6 +8297,16 @@
           "crew"
         ],
         [
+          "ksc-2023-mayfly-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2023-october-series",
+          "1976",
+          "crew"
+        ],
+        [
           "ksc-2023-open-summer-regatta",
           "1076",
           "crew"
@@ -8324,6 +8333,11 @@
         ],
         [
           "ksc-2024-warmer-series",
+          "1076",
+          "crew"
+        ],
+        [
+          "ksc-2025-cooler-series",
           "1076",
           "crew"
         ],
@@ -8808,6 +8822,11 @@
           "56112"
         ],
         [
+          "ksc-2025-summer-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2025-warmer-series",
           "48234",
           "crew"
@@ -8836,18 +8855,6 @@
         [
           "ksc-2026-warmer-series",
           "83231"
-        ]
-      ]
-    },
-    {
-      "slug": "marcus-wright-susan-le-mignon-qzqs",
-      "name": "Marcus Wright/Susan Le Mignon",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2025-summer-series",
-          "938",
-          "crew"
         ]
       ]
     },
@@ -9015,6 +9022,11 @@
         ],
         [
           "ksc-2023-mayfly-series",
+          "1263",
+          "crew"
+        ],
+        [
+          "ksc-2023-mayfly-series",
           "226",
           "crew"
         ],
@@ -9070,18 +9082,6 @@
         [
           "ksc-2025-summer-sunday-series",
           "226",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "margaret-watts-jo-kramer-dax4",
-      "name": "Margaret Watts/Jo Kramer",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-mayfly-series",
-          "1263",
           "crew"
         ]
       ]
@@ -9406,8 +9406,8 @@
       ]
     },
     {
-      "slug": "michelle-coleman-ruan-hj89",
-      "name": "Michelle Coleman / Ruan",
+      "slug": "michelle-coleman-hj89",
+      "name": "Michelle Coleman",
       "club": "KSC",
       "members": [
         [
@@ -10406,6 +10406,11 @@
           "crew"
         ],
         [
+          "ksc-2023-summer-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "1035",
           "crew"
@@ -10487,18 +10492,6 @@
         ],
         [
           "ksc-2025-warmer-series",
-          "1035",
-          "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "pat-o-donnell-simon-mcnamara-4t3f",
-      "name": "Pat O'Donnell/ Simon McNamara",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-summer-series",
           "1035",
           "crew"
         ]
@@ -12233,6 +12226,18 @@
       ]
     },
     {
+      "slug": "simon-mcnamara-4t3f",
+      "name": "Simon McNamara",
+      "club": "KSC",
+      "members": [
+        [
+          "ksc-2023-summer-series",
+          "1035",
+          "crew"
+        ]
+      ]
+    },
+    {
       "slug": "siofra-macnamara-aec2",
       "name": "Siofra MacNamara",
       "club": "Lough Ree YC",
@@ -12883,6 +12888,11 @@
         [
           "ksc-2025-summer-series",
           "199333"
+        ],
+        [
+          "ksc-2025-summer-series",
+          "938",
+          "crew"
         ],
         [
           "ksc-2025-summer-sunday-series",

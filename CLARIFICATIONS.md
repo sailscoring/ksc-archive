@@ -137,7 +137,8 @@ back to the club's presentation.
 ### 9. One name, one sailor — and where that stops
 
 The competitor-identity manifest (`identities.json`, app #218) groups the
-1,631 competitor rows into **278 sailors**. It is drafted by `pnpm identities`
+**2,406 people** named across the 1,631 competitor rows — helms and crew
+alike (§11) — into **444 sailors**. It is drafted by `pnpm identities`
 through the app's canonical matcher, then shaped by two rules.
 
 **The default: clusters sharing a name are one sailor.** The matcher is
@@ -145,10 +146,12 @@ deliberately cautious about merging on a name alone, and wants sail-number,
 club, or age continuity to corroborate it. That caution is miscalibrated for
 this corpus: KSC shares boats around the club, so sail number tracks a *hull*,
 not a person (§10), and the corroboration mostly isn't there. Left alone the
-matcher splits regulars into several clusters — all 33 of its review
-suggestions were a name against itself, e.g. Stephen O'Brien across clusters
-of 45, 2 and 1. At a club whose entrants come from a few hundred members, two
-rows sharing a name are the same person, so those merge by default.
+matcher splits regulars into several clusters — all 33 of the review
+suggestions it raised on the helm field alone were a name against itself, e.g.
+Stephen O'Brien across clusters of 45, 2 and 1. Adding crew takes that to 367,
+for the reason §11 gives. At a club whose entrants come from a few hundred
+members, two rows sharing a name are the same person, so those merge by
+default.
 
 **The exception: cross-spelling merges are listed, never guessed.**
 `identity-curation.json` records them, and an entry is only added when the
@@ -190,15 +193,16 @@ named crew contributed nobody, and the people who only ever crew sailed the
 whole record and got no sailor page. App
 [#348](https://github.com/sailscoring/sailscoring/issues/348) fixed that:
 every person on a boat is a member row of its own, tagged with the slot they
-filled. The manifest went from 278 sailors to **449** — **171 who had no
+filled. The manifest went from 278 sailors to **444** — **166 who had no
 record at all**, and **59 existing sailors who turn out to helm some seasons
 and crew others**.
 
 Two consequences worth knowing.
 
-**Crew names are looser than helm names.** Twenty-four mentions name nobody
-identifiable — `??`, `?????`, `TBD`, bare first names (`Michael`, `Daragh`),
-initials (`AM`, `SG`, `AS`), and two half-names (`?? Roycroft`, `Colm ??`).
+**Crew names are looser than helm names.** Twenty-five mentions name nobody
+identifiable — `??`, `?????`, `TBD`, bare first names (`Michael`, `Daragh`,
+`Ruan`), initials (`AM`, `SG`, `AS`), and two half-names (`?? Roycroft`,
+`Colm ??`).
 They stay in the published results, where they are what the club recorded, but
 they don't become sailors: a page titled `???` serves nobody, and a lone
 surname is exactly the shape that fuses unrelated people (§9). `pnpm
@@ -208,12 +212,18 @@ the fix is a curated spelling in `identity-curation.json`.
 **The matcher splits crew harder than helms.** Everyone on a boat shares its
 club and its sail number, so neither can corroborate a crew's name match the
 way they do for a helm — the app deliberately demands more before merging a
-crew. On this corpus that means the raw matcher returns 650 clusters where it
+crew. On this corpus that means the raw matcher returns 647 clusters where it
 returned 352, which the one-name-one-sailor merge in §9 then collapses. That
 merge was already carrying most of the weight here; it now carries more.
 
-Six rows named two sailors in the helm cell itself (`Aoibhí Ryan / Aoise
-Ryan`). Each is still attributed to the first named — the second sailor loses
-a row they arguably should keep. That is a *multi-person helm* field rather
-than a crew field, so #348 doesn't reach it: the app models it (`names` is a
-list), but this corpus's capture doesn't split the cell.
+A handful of rows name two sailors in the **helm** cell itself (`Aoibhí Ryan /
+Aoise Ryan`, `Andrew Mullally/Thomas Drayton`). Those are still one identity
+carrying both names, because that is the primary slot rather than the crew
+one — the app models it (`names` is a list), but this corpus's capture doesn't
+split the cell. Tracked as [#10](https://github.com/sailscoring/ksc-archive/issues/10).
+
+Three crew cells name two people separated by nothing but a space
+(`Amber Robson Maeve Derven`). Splitting those automatically would break every
+sailor whose own name runs to three or four words, so they stay joined until
+someone names them. Tracked as
+[#9](https://github.com/sailscoring/ksc-archive/issues/9).

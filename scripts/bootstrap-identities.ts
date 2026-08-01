@@ -170,10 +170,11 @@ const CREW_PLACEHOLDERS = new Set([
 ]);
 
 /** Mirrors the app's `splitCrewCell`: a few KSC cells list a whole crew in one
- *  field ("Maeve Dervan, Amber Robson"). Never splits on whitespace. */
+ *  field ("Maeve Dervan, Amber Robson"), some with a slash. Never splits on
+ *  whitespace. */
 function splitCrewCell(cell: string): string[] {
   return cell
-    .split(/\s*[,&+]\s*|\s+and\s+/i)
+    .split(/\s*[,&+/]\s*|\s+and\s+/i)
     .map((n) => n.trim())
     .filter((n) => n.length > 0);
 }
