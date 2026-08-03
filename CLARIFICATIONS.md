@@ -171,14 +171,78 @@ back to the club's presentation.
 
 - **No prize-winners or trophies.** The sibling `dbsc-archive` carries a
   `yearbook/` of trophy winners transcribed from the club yearbook; nothing
-  equivalent is published here.
+  equivalent is published here. The club has since described how the prizes
+  are awarded, but not who won them — below.
 - **No sailing instructions or notices of race**, so the discard rules and
   scoring systems are known only from each page's caption line ("Discards: 1,
   To count: 5, Rating system: PY, Scoring system: Appendix A"). That is
   enough for as-published — nothing is recomputed — but not enough to
-  re-score.
-- **No results before 2018.** Whether the club has earlier records in any
-  form is unknown.
+  re-score. The club's standing scoring rules are now on record — below —
+  which is not the same as a per-event document.
+- **No results before 2018.** The Sailwave folder starts there, with the
+  2018–2021 seasons back-filled by the scorer in July 2022.
+
+The club has answered most of that
+([#6](https://github.com/sailscoring/ksc-archive/issues/6)). What follows is
+**the club's account, not something read off a captured page** — it is
+recorded here as context and is not used to derive, correct or re-score
+anything.
+
+**Before 2018 there is most likely nothing to find.** 2018 is when the club's
+current scorer took the results on; earlier seasons were scored ad hoc, and
+the club does not believe those survive anywhere. So the archive starting in
+2018 is not a capture gap — it is where the continuous record begins.
+
+**No trophy list has ever been published**, but the prize structure is
+consistent and worth having on the record:
+
+- 1st, 2nd and 3rd overall;
+- then first-in-class — ILCA 7 / 6 / 4, RS Vision, Fireball, RS 400, RS 200
+  and so on — with the number of class prizes depending on the entry;
+- a class needs **at least three boats racing** for a class prize to be
+  awarded;
+- anyone who takes a 1st–3rd overall is **not** eligible for a class prize, so
+  the prizes spread across the fleet.
+
+The scorer believes a spreadsheet of prize winners exists and is looking for
+it. That is the one thread still open on #6; the structure above says nothing
+about *who* won, which is the part that would actually enrich the archive.
+
+**The scoring standard is written down**, in the club's sailing instructions —
+adopted in either 2019 or 2020 (the club is not sure which) and in effect
+since. In summary, and paraphrased rather than reproduced, since the wording
+is the club's own:
+
+- **Portsmouth Yardstick**, each boat carrying the PN of the PY system in
+  effect on the first day of that series or event (SI 16.1);
+- **Low Point, RRS Appendix A**, modified so a series score is the total of
+  the race scores with the worst discarded (16.3);
+- **one discard for every four races sailed** (16.3.1);
+- **average points** for rostered safety duty and for sailing an external
+  regatta, as defined in the NoR (16.4);
+- **tie-breaks** for a series spanning more than one event, applied in order:
+  A8.1 excluding discards, then A8.1 including them, then A8.2 (best recent
+  scores, including discards), then B8.8 (best discards) (17.1–17.4).
+
+The captures corroborate the first three. Every one of the 81 published fleet
+standings is scored "Appendix A", and the 74 that name a rating system all say
+PY. **80 of the 81 match one-discard-per-four exactly** — including all five
+2018 standings, which predate the written standard, so the practice was
+already settled before it was documented. The single exception is the 2025
+Summer Super Series: 14 races sailed, 4 discards, where 16.3.1 gives 3.
+Nothing follows from that here — under as-published a result is archived as it
+was scored, and the caption is carried verbatim — but it is the one place the
+corpus and the club's stated rule disagree, so it is recorded rather than
+smoothed over.
+
+What is still missing is the **per-event** notice of race and sailing
+instructions, which is what would explain any individual series' scoring
+(including that 2025 discard). The standing scoring section above is the club
+default, not a per-event record.
+
+> ❓ **For the club** ([#6](https://github.com/sailscoring/ksc-archive/issues/6))**:** the prize-winner spreadsheet, if it turns up. Names against
+> trophies are the one kind of club record the results pages cannot supply,
+> and they reach back past 2018 in a way the scored results cannot.
 
 ## Identity
 
