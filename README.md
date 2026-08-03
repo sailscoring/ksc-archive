@@ -139,6 +139,12 @@ per year. CI re-ingests on every push to `main`.
   spellings, including the `(J)` junior tag and five bare first names, took
   444 drafted sailors to 410. Two pairs that had been put to the club as
   open questions turned out to be one sailor each. See CLARIFICATIONS §9.
+- ⬜ **Land the Cooler Series rename** — the club confirmed the autumn series
+  is the Cooler Series everywhere
+  ([#3](https://github.com/sailscoring/ksc-archive/issues/3)), so 2023 and 2024
+  are no longer "October Series". That re-mints two series ids and two
+  competitor slugs: the four old paths need redirects and the two superseded
+  series rows need deleting from the workspace. See CLARIFICATIONS §5.
 - ⬜ **Refresh 2026** as the season finishes
   ([#8](https://github.com/sailscoring/ksc-archive/issues/8)).
 
@@ -152,7 +158,7 @@ and written up in CLARIFICATIONS.md.
 |---|---|
 | [#1](https://github.com/sailscoring/ksc-archive/issues/1) **Event dates** | the corpus states none, so every career arc shows `—` for its dates and isn't really ordered — the biggest single gap |
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
-| [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | including whether the autumn series is "Cooler" or "October" — the two sources disagree for 2024 |
+| [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | the autumn series is answered — it is the Cooler Series everywhere, and 2023/2024 have been renamed to match; the rest of the naming is still open |
 | [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | published twice, two scorings; which is official? |
 | [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Six identity questions** | same sailor or two — two of the original five have since been answered from the crew field — plus the correct spelling of one Fireball sailor's name and three helms entered under a first name alone |
 | [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | prize-winners, anything pre-2018, sailing instructions |

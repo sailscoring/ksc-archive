@@ -82,6 +82,26 @@ function stripClubPrefix(name: string): string {
   return rest.split(/\s+/).length >= 2 ? rest : name;
 }
 
+/** Names the club has confirmed, which outrank both published sources.
+ *
+ *  KSC's autumn series has appeared as "Cooler Series" and as "October
+ *  Series" over the years, and for 2024 the two sources disagree with each
+ *  other — the Sailwave `<h1>` says Cooler, the club's own season page says
+ *  October. The club settled it (#3): it is one recurring event, both names
+ *  have been used for it historically, and it is the **Cooler Series**. So
+ *  the two pages published as October are named Cooler here, and 2018-2025
+ *  reads as the one series it is.
+ *
+ *  Keyed by capture filename, the only stable identifier a page has — the
+ *  headings are what's in dispute and the key is derived from the name.
+ *  Renaming re-mints the series id, so an entry added here is a migration:
+ *  the old public path needs a redirect (ADR-011) and the old series row
+ *  needs deleting. See CLARIFICATIONS.md §5. */
+const CONFIRMED_NAMES: Record<string, string> = {
+  '2023_October_Series.htm': 'Cooler Series',
+  '2024_Cooler_Series.htm': 'Cooler Series',
+};
+
 /** The venue, from the Sailwave `<h2>`: "Lough Derg" on almost every page,
  *  "Killaloe Sailing Club" on three. Two pages need help — one gives the
  *  club's website in the venue slot, and one spells the lake "Lough derg". */
@@ -98,6 +118,11 @@ function venueOf(page: CatalogPage): string {
  *  Series"). The year is appended so a series reads unambiguously on its own.
  */
 function displayName(page: CatalogPage): string {
+  // A name the club has confirmed needs no normalising and beats both
+  // sources, including the season page that usually wins.
+  const confirmed = CONFIRMED_NAMES[page.file];
+  if (confirmed) return `${confirmed} ${page.year}`;
+
   // A capture filename ending in a small sequence number marks one of a
   // numbered run of events (the 2024 June Sprints). There the filename is the
   // only signal that separates them — the scorer left the `<h1>` of Sprint 2

@@ -784,17 +784,17 @@
       ]
     },
     {
-      "key": "ksc-2023-october-series",
-      "id": "3ebd79e8-b5d0-579e-836c-46985adf9c85",
+      "key": "ksc-2023-cooler-series",
+      "id": "b2c3958d-fc2b-5356-8f23-177155d87913",
       "publishedSlug": "2023",
-      "name": "October Series 2023",
+      "name": "Cooler Series 2023",
       "venue": "Lough Derg",
       "venueUrl": "https://www.killaloesailingclub.com",
       "source": "sailwave",
       "fleets": [
         {
           "name": "Overall",
-          "subPath": "october-series",
+          "subPath": "cooler-series",
           "file": "sources/sailwave.com/results/KSC/2023_October_Series.htm",
           "sectionTitle": "Overall",
           "includeRaces": true
@@ -1064,10 +1064,10 @@
       ]
     },
     {
-      "key": "ksc-2024-october-series",
-      "id": "29dd6f64-36c1-5d82-b853-047805ff84bd",
+      "key": "ksc-2024-cooler-series",
+      "id": "43fc4f33-a6f6-5d9c-a661-19dae9790f3f",
       "publishedSlug": "2024",
-      "name": "October Series 2024",
+      "name": "Cooler Series 2024",
       "venue": "Lough Derg",
       "venueUrl": "https://www.killaloesailingclub.com",
       "eventUrl": "https://www.killaloesailingclub.com/2024-archived-racing-results/",
@@ -1075,7 +1075,7 @@
       "fleets": [
         {
           "name": "Overall",
-          "subPath": "october-series",
+          "subPath": "cooler-series",
           "file": "sources/sailwave.com/results/KSC/2024_Cooler_Series.htm",
           "sectionTitle": "Overall",
           "includeRaces": true

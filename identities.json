@@ -35,10 +35,10 @@
     "ksc-2022-summer-series": "695ec346-3d9f-55e7-be1a-544e36aebcad",
     "ksc-2022-warmer-series": "05cb4db7-db88-5b2a-be74-f0e3811b190d",
     "ksc-2023-brass-monkey-series": "10d0741b-a73d-55ec-934d-42e793492b56",
+    "ksc-2023-cooler-series": "b2c3958d-fc2b-5356-8f23-177155d87913",
     "ksc-2023-fireball-munsters-420-leinsters": "68993721-1229-564c-85ed-d5733ff950df",
     "ksc-2023-june-series": "a9c2680e-3a4f-5490-ae54-32ad37af1942",
     "ksc-2023-mayfly-series": "a568444e-3f1b-556c-8165-85c4d708a129",
-    "ksc-2023-october-series": "3ebd79e8-b5d0-579e-836c-46985adf9c85",
     "ksc-2023-open-junior-summer-regatta": "a221f464-4ecf-5385-8ad2-9f5a72fb43f7",
     "ksc-2023-open-summer-regatta": "80cd1810-7ea6-54c0-ad70-aee3eefecd6a",
     "ksc-2023-september-series": "663e8dab-e8d2-537b-a9ed-0a041602a92a",
@@ -46,6 +46,7 @@
     "ksc-2023-summer-series": "759c75fc-7871-5f83-a86f-073eb65b97b4",
     "ksc-2023-warmer-series": "1e542fb7-69dc-5f09-b137-060806979bf0",
     "ksc-2024-brass-monkey-winter": "1082f15d-1f53-5481-89ac-9ceeeb0c7e7f",
+    "ksc-2024-cooler-series": "43fc4f33-a6f6-5d9c-a661-19dae9790f3f",
     "ksc-2024-gp14-munsters": "897d11da-df21-5837-8ee6-abc08788d7d5",
     "ksc-2024-gp14-munsters-alternate-scoring": "316787b6-c22f-5d9d-98ef-17ec22c51146",
     "ksc-2024-june-series": "2334f645-4659-5130-a562-a113746952df",
@@ -54,7 +55,6 @@
     "ksc-2024-june-sprint-3": "31ec04e7-76b6-5229-86c0-f4c00ba440b4",
     "ksc-2024-may-fun-event": "a3b02d98-732a-597b-884d-93cd09752e37",
     "ksc-2024-mayfly-series": "447a738d-4a6b-523f-889a-66444633561f",
-    "ksc-2024-october-series": "29dd6f64-36c1-5d82-b853-047805ff84bd",
     "ksc-2024-september-series": "a412b4f3-531e-5feb-b75a-61bd4f284489",
     "ksc-2024-summer-open-regatta": "d3a59824-d09f-5763-8721-7b75edd3bb1c",
     "ksc-2024-summer-series": "edcaa4bf-2972-5298-b877-b22ffdd6b13f",
@@ -332,16 +332,16 @@
           "168978"
         ],
         [
+          "ksc-2024-cooler-series",
+          "168978"
+        ],
+        [
           "ksc-2024-june-series",
           "168978"
         ],
         [
           "ksc-2024-mayfly-series",
           "99752 ?"
-        ],
-        [
-          "ksc-2024-october-series",
-          "168978"
         ],
         [
           "ksc-2024-september-series",
@@ -494,7 +494,7 @@
           "crew"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "14244",
           "crew"
         ],
@@ -669,7 +669,7 @@
           "14244"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "14244"
         ],
         [
@@ -833,16 +833,16 @@
           "1076"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1976"
+        ],
+        [
           "ksc-2023-june-series",
           "1076"
         ],
         [
           "ksc-2023-mayfly-series",
           "1076"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1976"
         ],
         [
           "ksc-2023-open-summer-regatta",
@@ -1102,7 +1102,7 @@
           "crew"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "14301",
           "crew"
         ],
@@ -1174,17 +1174,17 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1059",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "134668"
         ],
         [
           "ksc-2023-mayfly-series",
           "134668"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1059",
-          "crew"
         ],
         [
           "ksc-2023-open-junior-summer-regatta",
@@ -1218,12 +1218,12 @@
           "crew"
         ],
         [
-          "ksc-2024-june-series",
-          "166313A"
+          "ksc-2024-cooler-series",
+          "166313"
         ],
         [
-          "ksc-2024-october-series",
-          "166313"
+          "ksc-2024-june-series",
+          "166313A"
         ],
         [
           "ksc-2024-summer-open-regatta",
@@ -1294,13 +1294,13 @@
       "club": "KSC",
       "members": [
         [
+          "ksc-2023-cooler-series",
+          "166313"
+        ],
+        [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14584",
           "crew"
-        ],
-        [
-          "ksc-2023-october-series",
-          "166313"
         ],
         [
           "ksc-2023-september-series",
@@ -1315,6 +1315,10 @@
           "190759A"
         ],
         [
+          "ksc-2024-cooler-series",
+          "166313"
+        ],
+        [
           "ksc-2024-june-series",
           "190759A"
         ],
@@ -1325,10 +1329,6 @@
         [
           "ksc-2024-mayfly-series",
           "190759R"
-        ],
-        [
-          "ksc-2024-october-series",
-          "166313"
         ],
         [
           "ksc-2024-september-series",
@@ -1834,15 +1834,15 @@
           "1035"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1035"
+        ],
+        [
           "ksc-2023-june-series",
           "1035"
         ],
         [
           "ksc-2023-mayfly-series",
-          "1035"
-        ],
-        [
-          "ksc-2023-october-series",
           "1035"
         ],
         [
@@ -1858,6 +1858,10 @@
           "1035"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1035"
+        ],
+        [
           "ksc-2024-june-series",
           "1035"
         ],
@@ -1867,10 +1871,6 @@
         ],
         [
           "ksc-2024-mayfly-series",
-          "1035"
-        ],
-        [
-          "ksc-2024-october-series",
           "1035"
         ],
         [
@@ -2019,15 +2019,15 @@
           "147731"
         ],
         [
+          "ksc-2023-cooler-series",
+          "191307"
+        ],
+        [
           "ksc-2023-june-series",
           "191307"
         ],
         [
           "ksc-2023-mayfly-series",
-          "191307"
-        ],
-        [
-          "ksc-2023-october-series",
           "191307"
         ],
         [
@@ -2130,7 +2130,7 @@
           "14013"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "14301"
         ],
         [
@@ -2490,11 +2490,11 @@
           "136519"
         ],
         [
-          "ksc-2024-june-series",
+          "ksc-2024-cooler-series",
           "136519"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-june-series",
           "136519"
         ],
         [
@@ -2680,15 +2680,15 @@
           "crew"
         ],
         [
+          "ksc-2024-cooler-series",
+          "180593"
+        ],
+        [
           "ksc-2024-june-series",
           "180593"
         ],
         [
           "ksc-2024-mayfly-series",
-          "180593"
-        ],
-        [
-          "ksc-2024-october-series",
           "180593"
         ],
         [
@@ -2818,17 +2818,17 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1336",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "1336",
           "crew"
         ],
         [
           "ksc-2023-mayfly-series",
-          "1336",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
           "1336",
           "crew"
         ],
@@ -2867,6 +2867,11 @@
           "crew"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1336",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "1336",
           "crew"
@@ -2878,11 +2883,6 @@
         ],
         [
           "ksc-2024-june-sprint-2",
-          "1336",
-          "crew"
-        ],
-        [
-          "ksc-2024-october-series",
           "1336",
           "crew"
         ],
@@ -3420,7 +3420,7 @@
           "crew"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "14584",
           "crew"
         ],
@@ -3495,11 +3495,11 @@
           "183"
         ],
         [
-          "ksc-2023-june-series",
+          "ksc-2023-cooler-series",
           "183"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-june-series",
           "183"
         ],
         [
@@ -3519,6 +3519,10 @@
           "183"
         ],
         [
+          "ksc-2024-cooler-series",
+          "183"
+        ],
+        [
           "ksc-2024-june-series",
           "183"
         ],
@@ -3531,10 +3535,6 @@
           "ksc-2024-mayfly-series",
           "1138",
           "crew"
-        ],
-        [
-          "ksc-2024-october-series",
-          "183"
         ],
         [
           "ksc-2024-summer-open-regatta",
@@ -3750,17 +3750,17 @@
           "crew"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1549",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "1549",
           "crew"
         ],
         [
           "ksc-2024-mayfly-series",
-          "1549",
-          "crew"
-        ],
-        [
-          "ksc-2024-october-series",
           "1549",
           "crew"
         ],
@@ -3998,15 +3998,15 @@
           "190759"
         ],
         [
+          "ksc-2023-cooler-series",
+          "190759"
+        ],
+        [
           "ksc-2023-june-series",
           "190759"
         ],
         [
           "ksc-2023-mayfly-series",
-          "190759"
-        ],
-        [
-          "ksc-2023-october-series",
           "190759"
         ],
         [
@@ -4026,6 +4026,10 @@
           "190759"
         ],
         [
+          "ksc-2024-cooler-series",
+          "190759"
+        ],
+        [
           "ksc-2024-june-series",
           "190759"
         ],
@@ -4039,10 +4043,6 @@
         ],
         [
           "ksc-2024-mayfly-series",
-          "190759"
-        ],
-        [
-          "ksc-2024-october-series",
           "190759"
         ],
         [
@@ -4186,6 +4186,11 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "15584",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "14584",
           "crew"
@@ -4193,11 +4198,6 @@
         [
           "ksc-2023-mayfly-series",
           "14584",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
-          "15584",
           "crew"
         ],
         [
@@ -4427,15 +4427,15 @@
           "89875"
         ],
         [
+          "ksc-2023-cooler-series",
+          "175818"
+        ],
+        [
           "ksc-2023-june-series",
           "175818"
         ],
         [
           "ksc-2023-mayfly-series",
-          "175818"
-        ],
-        [
-          "ksc-2023-october-series",
           "175818"
         ],
         [
@@ -4459,15 +4459,15 @@
           "175818"
         ],
         [
+          "ksc-2024-cooler-series",
+          "175818"
+        ],
+        [
           "ksc-2024-june-sprint-3",
           "175818"
         ],
         [
           "ksc-2024-may-fun-event",
-          "175818"
-        ],
-        [
-          "ksc-2024-october-series",
           "175818"
         ],
         [
@@ -4546,15 +4546,15 @@
           "188055"
         ],
         [
+          "ksc-2023-cooler-series",
+          "188055"
+        ],
+        [
           "ksc-2023-june-series",
           "188055"
         ],
         [
           "ksc-2023-mayfly-series",
-          "188055"
-        ],
-        [
-          "ksc-2023-october-series",
           "188055"
         ],
         [
@@ -4746,13 +4746,13 @@
           "crew"
         ],
         [
-          "ksc-2023-mayfly-series",
-          "1076",
+          "ksc-2023-cooler-series",
+          "1976",
           "crew"
         ],
         [
-          "ksc-2023-october-series",
-          "1976",
+          "ksc-2023-mayfly-series",
+          "1076",
           "crew"
         ],
         [
@@ -5091,7 +5091,7 @@
           "crew"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "226",
           "crew"
         ],
@@ -5147,12 +5147,12 @@
       ]
     },
     {
-      "slug": "enda-griffin-49y8",
+      "slug": "enda-griffin-j5dm",
       "name": "Enda Griffin",
       "club": "KSC",
       "members": [
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "182605"
         ]
       ]
@@ -5269,17 +5269,17 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1436",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "1436",
           "crew"
         ],
         [
           "ksc-2023-mayfly-series",
-          "1436",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
           "1436",
           "crew"
         ],
@@ -5309,12 +5309,12 @@
           "crew"
         ],
         [
-          "ksc-2024-june-series",
+          "ksc-2024-cooler-series",
           "1436",
           "crew"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-june-series",
           "1436",
           "crew"
         ],
@@ -5655,6 +5655,10 @@
           "177870"
         ],
         [
+          "ksc-2024-cooler-series",
+          "177870"
+        ],
+        [
           "ksc-2024-june-series",
           "177870"
         ],
@@ -5668,10 +5672,6 @@
         ],
         [
           "ksc-2024-mayfly-series",
-          "177870"
-        ],
-        [
-          "ksc-2024-october-series",
           "177870"
         ],
         [
@@ -5829,12 +5829,12 @@
           "1"
         ],
         [
-          "ksc-2023-june-series",
-          "182605"
+          "ksc-2023-cooler-series",
+          "179316"
         ],
         [
-          "ksc-2023-october-series",
-          "179316"
+          "ksc-2023-june-series",
+          "182605"
         ]
       ]
     },
@@ -6128,15 +6128,15 @@
           "1452"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1549"
+        ],
+        [
           "ksc-2024-june-series",
           "1549"
         ],
         [
           "ksc-2024-mayfly-series",
-          "1549"
-        ],
-        [
-          "ksc-2024-october-series",
           "1549"
         ],
         [
@@ -6332,6 +6332,10 @@
           "226"
         ],
         [
+          "ksc-2023-cooler-series",
+          "226"
+        ],
+        [
           "ksc-2023-june-series",
           "226"
         ],
@@ -6344,20 +6348,16 @@
           "226"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-summer-series",
           "226"
         ],
         [
-          "ksc-2023-summer-series",
+          "ksc-2024-cooler-series",
           "226"
         ],
         [
           "ksc-2024-june-series",
           "228"
-        ],
-        [
-          "ksc-2024-october-series",
-          "226"
         ],
         [
           "ksc-2024-september-series",
@@ -6750,6 +6750,10 @@
           "14584"
         ],
         [
+          "ksc-2023-cooler-series",
+          "15584"
+        ],
+        [
           "ksc-2023-fireball-munsters-420-leinsters",
           "14584"
         ],
@@ -6760,10 +6764,6 @@
         [
           "ksc-2023-mayfly-series",
           "14584"
-        ],
-        [
-          "ksc-2023-october-series",
-          "15584"
         ],
         [
           "ksc-2023-open-summer-regatta",
@@ -6786,11 +6786,11 @@
           "14584"
         ],
         [
-          "ksc-2024-june-series",
+          "ksc-2024-cooler-series",
           "14584"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-june-series",
           "14584"
         ],
         [
@@ -6876,12 +6876,12 @@
           "crew"
         ],
         [
-          "ksc-2023-mayfly-series",
+          "ksc-2023-cooler-series",
           "1263",
           "crew"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-mayfly-series",
           "1263",
           "crew"
         ],
@@ -7082,15 +7082,15 @@
           "1436"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1436"
+        ],
+        [
           "ksc-2023-june-series",
           "1436"
         ],
         [
           "ksc-2023-mayfly-series",
-          "1436"
-        ],
-        [
-          "ksc-2023-october-series",
           "1436"
         ],
         [
@@ -7118,16 +7118,16 @@
           "1436"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1436"
+        ],
+        [
           "ksc-2024-june-series",
           "1436"
         ],
         [
           "ksc-2024-june-series",
           "177870A"
-        ],
-        [
-          "ksc-2024-october-series",
-          "1436"
         ],
         [
           "ksc-2024-september-series",
@@ -7349,15 +7349,15 @@
           "7173"
         ],
         [
+          "ksc-2023-cooler-series",
+          "7173"
+        ],
+        [
           "ksc-2023-june-series",
           "7173"
         ],
         [
           "ksc-2023-mayfly-series",
-          "7173"
-        ],
-        [
-          "ksc-2023-october-series",
           "7173"
         ],
         [
@@ -7373,7 +7373,7 @@
           "7173"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "624"
         ],
         [
@@ -7824,16 +7824,16 @@
           "184"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1"
+        ],
+        [
           "ksc-2023-june-series",
           "6869"
         ],
         [
           "ksc-2023-mayfly-series",
           "184"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1"
         ],
         [
           "ksc-2023-open-junior-summer-regatta",
@@ -7860,6 +7860,10 @@
           "1485"
         ],
         [
+          "ksc-2024-cooler-series",
+          "190759K"
+        ],
+        [
           "ksc-2024-june-series",
           "6869"
         ],
@@ -7871,10 +7875,6 @@
         [
           "ksc-2024-may-fun-event",
           "166313"
-        ],
-        [
-          "ksc-2024-october-series",
-          "190759K"
         ],
         [
           "ksc-2024-summer-series",
@@ -8150,6 +8150,11 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1976",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "1076",
           "crew"
@@ -8157,11 +8162,6 @@
         [
           "ksc-2023-mayfly-series",
           "1076",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1976",
           "crew"
         ],
         [
@@ -8356,12 +8356,12 @@
       ]
     },
     {
-      "slug": "liz-cooper-8k8f",
+      "slug": "liz-cooper-8r5e",
       "name": "Liz Cooper",
       "club": "Killaloe Sailing Club",
       "members": [
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "7173",
           "crew"
         ]
@@ -8639,7 +8639,7 @@
           "4365"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "166313M"
         ],
         [
@@ -8874,6 +8874,11 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "226",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "226",
           "crew"
@@ -8885,11 +8890,6 @@
         ],
         [
           "ksc-2023-mayfly-series",
-          "226",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
           "226",
           "crew"
         ],
@@ -8909,13 +8909,13 @@
           "crew"
         ],
         [
-          "ksc-2024-june-series",
-          "228",
+          "ksc-2024-cooler-series",
+          "226",
           "crew"
         ],
         [
-          "ksc-2024-october-series",
-          "226",
+          "ksc-2024-june-series",
+          "228",
           "crew"
         ],
         [
@@ -9274,7 +9274,7 @@
       "club": "KSC",
       "members": [
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "1",
           "crew"
         ],
@@ -9589,7 +9589,7 @@
           "9999"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "226"
         ],
         [
@@ -9909,16 +9909,16 @@
           "174731"
         ],
         [
+          "ksc-2024-cooler-series",
+          "203275"
+        ],
+        [
           "ksc-2024-june-series",
           "1"
         ],
         [
           "ksc-2024-mayfly-series",
           "149211"
-        ],
-        [
-          "ksc-2024-october-series",
-          "203275"
         ],
         [
           "ksc-2024-summer-series",
@@ -10115,11 +10115,11 @@
           "938"
         ],
         [
-          "ksc-2023-mayfly-series",
+          "ksc-2023-cooler-series",
           "938"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-mayfly-series",
           "938"
         ],
         [
@@ -10139,11 +10139,11 @@
           "938"
         ],
         [
-          "ksc-2024-mayfly-series",
+          "ksc-2024-cooler-series",
           "938"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-mayfly-series",
           "938"
         ],
         [
@@ -10214,6 +10214,11 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "1035",
           "crew"
@@ -10221,11 +10226,6 @@
         [
           "ksc-2023-mayfly-series",
           "134668X"
-        ],
-        [
-          "ksc-2023-october-series",
-          "1035",
-          "crew"
         ],
         [
           "ksc-2023-open-summer-regatta",
@@ -10248,6 +10248,11 @@
           "crew"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1035",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "1035",
           "crew"
@@ -10259,11 +10264,6 @@
         ],
         [
           "ksc-2024-mayfly-series",
-          "1035",
-          "crew"
-        ],
-        [
-          "ksc-2024-october-series",
           "1035",
           "crew"
         ],
@@ -10847,7 +10847,7 @@
           "101"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "101"
         ],
         [
@@ -11567,15 +11567,15 @@
           "193448"
         ],
         [
+          "ksc-2023-cooler-series",
+          "193448"
+        ],
+        [
           "ksc-2023-june-series",
           "193448"
         ],
         [
           "ksc-2023-mayfly-series",
-          "193448"
-        ],
-        [
-          "ksc-2023-october-series",
           "193448"
         ],
         [
@@ -11588,6 +11588,10 @@
         ],
         [
           "ksc-2023-warmer-series",
+          "193448"
+        ],
+        [
+          "ksc-2024-cooler-series",
           "193448"
         ],
         [
@@ -11613,10 +11617,6 @@
         [
           "ksc-2024-mayfly-series",
           "1138"
-        ],
-        [
-          "ksc-2024-october-series",
-          "193448"
         ],
         [
           "ksc-2024-september-series",
@@ -11803,15 +11803,15 @@
           "215187"
         ],
         [
+          "ksc-2023-cooler-series",
+          "215187"
+        ],
+        [
           "ksc-2023-june-series",
           "215187"
         ],
         [
           "ksc-2023-mayfly-series",
-          "215187"
-        ],
-        [
-          "ksc-2023-october-series",
           "215187"
         ],
         [
@@ -11949,11 +11949,11 @@
           "1263"
         ],
         [
-          "ksc-2023-mayfly-series",
+          "ksc-2023-cooler-series",
           "1263"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-mayfly-series",
           "1263"
         ],
         [
@@ -12289,15 +12289,15 @@
           "1336"
         ],
         [
+          "ksc-2023-cooler-series",
+          "1336"
+        ],
+        [
           "ksc-2023-june-series",
           "1336"
         ],
         [
           "ksc-2023-mayfly-series",
-          "1336"
-        ],
-        [
-          "ksc-2023-october-series",
           "1336"
         ],
         [
@@ -12325,6 +12325,10 @@
           "1336"
         ],
         [
+          "ksc-2024-cooler-series",
+          "1336"
+        ],
+        [
           "ksc-2024-june-series",
           "1336"
         ],
@@ -12338,10 +12342,6 @@
         ],
         [
           "ksc-2024-may-fun-event",
-          "1336"
-        ],
-        [
-          "ksc-2024-october-series",
           "1336"
         ],
         [
@@ -12616,6 +12616,11 @@
           "crew"
         ],
         [
+          "ksc-2023-cooler-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2023-june-series",
           "149211"
         ],
@@ -12626,11 +12631,6 @@
         ],
         [
           "ksc-2023-mayfly-series",
-          "938",
-          "crew"
-        ],
-        [
-          "ksc-2023-october-series",
           "938",
           "crew"
         ],
@@ -12658,6 +12658,11 @@
           "149211"
         ],
         [
+          "ksc-2024-cooler-series",
+          "938",
+          "crew"
+        ],
+        [
           "ksc-2024-june-series",
           "149211"
         ],
@@ -12667,11 +12672,6 @@
         ],
         [
           "ksc-2024-mayfly-series",
-          "938",
-          "crew"
-        ],
-        [
-          "ksc-2024-october-series",
           "938",
           "crew"
         ],
@@ -12783,11 +12783,11 @@
           "163413"
         ],
         [
-          "ksc-2023-june-series",
+          "ksc-2023-cooler-series",
           "163413"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-june-series",
           "163413"
         ],
         [
@@ -12979,7 +12979,7 @@
           "crew"
         ],
         [
-          "ksc-2024-october-series",
+          "ksc-2024-cooler-series",
           "624",
           "crew"
         ],
@@ -13109,7 +13109,7 @@
           "1049"
         ],
         [
-          "ksc-2023-october-series",
+          "ksc-2023-cooler-series",
           "1059"
         ],
         [

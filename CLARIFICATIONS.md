@@ -85,11 +85,44 @@ the 2026 Warmer Series page is still headed "2025 Warmer Series", and the
 - for a numbered run of events (the 2024 June Sprints) the filename ordinal
   wins, being the only signal that separates them.
 
-> ❓ **For the club** ([#3](https://github.com/sailscoring/ksc-archive/issues/3))**:** are "Baltic Series", "Warmer Series", "Cooler Series",
-> "Mayfly Series" and "Brass Monkey" the names the club wants shown, and is
-> "Summer Series" the right label for what Sailwave files as "Summer Super
-> Series"? The 2024–2026 season pages say yes; the earlier seasons are
-> inferred from Sailwave alone.
+**The autumn series is the Cooler Series.** It has been published under both
+"Cooler Series" and "October Series", and for 2024 the two sources disagree
+with each other — the Sailwave `<h1>` says Cooler, the club's own season page
+says October. The club settled it
+([#3](https://github.com/sailscoring/ksc-archive/issues/3)): it is one
+recurring event, both names have been used for it over the years, and it is
+the Cooler Series. The two pages published as October
+(`2023_October_Series.htm` and `2024_Cooler_Series.htm`) take their name from
+`CONFIRMED_NAMES` in `scripts/emit-as-published-config.ts`, which outranks
+both sources; the captures themselves are untouched, as always.
+
+A confirmed name is a **migration, not an edit** (rule 6): the key is derived
+from the name, and the series id from the key.
+
+| Was | Now |
+|---|---|
+| `ksc-2023-october-series` · `3ebd79e8-…` · `/p/ksc/2023/october-series` | `ksc-2023-cooler-series` · `b2c3958d-…` · `/p/ksc/2023/cooler-series` |
+| `ksc-2024-october-series` · `29dd6f64-…` · `/p/ksc/2024/october-series` | `ksc-2024-cooler-series` · `43fc4f33-…` · `/p/ksc/2024/cooler-series` |
+
+Two sailors appear in no other series, so the slug each was minted against
+moved with the series key: `enda-griffin-49y8` → `enda-griffin-j5dm`, and
+`liz-cooper-8k8f` → `liz-cooper-8r5e`. Every other slug was preserved (408 of
+410). So the ingest of this rename has two manual steps, neither of which the
+pipeline does for you:
+
+- **four redirects** for the old public paths (app ADR-011,
+  `pnpm redirects add ksc <from> <to>` — two season paths and two
+  `competitor/<slug>` paths);
+- **deleting the two superseded series rows** from the workspace. Ingest is
+  additive and keyed by content hash; nothing prunes a series whose key no
+  longer exists.
+
+> ❓ **For the club** ([#3](https://github.com/sailscoring/ksc-archive/issues/3))**:** are "Baltic Series", "Warmer Series", "Mayfly Series"
+> and "Brass Monkey" the names the club wants shown, and is "Summer Series"
+> the right label for what Sailwave files as "Summer Super Series"? The
+> 2024–2026 season pages say yes; the earlier seasons are inferred from
+> Sailwave alone. Was the 2021 "Killaloe Sailing Regatta", captured as
+> `2021_Spring_regatta.htm`, the Spring Regatta?
 
 ## Coverage gaps
 
