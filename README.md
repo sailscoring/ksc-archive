@@ -123,7 +123,7 @@ per year. CI re-ingests on every push to `main`.
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
-- ✅ **The identity manifest** — 1,604 rows resolved to **410 sailors**
+- ✅ **The identity manifest** — 1,604 rows resolved to **408 sailors**
   (`identities.json`), applied and live: the
   [competitor index](https://app.sailscoring.ie/p/ksc/competitors) and a career
   arc per sailor, spanning nine seasons
@@ -135,9 +135,9 @@ per year. CI re-ingests on every push to `main`.
   record entirely. Each person on a boat is now a sailor in their own right:
   **143 who had no page at all**, and **62 existing sailors** who turn out to
   helm some seasons and crew others. See CLARIFICATIONS §11.
-- ✅ **Cross-spelling merges** — 54 curated groups covering 78 alternative
+- ✅ **Cross-spelling merges** — 56 curated groups covering 80 alternative
   spellings, including the `(J)` junior tag and five bare first names, took
-  444 drafted sailors to 410. Two pairs that had been put to the club as
+  444 drafted sailors to 408. Five pairs that had been put to the club as
   open questions turned out to be one sailor each. See CLARIFICATIONS §9.
 - ⬜ **Drop the duplicate 2024 GP14 Munsters** — the club confirmed the Gold /
   Silver / Bronze split and the single overall are the same result, published
@@ -145,15 +145,15 @@ per year. CI re-ingests on every push to `main`.
   ([#4](https://github.com/sailscoring/ksc-archive/issues/4)). The fleet split
   is kept and the overall skipped, which takes the corpus to 75 series and
   stops every GP14 competitor entering the identity spine twice. The skipped
-  series row needs deleting from the workspace, and a redirect. Publishing
-  both properly is app
-  [#363](https://github.com/sailscoring/sailscoring/issues/363).
+  series row needs deleting from the workspace. Publishing both properly is
+  app [#363](https://github.com/sailscoring/sailscoring/issues/363).
 - ⬜ **Land the Cooler Series rename** — the club confirmed the autumn series
   is the Cooler Series everywhere
   ([#3](https://github.com/sailscoring/ksc-archive/issues/3)), so 2023 and 2024
   are no longer "October Series". That re-mints two series ids and two
-  competitor slugs: the four old paths need redirects and the two superseded
-  series rows need deleting from the workspace. See CLARIFICATIONS §5.
+  competitor slugs, and the two superseded series rows need deleting from the
+  workspace. The old paths are left to 404 — nothing links into the archive
+  yet, so URLs may still move. See CLARIFICATIONS §5.
 - ⬜ **Refresh 2026** as the season finishes
   ([#8](https://github.com/sailscoring/ksc-archive/issues/8)).
 
@@ -169,7 +169,7 @@ and written up in CLARIFICATIONS.md.
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
 | [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | the autumn series is answered — it is the Cooler Series everywhere, and 2023/2024 have been renamed to match; the rest of the naming is still open |
 | [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | answered — one result published two ways, on purpose; the archive keeps the fleet split and skips the overall |
-| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Six identity questions** | same sailor or two — two of the original five have since been answered from the crew field — plus the correct spelling of one Fireball sailor's name and three helms entered under a first name alone |
+| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Identity questions** | all five same-sailor-or-two pairs are answered, three by the club; still open are the correct spelling of one Fireball sailor's name, whether his two crew are one person, and three helms entered under a first name alone |
 | [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | prize-winners, anything pre-2018, sailing instructions |
 
 ## Relationship to the app repo

@@ -1812,7 +1812,31 @@
           "1035"
         ],
         [
+          "ksc-2021-winter-regatta",
+          "1035"
+        ],
+        [
+          "ksc-2022-june-series",
+          "1035"
+        ],
+        [
           "ksc-2022-mayfly-series",
+          "1035"
+        ],
+        [
+          "ksc-2022-open-summer-regatta",
+          "1035"
+        ],
+        [
+          "ksc-2022-rs-inlands",
+          "1035"
+        ],
+        [
+          "ksc-2022-september-series",
+          "1035"
+        ],
+        [
+          "ksc-2022-summer-series",
           "1035"
         ],
         [
@@ -1832,11 +1856,19 @@
           "1035"
         ],
         [
+          "ksc-2023-open-summer-regatta",
+          "1035"
+        ],
+        [
           "ksc-2023-september-series",
           "1035"
         ],
         [
           "ksc-2023-spring-regatta",
+          "1035"
+        ],
+        [
+          "ksc-2023-summer-series",
           "1035"
         ],
         [
@@ -1919,7 +1951,8 @@
           "ksc-2026-spring-series",
           "1035"
         ]
-      ]
+      ],
+      "note": "42 rows and 8, both KSC, both on RS 400 1035, never in the same series — but Brian and Bryan are two real names and 8 rows is a lot for a typo, so this was asked about rather than merged. The club confirms one sailor who uses both spellings, and standardises on Brian (#5)."
     },
     {
       "slug": "brian-cunningham-xqnk",
@@ -2144,45 +2177,6 @@
           "ksc-2024-gp14-munsters",
           "14284",
           "crew"
-        ]
-      ]
-    },
-    {
-      "slug": "bryan-bryce-p2mc",
-      "name": "Bryan Bryce",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2021-winter-regatta",
-          "1035"
-        ],
-        [
-          "ksc-2022-june-series",
-          "1035"
-        ],
-        [
-          "ksc-2022-open-summer-regatta",
-          "1035"
-        ],
-        [
-          "ksc-2022-rs-inlands",
-          "1035"
-        ],
-        [
-          "ksc-2022-september-series",
-          "1035"
-        ],
-        [
-          "ksc-2022-summer-series",
-          "1035"
-        ],
-        [
-          "ksc-2023-open-summer-regatta",
-          "1035"
-        ],
-        [
-          "ksc-2023-summer-series",
-          "1035"
         ]
       ]
     },
@@ -5450,7 +5444,7 @@
           "2"
         ]
       ],
-      "note": "Both Lough Ree, 2023 — unlike his namesake Siofra, whose two spellings carry different clubs and are left apart."
+      "note": "Both Lough Ree, 2023. His namesake Siofra carries the same two spellings, but across two clubs, so hers rested on the club's word rather than on the evidence here."
     },
     {
       "slug": "fionn-sweeney-5vrs",
@@ -8621,7 +8615,7 @@
           "10826"
         ]
       ],
-      "note": "Wayfarer 10826 with Mike Hayes crewing, in 2019 (Cullaun) and 2025 (KSC / Cullaun SC) — the same private boat and the same crew either side of a gap. 'Margaret Hayes' appears once, on the row where the crew cell immediately below reads 'Mike Hayes'; 'Margaret Hynes' appears twice, on rows where the two surnames differ. The doubled surname is read as the slip, so Hynes is published. CLARIFICATIONS.md §9 previously listed this pair as almost certainly two people; the crew field is what settled it."
+      "note": "Wayfarer 10826 with Mike Hayes crewing, in 2019 (Cullaun) and 2025 (KSC / Cullaun SC) — the same private boat and the same crew either side of a gap. 'Margaret Hayes' appears once, on the row where the crew cell immediately below reads 'Mike Hayes'; 'Margaret Hynes' appears twice, on rows where the two surnames differ. The doubled surname is read as the slip, so Hynes is published. CLARIFICATIONS.md §9 previously listed this pair as almost certainly two people; the crew field is what settled it, and the club has since confirmed it — Hynes is right and the 2019 spelling a typo (#5)."
     },
     {
       "slug": "margaret-watts-c5mh",
@@ -11842,9 +11836,13 @@
     },
     {
       "slug": "siofra-macnamara-aec2",
-      "name": "Siofra MacNamara",
+      "name": "Siofra McNamara",
       "club": "Lough Ree YC",
       "members": [
+        [
+          "ksc-2023-fireball-munsters-420-leinsters",
+          "IRL 49801"
+        ],
         [
           "ksc-2023-open-junior-summer-regatta",
           "53053"
@@ -11856,17 +11854,6 @@
         [
           "ksc-2023-september-series",
           "179313"
-        ]
-      ]
-    },
-    {
-      "slug": "siofra-mcnamara-7a3u",
-      "name": "Siofra McNamara",
-      "club": "KSC",
-      "members": [
-        [
-          "ksc-2023-fireball-munsters-420-leinsters",
-          "IRL 49801"
         ],
         [
           "ksc-2023-summer-series",
@@ -11876,7 +11863,8 @@
           "ksc-2024-warmer-series",
           "179313"
         ]
-      ]
+      ],
+      "note": "Three rows each, both sailing 179313 and never in the same series, but entered under Lough Ree YC in 2023 and KSC in 2023-24 — a difference in club normally holds a pair apart, and this one was asked about instead. The club confirms one sailor who is a member of both (#5). Which spelling she uses is not confirmed: McNamara is published because it is what her KSC entries carry and what her namesake Fionn is published under."
     },
     {
       "slug": "sophia-cahill-p6se",
@@ -12984,7 +12972,7 @@
           "1549"
         ]
       ],
-      "note": "CLARIFICATIONS.md §9 previously held 'Timothy O'Neill' apart because it carried Cullaun rather than KSC. Reading crew as well as helms settled it: both spellings helm RS 200 1059 with Martin Bon in 2022 and with Aoibhí Ryan in 2023, and 'Tim O'Neill' himself is entered as Cullaun in 2022 and as 'Cullaun / KSC' in 2023."
+      "note": "CLARIFICATIONS.md §9 previously held 'Timothy O'Neill' apart because it carried Cullaun rather than KSC. Reading crew as well as helms settled it: both spellings helm RS 200 1059 with Martin Bon in 2022 and with Aoibhí Ryan in 2023, and 'Tim O'Neill' himself is entered as Cullaun in 2022 and as 'Cullaun / KSC' in 2023. The club confirms it (#5): one sailor, a member of another club before he joined KSC, given name Timothy and preferred name Tim — so Tim is published."
     },
     {
       "slug": "tom-ryan-ta5a",

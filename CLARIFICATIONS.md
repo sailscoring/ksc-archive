@@ -120,16 +120,17 @@ from the name, and the series id from the key.
 
 Two sailors appear in no other series, so the slug each was minted against
 moved with the series key: `enda-griffin-49y8` → `enda-griffin-j5dm`, and
-`liz-cooper-8k8f` → `liz-cooper-8r5e`. Every other slug was preserved (408 of
-410). So the ingest of this rename has two manual steps, neither of which the
-pipeline does for you:
+`liz-cooper-8k8f` → `liz-cooper-8r5e`. Every other slug was preserved.
 
-- **four redirects** for the old public paths (app ADR-011,
-  `pnpm redirects add ksc <from> <to>` — two season paths and two
-  `competitor/<slug>` paths);
-- **deleting the two superseded series rows** from the workspace. Ingest is
-  additive and keyed by content hash; nothing prunes a series whose key no
-  longer exists.
+**The four old paths are being left to 404 rather than redirected** — a
+deliberate call while the archive is unannounced and nothing external links
+into it, taken with the club's answers still arriving. Once it is announced,
+rule 5 and rule 6 apply in full and a move needs a redirect (app ADR-011,
+`pnpm redirects add ksc <from> <to>`).
+
+The rename does still need **the two superseded series rows deleted** from the
+workspace: ingest is additive and keyed by content hash, so nothing prunes a
+series whose key no longer exists.
 
 > ❓ **For the club** ([#3](https://github.com/sailscoring/ksc-archive/issues/3))**:** are "Baltic Series", "Warmer Series", "Mayfly Series"
 > and "Brass Monkey" the names the club wants shown, and is "Summer Series"
@@ -185,7 +186,7 @@ back to the club's presentation.
 
 The competitor-identity manifest (`identities.json`, app #218) groups the
 **2,353 people** named across the 1,604 competitor rows — helms and crew
-alike (§11) — into **410 sailors**. It is drafted by `pnpm identities`
+alike (§11) — into **408 sailors**. It is drafted by `pnpm identities`
 through the app's canonical matcher, then shaped by two rules.
 
 **The default: clusters sharing a name are one sailor.** The matcher is
@@ -218,7 +219,7 @@ obvious slip. The slips that qualify:
   the name being unique alone, since the boats they sailed are shared club
   hulls (§10) and corroborate nothing.
 
-That covers 54 groups and 78 alternative spellings, the largest being the
+That covers 56 groups and 80 alternative spellings, the largest being the
 Fireball sailor published as **Andreas Gonzalves / Andres Gonzalez / Andreas
 Gonzalez / Andres Gonzales / Andreas / Andres Gonzalves** across 2019–2024
 (confirmed by the club; the correct spelling still isn't known, so the display
@@ -238,9 +239,6 @@ failing those tests is left apart and asked about instead:
 >
 > | | |
 > |---|---|
-> | `Brian Bryce` (42 rows, 2018–2026) / `Bryan Bryce` (8 rows, 2021–2023) | both KSC, never in the same series |
-> | `Siofra MacNamara` (3, Lough Ree YC, 2023) / `Siofra McNamara` (3, KSC, 2023–24) | same spelling pattern as Fionn McNamara, but the clubs differ |
-> | `Sean Cunningham` (43, KSC) / `John Cunningham` (1, Killaloe SC) | same club; Seán/John is the same name in Irish, but also two common ones |
 > | `Ana Gonzalves` (6, KSC, 2022–24) / `Ana Maria Grande` (15, KSC, 2019–23) | the same seat on the same Fireball, crewing for Andres Gonzalves, never in the same series — but a different surname is not a slip, so they are left apart |
 > | `Colin` (1, KSC, 2020) — `Colin Hart` or `Colin Haugh`? | he helmed RS 200 761, a shared club boat Colin Hart, Mike Hart, Reggie Quinn and Shirley O'Neill all used, so it settles nothing |
 > | `Liam` (1, 2024), `Paul` (1, 2025) | two Liams and four Pauls in the corpus |
@@ -248,15 +246,31 @@ failing those tests is left apart and asked about instead:
 > Two 2019–2022 helm entries are recorded as `??`, and stand as a single
 > sailor named `??` for want of anything to call them.
 
-Two rows were on that list and have come off it. `Tim O'Neill` / `Timothy
-O'Neill` were held apart for carrying different clubs; reading crew as well as
-helms (§11) showed both spellings helming RS 200 1059 with the same crew in
-the same seasons, and `Tim O'Neill` himself entered as Cullaun in 2022. And
-`Margaret Hayes` / `Margaret Hynes`, called "almost certainly two people",
-turn out to be one: the same privately owned Wayfarer 10826 with the same
-crew, `Mike Hayes`, in 2019 and 2025. The single `Hayes` row is the one whose
-crew cell repeats that surname, so it reads as the slip and `Margaret Hynes`
-is published.
+**Five pairs have come off that list**, two from the evidence and three from
+the club ([#5](https://github.com/sailscoring/ksc-archive/issues/5)).
+
+The two the corpus answered itself, once crew were read as well as helms
+(§11): `Tim O'Neill` / `Timothy O'Neill`, held apart for carrying different
+clubs, turned out to helm RS 200 1059 with the same crew in the same seasons,
+with `Tim O'Neill` himself entered as Cullaun in 2022 — and `Margaret Hayes` /
+`Margaret Hynes`, called "almost certainly two people", turned out to be the
+same privately owned Wayfarer 10826 with the same crew, `Mike Hayes`, in 2019
+and 2025. The club has since confirmed both of those and answered the three
+still standing:
+
+| Pair | The club's answer |
+|---|---|
+| `Brian Bryce` / `Bryan Bryce` | one sailor who uses both spellings; the club standardises on **Brian**. Both spellings sail RS 400 1035 and never meet in a series, which is why this was asked rather than guessed — 8 rows is a lot for a typo, and Brian and Bryan are two real names. |
+| `Siofra MacNamara` / `Siofra McNamara` | one sailor, a member of both clubs. Both spellings sail 179313. Which spelling *she* uses is still unconfirmed; **McNamara** is published, being what her KSC entries carry. |
+| `Sean Cunningham` / `John Cunningham` | **two people** — brothers, John not a regular sailor. The corpus agrees, and could have said so: in the 2018 Summer Regatta John helms 14750 with Sean crewing, so they are on one boat at one time. |
+| `Timothy` / `Tim O'Neill` | one sailor, at another club before he joined KSC. Given name Timothy, preferred name **Tim**. |
+| `Margaret Hayes` / `Margaret Hynes` | one sailor; **Hynes** is right and the 2019 spelling a typo. |
+
+Merging the two pairs cost two identities and no data: 410 sailors became
+**408**, with `Bryan Bryce`'s eight rows joining Brian's 42 and Siofra's two
+threes becoming one six. `Siofra McNamara` keeps the slug her `MacNamara`
+cluster was minted under, as five other curated names already do — the slug is
+the identifier, the name is the label, and only the label moves.
 
 ### 10. Boats are shared, so a sail number is not a sailor
 
@@ -274,7 +288,7 @@ named crew contributed nobody, and the people who only ever crew sailed the
 whole record and got no sailor page. App
 [#348](https://github.com/sailscoring/sailscoring/issues/348) fixed that:
 every person on a boat is a member row of its own, tagged with the slot they
-filled. The manifest went from 278 sailors to 444, and to **410** once the
+filled. The manifest went from 278 sailors to 444, and to **408** once the
 cross-spelling merges in §9 were applied: **143 of them appear only ever as
 crew** and had no record at all before this, and **62 both helm and crew**.
 
