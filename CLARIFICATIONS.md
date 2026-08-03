@@ -36,7 +36,8 @@ filename.
 KSC re-uploads a running series as it progresses, sometimes under a variant
 filename. Where several uploads are the same series, the one with the most
 races wins (ties break to the latest upload); the rest are recorded in
-`as-published-skips.json` and not ingested. Six pages:
+`as-published-skips.json` and not ingested. Six pages, plus one the club told
+us about (§4):
 
 | Skipped | Superseded by | Why |
 |---|---|---|
@@ -46,6 +47,7 @@ races wins (ties break to the latest upload); the rest are recorded in
 | `2022_September_Series.htm` | `September_Series_2022.htm` | 4 races, mid-series |
 | `Summer_Series_2022.htm` | `2022_Summer_Series.htm` | byte-identical, uploaded 21 s apart |
 | `2004_Summer_Super_Series.htm` | `2024_Summer_Super_Series.htm` | 8 races vs 16 |
+| `2024_GP14_Munsters_alternate.htm` | `2024_GP14_Munsters.htm` | the same result published a second way (§4) |
 
 ### 3. Pages with nothing sailed
 
@@ -63,12 +65,24 @@ complete published result.
 
 `2024_GP14_Munsters.htm` (Gold / Silver / Bronze fleets) and
 `2024_GP14_Munsters_alternate.htm` (a single overall) were uploaded a minute
-apart on 2024-04-21. Both are part of the published record, so both are
-ingested; the second is named "GP14 Munsters (alternate scoring) 2024".
+apart on 2024-04-21. Both were published on purpose: the club
+([#4](https://github.com/sailscoring/ksc-archive/issues/4)) confirms they are
+the same racing and the same scores, put out in both formats at the GP14
+class's request, so sailors could see where they finished among their peers
+*and* within their fleet.
 
-> ❓ **For the club** ([#4](https://github.com/sailscoring/ksc-archive/issues/4))**:** which of the two does the class consider the official
-> result? If one supersedes the other we should skip it rather than publish
-> both.
+Neither supersedes the other, then — but two series is the wrong shape for
+one result. It lists the regatta twice in the 2024 index, and `rows` is
+structural, not display: every GP14 competitor entered the identity spine
+twice off one event, which is why the manifest counted 199 sailors in more
+than one series where it now counts 156.
+
+So the **fleet split is archived and the single overall is skipped** (§2) —
+the finer-grained of the two, and the one the class's own gold/silver/bronze
+placings live in. That drops a view the club deliberately published, which is
+a loss, not a fix. Carrying both properly — one result, a switch between
+presentations, only one of them structural — is app-side work, filed as
+[sailscoring#363](https://github.com/sailscoring/sailscoring/issues/363).
 
 ### 5. Event names
 
@@ -128,7 +142,7 @@ pipeline does for you:
 
 ### 6. No event dates
 
-Nothing in the corpus states when a series was sailed. Only 3 of 76 pages
+Nothing in the corpus states when a series was sailed. Only 3 of 75 pages
 carry dated race titles, and those look bulk-set by the scorer (every race in
 `2018_Cooler_Series.htm` is dated 30/09/2018). Rather than invent dates, the
 config omits `startDate`/`endDate` entirely.
@@ -170,7 +184,7 @@ back to the club's presentation.
 ### 9. One name, one sailor — and where that stops
 
 The competitor-identity manifest (`identities.json`, app #218) groups the
-**2,406 people** named across the 1,631 competitor rows — helms and crew
+**2,353 people** named across the 1,604 competitor rows — helms and crew
 alike (§11) — into **410 sailors**. It is drafted by `pnpm identities`
 through the app's canonical matcher, then shaped by two rules.
 
@@ -255,7 +269,7 @@ manifest that would lose a row.
 
 ### 11. Crew are sailors too
 
-Identity used to attach to the helm alone, so the 48% of KSC rows carrying a
+Identity used to attach to the helm alone, so the 47% of KSC rows carrying a
 named crew contributed nobody, and the people who only ever crew sailed the
 whole record and got no sailor page. App
 [#348](https://github.com/sailscoring/sailscoring/issues/348) fixed that:

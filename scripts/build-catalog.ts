@@ -156,13 +156,38 @@ interface CatalogEntry {
   raceCount: number;
   raceTitles: string[];
   /** `current` — the upload to ingest. `superseded` — an earlier upload of
-   *  the same series (KSC re-publishes in progress under variant filenames).
+   *  the same series (KSC re-publishes in progress under variant filenames),
+   *  or a second presentation of a result captured elsewhere.
    *  `placeholder` — an entry-list stub with no racing yet. */
   status: 'current' | 'superseded' | 'placeholder';
   supersededBy?: string;
+  /** Why, when it is not the ordinary earlier-upload case. */
+  supersededNote?: string;
   /** Set when another captured file is byte-identical. */
   duplicateOf?: string;
 }
+
+/** Pages the club has told us are a second *presentation* of a result
+ *  captured elsewhere, rather than a result of their own.
+ *
+ *  The 2024 GP14 Munsters was published twice, a minute apart: split Gold /
+ *  Silver / Bronze, and as a single overall standing. The club confirms both
+ *  are the same racing and the same scores, published in both formats at the
+ *  GP14 class's request so sailors could see themselves against their fleet
+ *  and against the whole entry (#4). Two series is the wrong shape for that —
+ *  the season index lists the regatta twice, and every GP14 competitor lands
+ *  in the identity spine twice off one event. The fleet split is kept, being
+ *  the finer-grained of the two; carrying both properly is a publishing
+ *  feature, filed as sailscoring#363.
+ *
+ *  Curated because the automatic pass below cannot see it: that groups by
+ *  filename, and `_alternate` is a different key. */
+const CONFIRMED_DUPLICATES: Record<string, { of: string; note: string }> = {
+  '2024_GP14_Munsters_alternate.htm': {
+    of: '2024_GP14_Munsters.htm',
+    note: 'a second presentation of the same result, one overall standing rather than the Gold/Silver/Bronze split, confirmed by the club (#4)',
+  },
+};
 
 function yearIn(text: string | null | undefined, tail = false): number | null {
   if (!text) return null;
@@ -297,6 +322,16 @@ function main(): void {
       e.status = 'superseded';
       e.supersededBy = winner.file;
     }
+  }
+
+  // A club-confirmed second presentation. Applied last: an answer from the
+  // club outranks anything the filenames imply.
+  for (const e of entries) {
+    const duplicate = CONFIRMED_DUPLICATES[e.file];
+    if (!duplicate) continue;
+    e.status = 'superseded';
+    e.supersededBy = duplicate.of;
+    e.supersededNote = duplicate.note;
   }
 
   const unmatched = clubEntries.filter(

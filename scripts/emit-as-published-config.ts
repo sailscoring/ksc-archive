@@ -50,6 +50,7 @@ interface CatalogPage {
   raceCount: number;
   status: 'current' | 'superseded' | 'placeholder';
   supersededBy?: string;
+  supersededNote?: string;
 }
 
 function slug(name: string): string {
@@ -293,7 +294,9 @@ function main(): void {
       file: p.file,
       reason:
         p.status === 'superseded'
-          ? `superseded by ${p.supersededBy} — an earlier upload of the same series`
+          ? `superseded by ${p.supersededBy} — ${
+              p.supersededNote ?? 'an earlier upload of the same series'
+            }`
           : 'placeholder — an entry list with no races sailed',
       year: p.year,
       uploadedAt: p.uploadedAt,

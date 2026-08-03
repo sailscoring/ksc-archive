@@ -98,7 +98,7 @@ as-published-skips.json        pages deliberately not ingested, with reasons
 
 ## Status
 
-**Live.** All **76 series / 82 fleet pages / 1,631 competitor rows** across
+**Live.** All **75 series / 81 fleet pages / 1,604 competitor rows** across
 2018–2026 are ingested into the `ksc` workspace and published at
 [app.sailscoring.ie/p/ksc](https://app.sailscoring.ie/p/ksc), one season index
 per year. CI re-ingests on every push to `main`.
@@ -111,7 +111,7 @@ per year. CI re-ingests on every push to `main`.
 | 2021 | 8 | Summer Series also present as three weekly snapshots (skipped) |
 | 2022 | 10 | includes the RS Inlands (2 fleets) and Munster Fireballs |
 | 2023 | 11 | includes the Fireball Munsters & 420 Leinsters (2 fleets) |
-| 2024 | 14 | first season with the club's curated naming; GP14 Munsters (3 fleets) |
+| 2024 | 13 | first season with the club's curated naming; GP14 Munsters (3 fleets) |
 | 2025 | 12 | includes the ILCA Westerns (3 fleets) |
 | 2026 | 6 | season in progress — re-capture to refresh |
 
@@ -123,14 +123,14 @@ per year. CI re-ingests on every push to `main`.
   ([#344](https://github.com/sailscoring/sailscoring/issues/344)).
 - ✅ `ksc` workspace provisioned, CI armed, and the whole corpus ingested and
   published (2026-07-31).
-- ✅ **The identity manifest** — 1,631 rows resolved to **410 sailors**
+- ✅ **The identity manifest** — 1,604 rows resolved to **410 sailors**
   (`identities.json`), applied and live: the
   [competitor index](https://app.sailscoring.ie/p/ksc/competitors) and a career
   arc per sailor, spanning nine seasons
   ([John Callanan](https://app.sailscoring.ie/p/ksc/competitor/john-callanan-dzwh)
   has 56 series).
 - ✅ **Crew count as sailors** (app
-  [#348](https://github.com/sailscoring/sailscoring/issues/348)) — 48% of rows
+  [#348](https://github.com/sailscoring/sailscoring/issues/348)) — 47% of rows
   name a crew, and reading the helm field alone left those people out of the
   record entirely. Each person on a boat is now a sailor in their own right:
   **143 who had no page at all**, and **62 existing sailors** who turn out to
@@ -139,6 +139,15 @@ per year. CI re-ingests on every push to `main`.
   spellings, including the `(J)` junior tag and five bare first names, took
   444 drafted sailors to 410. Two pairs that had been put to the club as
   open questions turned out to be one sailor each. See CLARIFICATIONS §9.
+- ⬜ **Drop the duplicate 2024 GP14 Munsters** — the club confirmed the Gold /
+  Silver / Bronze split and the single overall are the same result, published
+  both ways at the class's request
+  ([#4](https://github.com/sailscoring/ksc-archive/issues/4)). The fleet split
+  is kept and the overall skipped, which takes the corpus to 75 series and
+  stops every GP14 competitor entering the identity spine twice. The skipped
+  series row needs deleting from the workspace, and a redirect. Publishing
+  both properly is app
+  [#363](https://github.com/sailscoring/sailscoring/issues/363).
 - ⬜ **Land the Cooler Series rename** — the club confirmed the autumn series
   is the Cooler Series everywhere
   ([#3](https://github.com/sailscoring/ksc-archive/issues/3)), so 2023 and 2024
@@ -159,7 +168,7 @@ and written up in CLARIFICATIONS.md.
 | [#1](https://github.com/sailscoring/ksc-archive/issues/1) **Event dates** | the corpus states none, so every career arc shows `—` for its dates and isn't really ordered — the biggest single gap |
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
 | [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | the autumn series is answered — it is the Cooler Series everywhere, and 2023/2024 have been renamed to match; the rest of the naming is still open |
-| [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | published twice, two scorings; which is official? |
+| [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | answered — one result published two ways, on purpose; the archive keeps the fleet split and skips the overall |
 | [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Six identity questions** | same sailor or two — two of the original five have since been answered from the crew field — plus the correct spelling of one Fireball sailor's name and three helms entered under a first name alone |
 | [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | prize-winners, anything pre-2018, sailing instructions |
 

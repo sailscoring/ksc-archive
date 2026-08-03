@@ -820,24 +820,6 @@
       ]
     },
     {
-      "key": "ksc-2024-gp14-munsters-alternate-scoring",
-      "id": "316787b6-c22f-5d9d-98ef-17ec22c51146",
-      "publishedSlug": "2024",
-      "name": "GP14 Munsters (alternate scoring) 2024",
-      "venue": "Lough Derg",
-      "venueUrl": "https://www.killaloesailingclub.com",
-      "source": "sailwave",
-      "fleets": [
-        {
-          "name": "Overall",
-          "subPath": "gp14-munsters-alternate-scoring",
-          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters_alternate.htm",
-          "sectionTitle": "Overall",
-          "includeRaces": true
-        }
-      ]
-    },
-    {
       "key": "ksc-2024-gp14-munsters",
       "id": "897d11da-df21-5837-8ee6-abc08788d7d5",
       "publishedSlug": "2024",

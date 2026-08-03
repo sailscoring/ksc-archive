@@ -48,7 +48,6 @@
     "ksc-2024-brass-monkey-winter": "1082f15d-1f53-5481-89ac-9ceeeb0c7e7f",
     "ksc-2024-cooler-series": "43fc4f33-a6f6-5d9c-a661-19dae9790f3f",
     "ksc-2024-gp14-munsters": "897d11da-df21-5837-8ee6-abc08788d7d5",
-    "ksc-2024-gp14-munsters-alternate-scoring": "316787b6-c22f-5d9d-98ef-17ec22c51146",
     "ksc-2024-june-series": "2334f645-4659-5130-a562-a113746952df",
     "ksc-2024-june-sprint-1": "eeccc251-cd04-54c4-9c23-a397918cacec",
     "ksc-2024-june-sprint-2": "bc152463-0f5e-5a92-bbbf-2b3de52f2c0b",
@@ -131,10 +130,6 @@
       "name": "Alan Blay",
       "club": "Sutton Dinghy Club/ Howth Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14235"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14235"
@@ -1488,11 +1483,6 @@
       "club": "Tralee Bay Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13677",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13677",
           "crew"
@@ -1627,10 +1617,6 @@
       "members": [
         [
           "ksc-2022-spring-challenge-open-regatta",
-          "13228"
-        ],
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
           "13228"
         ],
         [
@@ -2155,11 +2141,6 @@
       "club": "Mullingar Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14284",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14284",
           "crew"
@@ -2312,11 +2293,6 @@
       "name": "Carolyn Mccaldin",
       "club": "Lough Erne Yacht club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14237",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14237",
@@ -3012,10 +2988,6 @@
       "club": "Skerries SC / Derwent reservoir",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14"
         ]
@@ -3133,10 +3105,6 @@
       "club": "Sutton Dinghy Club/ Howth Yacht Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14165"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14165"
         ]
@@ -3214,10 +3182,6 @@
       "club": "Tralee Bay Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13677"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13677"
         ]
@@ -3235,10 +3199,6 @@
         ],
         [
           "ksc-2023-open-summer-regatta",
-          "14130"
-        ],
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
           "14130"
         ],
         [
@@ -3862,10 +3822,6 @@
       "name": "David Evans",
       "club": "Sligo Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14203"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14203"
@@ -4649,10 +4605,6 @@
           "14182"
         ],
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13353"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13353"
         ],
@@ -4667,11 +4619,6 @@
       "name": "Dierdre Foley",
       "club": "Greystones SC",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13669 / 14270",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13669 / 14270",
@@ -4994,11 +4941,6 @@
       "name": "Eimer Moriarty",
       "club": "Tralee Bay Sailing Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "142371",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "142371",
@@ -5859,11 +5801,6 @@
       "club": "Cullaun Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13238",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13238",
           "crew"
@@ -5928,10 +5865,6 @@
       "club": "Cullaun Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13238"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13238"
         ]
@@ -5942,10 +5875,6 @@
       "name": "Ger Owens",
       "club": "Wicklow SC, East Antrim BC",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14256"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14256"
@@ -6398,10 +6327,6 @@
       "club": "Sutton Dinghy/Blessington Sailing Clubs",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14275"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14275"
         ]
@@ -6412,16 +6337,6 @@
       "name": "Hugh McNally",
       "club": "Sutton Dinghy Club/ Howth Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13300",
-          "crew"
-        ],
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14235",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13300",
@@ -6650,10 +6565,6 @@
       "name": "Jennifer Bryce",
       "club": "Newtownards & Donaghadee Sailing Clubs",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13865"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13865"
@@ -7213,11 +7124,6 @@
       "club": "Cullaun Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13228",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13228",
           "crew"
@@ -7552,11 +7458,6 @@
       "club": "Blessington Lakes Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13981",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13981",
           "crew"
@@ -7579,10 +7480,6 @@
       "name": "JP Mccaldin",
       "club": "Lough Erne Yacht club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14237"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14237"
@@ -7643,10 +7540,6 @@
       "name": "Katie Dwyer",
       "club": "Sutton Dinghy Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14279"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14279"
@@ -7974,10 +7867,6 @@
       "name": "Laura O'Brien",
       "club": "Rush Sailing Club/Sligo YC",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13300"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13300"
@@ -8344,11 +8233,6 @@
       "club": "Blessington Lakes Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "4",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "4",
           "crew"
@@ -8497,11 +8381,6 @@
       "club": "Sligo Yacht Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14257",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14257",
           "crew"
@@ -8530,11 +8409,6 @@
           "crew"
         ],
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14130",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14130",
           "crew"
@@ -8550,11 +8424,6 @@
       "name": "Maedbh Butterly",
       "club": "Rush Sailing Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14036",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14036",
@@ -9074,11 +8943,6 @@
       "club": "Sutton Dinghy Club/ Howth Yacht Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14165",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14165",
           "crew"
@@ -9135,11 +8999,6 @@
       "club": "Wicklow SC, East Antrim BC",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14256",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14256",
           "crew"
@@ -9162,10 +9021,6 @@
       "name": "Michael Collender",
       "club": "Mullingar Sailing Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14284"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14284"
@@ -9293,11 +9148,6 @@
       "name": "Michelle Rowley",
       "club": "Sutton Dinghy Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14279",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14279",
@@ -9637,11 +9487,6 @@
       "club": "East Down Yacht Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14171",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14171",
           "crew"
@@ -9681,11 +9526,6 @@
       "name": "Neil Soffe",
       "club": "Malahide Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14041",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14041",
@@ -9783,10 +9623,6 @@
       "name": "Norman Lee",
       "club": "Greystones SC",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13669 / 14270"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13669 / 14270"
@@ -10027,11 +9863,6 @@
       "name": "Pat Beisty",
       "club": "Cullaun Sailing Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13353",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "13353",
@@ -10366,10 +10197,6 @@
       "club": "Sligo Yacht Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14271"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14271"
         ]
@@ -10430,10 +10257,6 @@
       "name": "Paul Soffe",
       "club": "Malahide Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14041"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14041"
@@ -10999,10 +10822,6 @@
       "club": "Rush Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14036"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14036"
         ]
@@ -11040,11 +10859,6 @@
           "14816"
         ],
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14275",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14275",
           "crew"
@@ -11068,10 +10882,6 @@
       "club": "Greystones Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14185"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14185"
         ]
@@ -11093,10 +10903,6 @@
       "name": "Robbie Richardson",
       "club": "East Down Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14171"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14171"
@@ -11227,11 +11033,6 @@
       "club": "Skerries SC / Derwent reservoir",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14",
           "crew"
@@ -11329,10 +11130,6 @@
           "14044"
         ],
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13981"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13981"
         ]
@@ -11359,10 +11156,6 @@
       "name": "Sam Wray",
       "club": "Sligo Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14257"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14257"
@@ -11502,10 +11295,6 @@
       "name": "Sean Craig",
       "club": "RStGYC / Sutton Dinghy Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14272"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14272"
@@ -12034,10 +11823,6 @@
       "club": "Blessington Lakes Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "4"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "4"
         ]
@@ -12190,11 +11975,6 @@
       "club": "RStGYC / Sutton Dinghy Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14272",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "14272",
           "crew"
@@ -12206,11 +11986,6 @@
       "name": "Stephen Lynch",
       "club": "Greystones Sailing Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14185",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14185",
@@ -12822,10 +12597,6 @@
       "club": "Tralee Bay Sailing Club",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "142371"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "142371"
         ]
@@ -13263,11 +13034,6 @@
       "club": "Newtownards & Donaghadee Sailing Clubs",
       "members": [
         [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "13865",
-          "crew"
-        ],
-        [
           "ksc-2024-gp14-munsters",
           "13865",
           "crew"
@@ -13305,11 +13071,6 @@
       "name": "William Draper",
       "club": "Sligo Yacht Club",
       "members": [
-        [
-          "ksc-2024-gp14-munsters-alternate-scoring",
-          "14203",
-          "crew"
-        ],
         [
           "ksc-2024-gp14-munsters",
           "14203",
