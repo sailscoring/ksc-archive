@@ -146,10 +146,21 @@ per year. CI re-ingests on every push to `main`.
   ([#4](https://github.com/sailscoring/ksc-archive/issues/4)). Both are now
   emitted into one series of four fleet pages, the three divisions marked
   `displayOnly` so the twenty-seven boats are counted once
-  (app [#363](https://github.com/sailscoring/sailscoring/issues/363)). Adds
-  `/p/ksc/2024/gp14-munsters/overall`; the three existing division URLs are
-  unchanged. Needs the app deployed first — the CI generates against its
-  `main`. See CLARIFICATIONS §4.
+  (app [#363](https://github.com/sailscoring/sailscoring/issues/363)). Live:
+  `/p/ksc/2024/gp14-munsters/overall` publishes alongside the three division
+  URLs, which are unchanged. See CLARIFICATIONS §4.
+
+  **Still to do, by hand:** the alternate was ingested as a series of its own
+  before it was skipped, and that row is still in the workspace — it is why
+  `/p/ksc/2024/2024-gp14-munsters-alternate-scoring` is still live and why a
+  GP14 sailor's timeline still lists the regatta twice. Retire it with a
+  managed 301 to the new page and then delete it (both need production
+  credentials):
+
+  ```
+  pnpm redirects add ksc /2024/gp14-munsters-alternate-scoring /2024/gp14-munsters/overall
+  pnpm cli as-published delete 316787b6-c22f-5d9d-98ef-17ec22c51146
+  ```
 - ⬜ **Land the Cooler Series rename** — the club confirmed the autumn series
   is the Cooler Series everywhere
   ([#3](https://github.com/sailscoring/ksc-archive/issues/3)), so 2023 and 2024
