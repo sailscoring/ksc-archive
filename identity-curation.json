@@ -33,14 +33,18 @@
       "note": "One Fireball sailor, published under six spellings across 2019-2024 (all KSC, all Fireball). Confirmed by the club. The display name is the commonest; the correct spelling is still to be confirmed. The bare 'Andreas' is the 2020 Summer Series entry on Fireball 1471 with 'Ana' crewing — 1471 is this boat in every other year it appears."
     },
     {
-      "name": "Ana Gonzalves",
-      "aliases": ["Ana Gonzalez", "Ana Gonzales"],
-      "note": "Andres Gonzalves's crew on Fireball 14244, 2022-2024, all KSC. Her surname tracks his spelling row for row. Whether she is also the 'Ana Maria Grande' who crews the same boat is a question for the club, not a merge — see CLARIFICATIONS.md §9."
-    },
-    {
-      "name": "Ana Maria Grande",
-      "aliases": ["Ana-Marie Grande", "Ana-Maria Grande", "Ana Marie Grande", "Anna Marie Grande"],
-      "note": "Five spellings of Andres Gonzalves's Fireball crew, 2019-2023, all KSC, never two in one series. The corpus splits 7/5/1/1/1 in favour of 'Ana-Marie Grande'; the Spanish form is published here to match his own name, and the correct spelling is unconfirmed."
+      "name": "Ana Maria Gonzalves",
+      "aliases": [
+        "Ana Gonzalves",
+        "Ana Gonzalez",
+        "Ana Gonzales",
+        "Ana Maria Grande",
+        "Ana-Marie Grande",
+        "Ana-Maria Grande",
+        "Ana Marie Grande",
+        "Anna Marie Grande"
+      ],
+      "note": "Andres Gonzalves's Fireball crew, 2019-2024, all KSC, under eight spellings of two surnames: Grande on 15 rows (2019-2023) and Gonzalves — tracking his own spelling row for row — on 6 (2022-2024). A different surname is not a slip, so this was asked about rather than merged; the club confirms one sailor, Grande being her maiden name (#5). Her married name is published, in the full form the club used; the display name is the only thing that moves, and the identity keeps the slug its Grande cluster was minted under."
     },
     {
       "name": "Charlie McDonnell",
