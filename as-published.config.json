@@ -829,25 +829,35 @@
       "source": "sailwave",
       "fleets": [
         {
+          "name": "Overall",
+          "subPath": "gp14-munsters/overall",
+          "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters_alternate.htm",
+          "sectionTitle": "Overall",
+          "includeRaces": true
+        },
+        {
           "name": "Gold Fleet",
           "subPath": "gp14-munsters/gold-fleet",
           "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
           "sectionTitle": "Gold Fleet",
-          "includeRaces": true
+          "includeRaces": true,
+          "displayOnly": true
         },
         {
           "name": "Silver Fleet",
           "subPath": "gp14-munsters/silver-fleet",
           "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
           "sectionTitle": "Silver Fleet",
-          "includeRaces": true
+          "includeRaces": true,
+          "displayOnly": true
         },
         {
           "name": "Bronze Fleet",
           "subPath": "gp14-munsters/bronze-fleet",
           "file": "sources/sailwave.com/results/KSC/2024_GP14_Munsters.htm",
           "sectionTitle": "Bronze Fleet",
-          "includeRaces": true
+          "includeRaces": true,
+          "displayOnly": true
         }
       ],
       "folders": [

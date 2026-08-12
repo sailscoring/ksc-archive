@@ -98,7 +98,7 @@ as-published-skips.json        pages deliberately not ingested, with reasons
 
 ## Status
 
-**Live.** All **75 series / 81 fleet pages / 1,604 competitor rows** across
+**Live.** All **75 series / 82 fleet pages / 1,604 competitor rows** across
 2018–2026 are ingested into the `ksc` workspace and published at
 [app.sailscoring.ie/p/ksc](https://app.sailscoring.ie/p/ksc), one season index
 per year. CI re-ingests on every push to `main`.
@@ -111,7 +111,7 @@ per year. CI re-ingests on every push to `main`.
 | 2021 | 8 | Summer Series also present as three weekly snapshots (skipped) |
 | 2022 | 10 | includes the RS Inlands (2 fleets) and Munster Fireballs |
 | 2023 | 11 | includes the Fireball Munsters & 420 Leinsters (2 fleets) |
-| 2024 | 13 | first season with the club's curated naming; GP14 Munsters (3 fleets) |
+| 2024 | 13 | first season with the club's curated naming; GP14 Munsters (overall + 3 divisions, §4) |
 | 2025 | 12 | includes the ILCA Westerns (3 fleets) |
 | 2026 | 6 | season in progress — re-capture to refresh |
 
@@ -140,14 +140,16 @@ per year. CI re-ingests on every push to `main`.
   444 drafted sailors to 407. Six pairs that had been put to the club as open
   questions have been answered: five are one sailor each, one is two brothers.
   See CLARIFICATIONS §9.
-- ⬜ **Drop the duplicate 2024 GP14 Munsters** — the club confirmed the Gold /
-  Silver / Bronze split and the single overall are the same result, published
-  both ways at the class's request
-  ([#4](https://github.com/sailscoring/ksc-archive/issues/4)). The fleet split
-  is kept and the overall skipped, which takes the corpus to 75 series and
-  stops every GP14 competitor entering the identity spine twice. The skipped
-  series row needs deleting from the workspace. Publishing both properly is
-  app [#363](https://github.com/sailscoring/sailscoring/issues/363).
+- ⬜ **Publish both 2024 GP14 Munsters presentations** — the club confirmed the
+  Gold / Silver / Bronze split and the single overall are the same result,
+  published both ways at the class's request
+  ([#4](https://github.com/sailscoring/ksc-archive/issues/4)). Both are now
+  emitted into one series of four fleet pages, the three divisions marked
+  `displayOnly` so the twenty-seven boats are counted once
+  (app [#363](https://github.com/sailscoring/sailscoring/issues/363)). Adds
+  `/p/ksc/2024/gp14-munsters/overall`; the three existing division URLs are
+  unchanged. Needs the app deployed first — the CI generates against its
+  `main`. See CLARIFICATIONS §4.
 - ⬜ **Land the Cooler Series rename** — the club confirmed the autumn series
   is the Cooler Series everywhere
   ([#3](https://github.com/sailscoring/ksc-archive/issues/3)), so 2023 and 2024

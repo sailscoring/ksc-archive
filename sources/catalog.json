@@ -1492,9 +1492,10 @@
         "R5",
         "R6"
       ],
-      "status": "superseded",
-      "supersededBy": "2024_GP14_Munsters.htm",
-      "supersededNote": "a second presentation of the same result, one overall standing rather than the Gold/Silver/Bronze split, confirmed by the club (#4)"
+      "status": "second-presentation",
+      "presentationOf": "2024_GP14_Munsters.htm",
+      "supersededNote": "the same result published a second way, one overall standing rather than the Gold/Silver/Bronze split, confirmed by the club (#4)",
+      "structural": true
     },
     {
       "file": "2024_June_Sprint_1.htm",

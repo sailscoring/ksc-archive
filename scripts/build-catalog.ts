@@ -156,13 +156,19 @@ interface CatalogEntry {
   raceCount: number;
   raceTitles: string[];
   /** `current` — the upload to ingest. `superseded` — an earlier upload of
-   *  the same series (KSC re-publishes in progress under variant filenames),
-   *  or a second presentation of a result captured elsewhere.
-   *  `placeholder` — an entry-list stub with no racing yet. */
-  status: 'current' | 'superseded' | 'placeholder';
+   *  the same series (KSC re-publishes in progress under variant filenames).
+   *  `second-presentation` — the same result published a second way, ingested
+   *  as extra tables of the other page's series rather than as a series of
+   *  its own. `placeholder` — an entry-list stub with no racing yet. */
+  status: 'current' | 'superseded' | 'second-presentation' | 'placeholder';
   supersededBy?: string;
   /** Why, when it is not the ordinary earlier-upload case. */
   supersededNote?: string;
+  /** `second-presentation` only: the page whose result this re-presents. */
+  presentationOf?: string;
+  /** `second-presentation` only: whether *this* page's tables are the ones
+   *  that account for the sailors — see `SECOND_PRESENTATIONS`. */
+  structural?: boolean;
   /** Set when another captured file is byte-identical. */
   duplicateOf?: string;
 }
@@ -174,18 +180,26 @@ interface CatalogEntry {
  *  Silver / Bronze, and as a single overall standing. The club confirms both
  *  are the same racing and the same scores, published in both formats at the
  *  GP14 class's request so sailors could see themselves against their fleet
- *  and against the whole entry (#4). Two series is the wrong shape for that —
- *  the season index lists the regatta twice, and every GP14 competitor lands
- *  in the identity spine twice off one event. The fleet split is kept, being
- *  the finer-grained of the two; carrying both properly is a publishing
- *  feature, filed as sailscoring#363.
+ *  and against the whole entry (#4). Both are emitted into one series, whose
+ *  fleet pages are both presentations — the app carries this as
+ *  sailscoring#363.
+ *
+ *  `structural` says which page's tables account for the sailors. It is the
+ *  overall standing here: one start and one scoring pool of twenty-seven, so
+ *  a sailor's place in this regatta is out of twenty-seven. Taking it from
+ *  the split would read a division as a fleet and record a mid-fleet sailor
+ *  as first of four.
  *
  *  Curated because the automatic pass below cannot see it: that groups by
  *  filename, and `_alternate` is a different key. */
-const CONFIRMED_DUPLICATES: Record<string, { of: string; note: string }> = {
+const SECOND_PRESENTATIONS: Record<
+  string,
+  { of: string; note: string; structural: boolean }
+> = {
   '2024_GP14_Munsters_alternate.htm': {
     of: '2024_GP14_Munsters.htm',
-    note: 'a second presentation of the same result, one overall standing rather than the Gold/Silver/Bronze split, confirmed by the club (#4)',
+    note: 'the same result published a second way, one overall standing rather than the Gold/Silver/Bronze split, confirmed by the club (#4)',
+    structural: true,
   },
 };
 
@@ -327,11 +341,12 @@ function main(): void {
   // A club-confirmed second presentation. Applied last: an answer from the
   // club outranks anything the filenames imply.
   for (const e of entries) {
-    const duplicate = CONFIRMED_DUPLICATES[e.file];
-    if (!duplicate) continue;
-    e.status = 'superseded';
-    e.supersededBy = duplicate.of;
-    e.supersededNote = duplicate.note;
+    const presentation = SECOND_PRESENTATIONS[e.file];
+    if (!presentation) continue;
+    e.status = 'second-presentation';
+    e.presentationOf = presentation.of;
+    e.supersededNote = presentation.note;
+    e.structural = presentation.structural;
   }
 
   const unmatched = clubEntries.filter(
@@ -360,6 +375,7 @@ function main(): void {
   console.log(
     `${entries.length} pages -> ${OUT}\n` +
       `  ${count('current')} current, ${count('superseded')} superseded, ` +
+      `${count('second-presentation')} second presentations, ` +
       `${count('placeholder')} placeholder\n` +
       `  ${entries.filter((e) => e.clubHeading).length} with a club heading\n` +
       `  ${entries.filter((e) => e.encoding !== 'utf-8').length} not UTF-8\n` +
@@ -368,7 +384,11 @@ function main(): void {
   );
   for (const e of entries.filter((x) => x.status !== 'current')) {
     console.log(
-      `  ${e.status}: ${e.file}${e.supersededBy ? ` -> ${e.supersededBy}` : ''}`,
+      `  ${e.status}: ${e.file}${
+        e.supersededBy || e.presentationOf
+          ? ` -> ${e.supersededBy ?? e.presentationOf}`
+          : ''
+      }`,
     );
   }
 }

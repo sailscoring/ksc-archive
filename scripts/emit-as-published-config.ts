@@ -48,9 +48,11 @@ interface CatalogPage {
   clubYearPage: string | null;
   fleets: CatalogFleet[];
   raceCount: number;
-  status: 'current' | 'superseded' | 'placeholder';
+  status: 'current' | 'superseded' | 'second-presentation' | 'placeholder';
   supersededBy?: string;
   supersededNote?: string;
+  presentationOf?: string;
+  structural?: boolean;
 }
 
 function slug(name: string): string {
@@ -192,6 +194,10 @@ interface EmittedFleet {
   file: string;
   sectionTitle?: string;
   includeRaces?: boolean;
+  /** A second presentation of the same racing (app sailscoring#363): these
+   *  tables publish and render, but the other presentation's account for the
+   *  sailors. */
+  displayOnly?: true;
 }
 
 function main(): void {
@@ -207,6 +213,16 @@ function main(): void {
         (a.uploadedAt ?? '').localeCompare(b.uploadedAt ?? ''),
     );
 
+  // file -> the pages that publish that page's result a second way.
+  const secondPresentations = new Map<string, CatalogPage[]>();
+  for (const page of catalog.pages) {
+    if (page.status !== 'second-presentation' || !page.presentationOf) continue;
+    secondPresentations.set(page.presentationOf, [
+      ...(secondPresentations.get(page.presentationOf) ?? []),
+      page,
+    ]);
+  }
+
   const takenByYear = new Map<number, Set<string>>();
   const seriesKeys = new Set<string>();
   const series = [];
@@ -221,26 +237,41 @@ function main(): void {
     if (seriesKeys.has(key)) throw new Error(`duplicate series key: ${key}`);
     seriesKeys.add(key);
 
-    const multi = page.fleets.length > 1;
-    const fleets: EmittedFleet[] = page.fleets.map((fleet, i) => {
-      // Sailwave titles a lone section "Overall"; on a multi-fleet page the
-      // titles are the real class names ("ILCA 6 / Laser Radial Class").
-      const name = fleet.title?.trim() || 'Overall';
-      return {
-        name,
-        subPath: multi ? `${event}/${slug(name)}` : event,
-        file: `${CAPTURE_DIR}/${page.file}`,
-        // Only disambiguate when there is something to disambiguate; a
-        // single-section page needs no title match (and some have none).
-        ...(multi || (page.fleets.length === 1 && fleet.title)
-          ? { sectionTitle: fleet.title ?? undefined }
-          : {}),
-        // Carry the per-race detail tables where the page publishes them.
-        // Many KSC pages are standings-only — a complete published result,
-        // just without the per-race breakdown.
-        ...(page.raceCount > 0 ? { includeRaces: true } : {}),
-      };
-    });
+    // A second presentation of this page's result — the same racing published
+    // a second way — joins this series as further fleet pages rather than
+    // becoming a series of its own. Whichever presentation the curation calls
+    // structural accounts for the sailors; the other is display-only.
+    const presentations = secondPresentations.get(page.file) ?? [];
+    const pageIsStructural = presentations.every((p) => !p.structural);
+    const sourcePages: Array<{ page: CatalogPage; displayOnly: boolean }> = [
+      ...presentations.map((p) => ({ page: p, displayOnly: !p.structural })),
+      { page, displayOnly: !pageIsStructural },
+    ];
+
+    const multi =
+      sourcePages.reduce((n, sp) => n + sp.page.fleets.length, 0) > 1;
+    const fleets: EmittedFleet[] = sourcePages.flatMap(({ page: src, displayOnly }) =>
+      src.fleets.map((fleet) => {
+        // Sailwave titles a lone section "Overall"; on a multi-fleet page the
+        // titles are the real class names ("ILCA 6 / Laser Radial Class").
+        const name = fleet.title?.trim() || 'Overall';
+        return {
+          name,
+          subPath: multi ? `${event}/${slug(name)}` : event,
+          file: `${CAPTURE_DIR}/${src.file}`,
+          // Only disambiguate when there is something to disambiguate; a
+          // single-section page needs no title match (and some have none).
+          ...(src.fleets.length > 1 || (src.fleets.length === 1 && fleet.title)
+            ? { sectionTitle: fleet.title ?? undefined }
+            : {}),
+          // Carry the per-race detail tables where the page publishes them.
+          // Many KSC pages are standings-only — a complete published result,
+          // just without the per-race breakdown.
+          ...(src.raceCount > 0 ? { includeRaces: true } : {}),
+          ...(displayOnly ? { displayOnly: true as const } : {}),
+        };
+      }),
+    );
 
     series.push({
       key,
@@ -289,7 +320,7 @@ function main(): void {
   );
 
   const skips = catalog.pages
-    .filter((p) => p.status !== 'current')
+    .filter((p) => p.status !== 'current' && p.status !== 'second-presentation')
     .map((p) => ({
       file: p.file,
       reason:
@@ -308,7 +339,10 @@ function main(): void {
   console.log(
     `${series.length} series / ${fleetCount} fleet pages -> ${OUT}\n` +
       `  seasons ${years[0]}–${years[years.length - 1]} (${years.length})\n` +
-      `  ${skips.length} pages skipped -> ${SKIPS}`,
+      `  ${skips.length} pages skipped -> ${SKIPS}` +
+      (secondPresentations.size > 0
+        ? `\n  ${[...secondPresentations.values()].flat().length} second presentations folded into their series`
+        : ''),
   );
 }
 

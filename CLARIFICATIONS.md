@@ -47,7 +47,6 @@ us about (§4):
 | `2022_September_Series.htm` | `September_Series_2022.htm` | 4 races, mid-series |
 | `Summer_Series_2022.htm` | `2022_Summer_Series.htm` | byte-identical, uploaded 21 s apart |
 | `2004_Summer_Super_Series.htm` | `2024_Summer_Super_Series.htm` | 8 races vs 16 |
-| `2024_GP14_Munsters_alternate.htm` | `2024_GP14_Munsters.htm` | the same result published a second way (§4) |
 
 ### 3. Pages with nothing sailed
 
@@ -71,18 +70,26 @@ the same racing and the same scores, put out in both formats at the GP14
 class's request, so sailors could see where they finished among their peers
 *and* within their fleet.
 
-Neither supersedes the other, then — but two series is the wrong shape for
-one result. It lists the regatta twice in the 2024 index, and `rows` is
-structural, not display: every GP14 competitor entered the identity spine
-twice off one event, which is why the manifest counted 199 sailors in more
-than one series where it now counts 153.
+Neither supersedes the other, then, and neither is dropped. Both are emitted
+into **one series** with four fleet pages — the overall standing and the three
+divisions — using the app's second-presentation support
+([sailscoring#363](https://github.com/sailscoring/sailscoring/issues/363)).
+The catalogue marks the alternate `second-presentation` rather than
+`superseded`, and the emitter folds it into the other page's series.
 
-So the **fleet split is archived and the single overall is skipped** (§2) —
-the finer-grained of the two, and the one the class's own gold/silver/bronze
-placings live in. That drops a view the club deliberately published, which is
-a loss, not a fix. Carrying both properly — one result, a switch between
-presentations, only one of them structural — is app-side work, filed as
-[sailscoring#363](https://github.com/sailscoring/sailscoring/issues/363).
+The division tables are `displayOnly`: they publish and render, but their rows
+join to the overall table's competitor rows rather than minting their own, so
+the twenty-seven boats are twenty-seven competitors and each enters the
+identity spine once. Before this, archiving both would have counted every GP14
+competitor twice — the manifest saw 199 sailors in more than one series where
+it now sees 153.
+
+The overall standing is the structural one. The regatta was one start and one
+scoring pool of twenty-seven, so a sailor's place in it is out of
+twenty-seven; taking places off the divisions would read a division as a fleet
+and record a mid-fleet sailor as first of four. (In this capture the question
+is moot for places — Sailwave published these tables with no rank column at
+all — but the choice is the one that generalises.)
 
 ### 5. Event names
 
