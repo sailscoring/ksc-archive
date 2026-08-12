@@ -34,6 +34,10 @@ on:
       - 'sources/**'
       - 'as-published.config.json'
       - 'as-published-skips.json'
+      # The identity manifest is an ingest input too: the config names it and
+      # archive-generate copies it alongside the series documents. An
+      # identity-only commit is a publishable change, so it must trigger.
+      - 'identities.json'
       - 'scripts/**'
       - '.github/workflows/as-published.yml'
   workflow_dispatch:
