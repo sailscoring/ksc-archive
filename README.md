@@ -170,7 +170,7 @@ and written up in CLARIFICATIONS.md.
 | [#2](https://github.com/sailscoring/ksc-archive/issues/2) **Members-area access** | would confirm the 2018–2023 naming; the results themselves are unaffected |
 | [#3](https://github.com/sailscoring/ksc-archive/issues/3) **Event names** | the autumn series is answered — it is the Cooler Series everywhere, and 2023/2024 have been renamed to match; the rest of the naming is still open |
 | [#4](https://github.com/sailscoring/ksc-archive/issues/4) **2024 GP14 Munsters** | answered — one result published two ways, on purpose; the archive keeps the fleet split and skips the overall |
-| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Identity questions** | all five same-sailor-or-two pairs are answered, three by the club; still open are the correct spelling of one Fireball sailor's name, whether his two crew are one person, and three helms entered under a first name alone |
+| [#5](https://github.com/sailscoring/ksc-archive/issues/5) **Identity questions** | answered and closed — all six same-sailor-or-two pairs are settled, four by the club, including his two crew turning out to be one person. Never pinned down: the correct spelling of that Fireball sailor's own name, and three helms entered under a first name alone. CLARIFICATIONS §9 records both rather than asking again |
 | [#6](https://github.com/sailscoring/ksc-archive/issues/6) **Other club records** | mostly answered — nothing survives pre-2018, no trophy list was ever published, and the club's standing scoring rules are now on record; still open is a prize-winner spreadsheet the scorer is looking for |
 
 ## Relationship to the app repo

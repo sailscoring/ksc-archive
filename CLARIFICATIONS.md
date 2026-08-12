@@ -286,9 +286,10 @@ obvious slip. The slips that qualify:
 That covers 55 groups and 82 alternative spellings, the two largest being one
 Fireball crew: the sailor published as **Andreas Gonzalves / Andres Gonzalez /
 Andreas Gonzalez / Andres Gonzales / Andreas / Andres Gonzalves** across
-2019–2024 (confirmed by the club; the correct spelling still isn't known, so
-the display name is simply the commonest), and his crew, who carries eight
-spellings of two surnames — see her row in the club's answers below.
+2019–2024 (confirmed by the club as one sailor, but #5 closed without settling
+which of the six is his name, so the display name is simply the commonest), and
+his crew, who carries eight spellings of two surnames — see her row in the
+club's answers below.
 
 Where a merge picks a display name the corpus does not favour by count — `Jo
 Kramers` over `Jo Kramer` — the curation file says why. One name, `Ana Maria
@@ -300,20 +301,22 @@ it was minted even when the name printed on the page changes.
 
 Under-linking splits one sailor's record; over-linking puts another sailor's
 results in it. The second is worse and much harder to spot, so anything
-failing those tests is left apart and asked about instead:
+failing those tests is left apart. Three helm entries stay that way for good:
 
-> ❓ **For the club** ([#5](https://github.com/sailscoring/ksc-archive/issues/5))**:** are these the same sailor, or two?
->
-> | | |
-> |---|---|
-> | `Colin` (1, KSC, 2020) — `Colin Hart` or `Colin Haugh`? | he helmed RS 200 761, a shared club boat Colin Hart, Mike Hart, Reggie Quinn and Shirley O'Neill all used, so it settles nothing |
-> | `Liam` (1, 2024), `Paul` (1, 2025) | two Liams and four Pauls in the corpus |
->
-> Two 2019–2022 helm entries are recorded as `??`, and stand as a single
-> sailor named `??` for want of anything to call them.
+| | |
+|---|---|
+| `Colin` (1, KSC, 2020) — `Colin Hart` or `Colin Haugh`? | he helmed RS 200 761, a shared club boat Colin Hart, Mike Hart, Reggie Quinn and Shirley O'Neill all used, so it settles nothing |
+| `Liam` (1, 2024), `Paul` (1, 2025) | two Liams and four Pauls in the corpus |
 
-**Six pairs have come off that list**, two from the evidence and four from
-the club ([#5](https://github.com/sailscoring/ksc-archive/issues/5)).
+Two 2019–2022 helm entries are recorded as `??`, and stand as a single sailor
+named `??` for want of anything to call them. These five are what the corpus
+says, and they stay as published: one row is not worth the risk of filing it
+under the wrong member. If the club ever recognises one, a curated spelling in
+`identity-curation.json` is the whole fix.
+
+**Six pairs used to sit alongside them, and all six are settled** — two by the
+evidence and four by the club
+([#5](https://github.com/sailscoring/ksc-archive/issues/5), now closed).
 
 The two the corpus answered itself, once crew were read as well as helms
 (§11): `Tim O'Neill` / `Timothy O'Neill`, held apart for carrying different
@@ -340,6 +343,13 @@ a single 21-series record spanning 2019–2024. `Siofra McNamara` and `Ana Maria
 Gonzalves` keep the slugs their `MacNamara` and `Ana-Marie Grande` clusters were
 minted under, as five other curated names already do — the slug is the
 identifier, the name is the label, and only the label moves.
+
+With that, **#5 is closed**. Every pair the club could put a name to is
+answered; what is left — which spelling of his own name Andres Gonzalves uses,
+and the five entries above that name nobody identifiable — is recorded here
+rather than held open as a question, because neither changes a result and
+neither is worth asking the club a third time. Both would still be welcome
+answers, and both are a curation-file change if they ever arrive.
 
 ### 10. Boats are shared, so a sail number is not a sailor
 
