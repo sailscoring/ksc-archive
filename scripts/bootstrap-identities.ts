@@ -12,10 +12,13 @@
  *
  *  1. **One name, one sailor.** KSC is a small club whose entrants are drawn
  *     from a few hundred members, so two rows sharing a name are the same
- *     person, and the matcher's caution about it is miscalibrated here: with
- *     boats shared around the club, sail-number continuity — its main
- *     corroborating signal — mostly isn't there, so it splits a regular into
- *     several clusters ("no sail-number, club, or age corroboration"). Clusters
+ *     person. The matcher is deliberately more cautious than that — it wants
+ *     sail-number, club, or age continuity to corroborate a name — and with
+ *     boats shared around the club, sail-number continuity mostly isn't there.
+ *     App #356 closed most of the gap (the club is now read through this
+ *     corpus's own spellings, and a whole name is no longer treated as fragile
+ *     just for sharing a boat), taking the raw clusters from 647 to 499 and the
+ *     review suggestions from 367 to 12. What remains is the last step: clusters
  *     sharing a normalised name are merged by default. Genuine namesakes are
  *     the exception and go in `separate` in the curation file.
  *  2. **Curated aliases.** Cross-spelling merges the matcher can't see, listed
@@ -259,10 +262,10 @@ interface ClusterResult {
  *  normally comes from `series.start_date`; this corpus states no dates
  *  (CLARIFICATIONS §6), so the season the archive does know stands in.
  *
- *  Crew go in flagged as fragments, exactly as the workspace apply flags them:
- *  everyone on a boat shares its club and sail, so neither can corroborate a
- *  crew's name match. That makes the matcher split crew hard on this corpus —
- *  which the one-name-one-sailor merge below is already there to undo. */
+ *  Crew go in stamped with their slot, exactly as the workspace apply stamps
+ *  them, so the draft matches what the apply would produce. They are no longer
+ *  held to a higher bar than a helm: sharing a boat's club is a fact about one
+ *  row, and two people on one row never match each other anyway (app #356). */
 function cluster(rows: Row[]): ClusterResult {
   const input = rows.map((r) => ({
     competitorId: r.rowId,
@@ -272,7 +275,7 @@ function cluster(rows: Row[]): ClusterResult {
     age: null,
     raceYear: r.year,
     existingIdentityId: null,
-    ...(r.role === 'crew' ? { role: 'crew', fromMultiPersonRow: true } : {}),
+    ...(r.role === 'crew' ? { role: 'crew' } : {}),
   }));
   const out = execFileSync('pnpm', ['--silent', '--dir', APP_DIR, 'cluster-rows'], {
     input: JSON.stringify(input),

@@ -262,15 +262,23 @@ through the app's canonical matcher, then shaped by two rules.
 
 **The default: clusters sharing a name are one sailor.** The matcher is
 deliberately cautious about merging on a name alone, and wants sail-number,
-club, or age continuity to corroborate it. That caution is miscalibrated for
-this corpus: KSC shares boats around the club, so sail number tracks a *hull*,
-not a person (§10), and the corroboration mostly isn't there. Left alone the
-matcher splits regulars into several clusters — all 33 of the review
+club, or age continuity to corroborate it. That caution used to be badly
+miscalibrated for this corpus: KSC shares boats around the club, so sail number
+tracks a *hull*, not a person (§10); the club field is stated on all but 6 rows
+but spelled three ways (`KSC`, `Killaloe Sailing Club`, `Killaloe SC`), which
+the matcher read as three clubs; and every crew was held to a higher bar than a
+helm. Left alone it split regulars into several clusters — all 33 of the review
 suggestions it raised on the helm field alone were a name against itself, e.g.
-Stephen O'Brien across clusters of 45, 2 and 1. Adding crew takes that to 367,
-for the reason §11 gives. At a club whose entrants come from a few hundred
-members, two rows sharing a name are the same person, so those merge by
-default.
+Stephen O'Brien across clusters of 45, 2 and 1, and adding crew took that to
+367.
+
+App #356 fixed both halves: the club is now canonicalised against this corpus's
+own vocabulary, so its three spellings are one club, and a name match is
+demoted only when it rests on an initial (`J. Murphy`) rather than whenever the
+person shared a boat. That takes the raw clusters from 647 to 499 and the
+review suggestions from 367 to 12 — every one of the 12 still a name against
+itself. At a club whose entrants come from a few hundred members, two rows
+sharing a name are the same person, so those last 12 merge by default too.
 
 **The exception: cross-spelling merges are listed, never guessed.**
 `identity-curation.json` records them, and an entry is only added when the
